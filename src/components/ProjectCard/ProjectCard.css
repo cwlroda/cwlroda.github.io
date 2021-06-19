@@ -1,3 +1,10 @@
+.repo-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .repo-stats {
   display: flex;
   -webkit-box-pack: justify;
@@ -78,6 +85,10 @@
 }
 
 @media (max-width: 768px) {
+  .repo-card {
+    flex-direction: column;
+  }
+
   .repo-name {
     font-size: 16px;
   }

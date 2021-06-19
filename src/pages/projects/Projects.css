@@ -8,6 +8,25 @@
   margin-right: 5%;
 }
 
+.projects-header {
+  font-size: 40px;
+  line-height: 1.1;
+  font-family: "Google Sans Regular";
+  text-align: center;
+}
+
+@media (max-width: 1380px) {
+  .projects-header {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-header {
+    font-size: 30px;
+  }
+}
+
 .projects-heading-div {
   display: flex;
 }
@@ -55,14 +74,28 @@
   font-family: "Google Sans Medium";
 }
 
+.hackathon-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 1rem 1rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
+}
+
 .repo-cards-div-main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem 1rem;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top: 60px;
-  margin: 12vw;
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
 }
 
 @media (max-width: 1380px) {

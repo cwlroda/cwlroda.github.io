@@ -16,7 +16,8 @@ const greeting = {
   full_name: "Wei Loon Cheng",
   subTitle:
     "Back-End Developer & Machine Learning Engineer with 3.5 years of experience. Currently learning Front-End to be a Full-Stack Developer 🔥.",
-  resumeLink: "https://drive.google.com/uc?export=download&id=1pGTinnif3OEzvgFd_4Tk_5PmqhKzn4sD",
+  resumeLink:
+    "https://drive.google.com/uc?export=download&id=1pGTinnif3OEzvgFd_4Tk_5PmqhKzn4sD",
   mail: "mailto:weiloon.c97@gmail.com",
 };
 
@@ -262,6 +263,7 @@ const degrees = {
       duration: "Starting 2021",
       descriptions: [
         "⚡ Exchange Masters under the Department of Information Technology and Electrical Engineering",
+        "⚡ Swiss-European Mobility Programme (SEMP) Scholarship holder",
         "⚡ Taking modules in Natural Language Processing and Computer Vision",
       ],
       website_link:
@@ -269,7 +271,8 @@ const degrees = {
     },
     {
       title: "Imperial College London",
-      subtitle: "MEng Electronic and Information Engineering with a Year Abroad",
+      subtitle:
+        "MEng Electronic and Information Engineering with a Year Abroad",
       logo_path: "imperial.png",
       alt_name: "ICL",
       duration: "2018 - Present",
@@ -292,7 +295,8 @@ const certifications = {
       title: "Intro to ML: Image Processing",
       subtitle: "Google Cloud Platform | Qwiklabs",
       logo_path: "qwiklabs1.png",
-      certificate_link: "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
+      certificate_link:
+        "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
       alt_name: "Google Cloud Platform | Qwiklabs",
       color_code: "#C5E2EE",
     },
@@ -300,7 +304,8 @@ const certifications = {
       title: "Intro to ML: Language Processing",
       subtitle: "Google Cloud Platform | Qwiklabs",
       logo_path: "qwiklabs2.png",
-      certificate_link: "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
+      certificate_link:
+        "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
       alt_name: "Google Cloud Platform | Qwiklabs",
       color_code: "#C5E2EE",
     },
@@ -308,7 +313,8 @@ const certifications = {
       title: "Intermediate ML: Tensorflow on GCP",
       subtitle: "Google Cloud Platform | Qwiklabs",
       logo_path: "qwiklabs3.png",
-      certificate_link: "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
+      certificate_link:
+        "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
       alt_name: "Google Cloud Platform | Qwiklabs",
       color_code: "#C5E2EE",
     },
@@ -316,7 +322,8 @@ const certifications = {
       title: "Google Cloud Solutions II: Data and Machine Learning",
       subtitle: "Google Cloud Platform | Qwiklabs",
       logo_path: "qwiklabs4.png",
-      certificate_link: "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
+      certificate_link:
+        "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
       alt_name: "Google Cloud Platform | Qwiklabs",
       color_code: "#C5E2EE",
     },
@@ -324,7 +331,8 @@ const certifications = {
       title: "Integrate with Machine Learning APIs",
       subtitle: "Google Cloud Platform | Qwiklabs",
       logo_path: "qwiklabs5.png",
-      certificate_link: "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
+      certificate_link:
+        "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
       alt_name: "Google Cloud Platform | Qwiklabs",
       color_code: "#C5E2EE",
     },
@@ -332,7 +340,8 @@ const certifications = {
       title: "Advanced ML: ML Infrastructure",
       subtitle: "Google Cloud Platform | Qwiklabs",
       logo_path: "qwiklabs6.png",
-      certificate_link: "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
+      certificate_link:
+        "https://www.qwiklabs.com/public_profiles/40e5ddb5-b0b0-458d-ac11-62dde889a1ed",
       alt_name: "Google Cloud Platform | Qwiklabs",
       color_code: "#C5E2EE",
     },
@@ -340,7 +349,8 @@ const certifications = {
       title: "Programming Foundations: Design Patterns",
       subtitle: "LinkedIn",
       logo_path: "linkedin.png",
-      certificate_link: "http://www.linkedin.com/learning/programming-foundations-design-patterns-2",
+      certificate_link:
+        "http://www.linkedin.com/learning/programming-foundations-design-patterns-2",
       alt_name: "LinkedIn",
       color_code: "#C5E2EE",
     },
@@ -431,55 +441,14 @@ const projectsHeader = {
   avatar_image_path: "projects_image.svg",
 };
 
-const projects = {
+const hackathons = {
   data: [
     {
       id: "0",
-      name: "3DFeatNet",
-      url: "https://github.com/cwlroda/3DFeatNet",
-      description:
-        "Optimising a weakly supervised local 3D feature detection model for better point cloud geometric registration.",
-      languages: [
-        {
-          name: "Python",
-          iconifyClass: "logos-python",
-        },
-        {
-          name: "Tensorflow",
-          iconifyClass: "logos-tensorflow",
-        },
-        {
-          name: "MATLAB",
-          iconifyClass: "vscode-icons:file-type-matlab",
-        },
-      ],
-    },
-    {
-      id: "1",
-      name: "ISSIE",
-      url: "https://github.com/cwlroda/issie",
-      description:
-        "Fast and reliable 2D drawing library for a digital circuit design and simulation app for first year undergraduates to learn about circuits.",
-      languages: [
-        {
-          name: "F#",
-          iconifyClass: "logos-fsharp",
-        },
-        {
-          name: "React",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "Electron",
-          iconifyClass: "logos-electron",
-        },
-      ],
-    },
-    {
-      id: "2",
       name: "BITweets",
       url: "https://github.com/cwlroda/btc-predictor",
-      description: "Predicting Bitcoin prices using a multi-dimensional bi-directional LSTM and sentiment analysis of tweets. Achieved 3rd place in AIHack 2021.",
+      description:
+        "Predicting Bitcoin prices using a multi-dimensional bi-directional LSTM and sentiment analysis of tweets. Achieved 3rd place in AIHack 2021.",
       languages: [
         {
           name: "Python",
@@ -494,9 +463,11 @@ const projects = {
           iconifyClass: "logos-tensorflow",
         },
       ],
+      logo_path: "aihack.png",
+      alt_name: "AI Hack 2021",
     },
     {
-      id: "3",
+      id: "1",
       name: "blinkr",
       url: "https://github.com/cwlroda/blinkr",
       description:
@@ -519,9 +490,11 @@ const projects = {
           iconifyClass: "logos-nodejs",
         },
       ],
+      logo_path: "hacklytics.png",
+      alt_name: "Hacklytics 2021",
     },
     {
-      id: "4",
+      id: "2",
       name: "em.",
       url: "https://github.com/cwlroda/em",
       description:
@@ -540,9 +513,11 @@ const projects = {
           iconifyClass: "logos-firebase",
         },
       ],
+      logo_path: "hackviolet.png",
+      alt_name: "HackViolet 2021",
     },
     {
-      id: "5",
+      id: "3",
       name: "Virtualso Piano",
       url: "https://github.com/cwlroda/virtual-piano",
       description:
@@ -557,12 +532,104 @@ const projects = {
           iconifyClass: "logos-opencv",
         },
       ],
+      logo_path: "hacksheffield.png",
+      alt_name: "hackSheffield 6",
     },
     {
-      id: "6",
+      id: "4",
+      name: "Don8te",
+      url: "https://github.com/cwlroda/Hack-A-Project-20",
+      description:
+        "Item donation iOS app to help the needy and promote item re-usability. Won 3rd place in the prototype forum in Facebook Hack-A-Project 2020.",
+      languages: [
+        {
+          name: "Swift",
+          iconifyClass: "logos-swift",
+        },
+        {
+          name: "Firebase",
+          iconifyClass: "logos-firebase",
+        },
+      ],
+      logo_path: "hackaproject.png",
+      alt_name: "Facebook Hack-A-Project 2020",
+    },
+    {
+      id: "5",
+      name: "Dinner-Dash",
+      url: "https://github.com/cwlroda/Dinner-Dash",
+      description:
+        "Interactive Android app that curates time-saving recipes based on specific ingredients and cookware. Won 4th placing in the IoT category in ICHack 2020.",
+      languages: [
+        {
+          name: "Java",
+          iconifyClass: "logos-java",
+        },
+        {
+          name: "Android Studio",
+          iconifyClass: "mdi-android-studio",
+        },
+      ],
+      logo_path: "ichack.png",
+      alt_name: "IC Hack 2020",
+    },
+  ],
+};
+
+const projects = {
+  data: [
+    {
+      id: "0",
+      name: "3DFeatNet",
+      url: "https://github.com/cwlroda/3DFeatNet",
+      description:
+        "Optimising a weakly supervised local 3D feature detection model for better point cloud geometric registration.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "Tensorflow",
+          iconifyClass: "logos-tensorflow",
+        },
+        {
+          name: "MATLAB",
+          iconifyClass: "vscode-icons:file-type-matlab",
+        },
+      ],
+      logo_path: "",
+      alt_name: "",
+    },
+    {
+      id: "1",
+      name: "ISSIE",
+      url: "https://github.com/cwlroda/issie",
+      description:
+        "Fast and reliable 2D drawing library for a digital circuit design and simulation app for first year undergraduates to learn about circuits.",
+      languages: [
+        {
+          name: "F#",
+          iconifyClass: "logos-fsharp",
+        },
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Electron",
+          iconifyClass: "logos-electron",
+        },
+      ],
+      logo_path: "",
+      alt_name: "",
+    },
+    {
+      id: "2",
       name: "C-MIPS-Compiler",
       url: "https://github.com/cwlroda/C-MIPS-Compiler",
-      description: "Lightweight compiler from C89 to MIPS Assembly and translator from C to Python.",
+      description:
+        "Lightweight compiler from C89 to MIPS Assembly and translator from C to Python.",
       languages: [
         {
           name: "C",
@@ -577,46 +644,15 @@ const projects = {
           iconifyClass: "logos-python",
         },
       ],
+      logo_path: "",
+      alt_name: "",
     },
     {
-      id: "7",
-      name: "Don8te",
-      url: "https://github.com/cwlroda/Hack-A-Project-20",
-      description:
-        "Item donation iOS app to help the needy and promote item re-usability. Won 3rd place in Facebook Hack-A-Project 2020.",
-      languages: [
-        {
-          name: "Swift",
-          iconifyClass: "logos-swift",
-        },
-        {
-          name: "Firebase",
-          iconifyClass: "logos-firebase",
-        },
-      ],
-    },
-    {
-      id: "8",
-      name: "Dinner-Dash",
-      url: "https://github.com/cwlroda/Dinner-Dash",
-      description: "Interactive Android app that curates time-saving recipes based on specific ingredients and cookware. Won 4th placing in the IoT category in ICHack 2020.",
-      languages: [
-        {
-          name: "Java",
-          iconifyClass: "logos-java",
-        },
-        {
-          name: "Android Studio",
-          iconifyClass: "mdi-android-studio",
-        },
-      ],
-    },
-
-    {
-      id: "9",
+      id: "3",
       name: "MIPS Simulator",
       url: "https://github.com/cwlroda/MIPS-Simulator",
-      description: "MIPS CPU simulator that accurately executes MIPS-1 big-endian binaries using instructions specified by the MIPS ISA.",
+      description:
+        "MIPS CPU simulator that accurately executes MIPS-1 big-endian binaries using instructions specified by the MIPS ISA.",
       languages: [
         {
           name: "C++",
@@ -627,9 +663,11 @@ const projects = {
           iconifyClass: "logos-bash-icon",
         },
       ],
+      logo_path: "",
+      alt_name: "",
     },
     {
-      id: "10",
+      id: "4",
       name: "Dance Dance Convolution",
       url: "https://github.com/cwlroda/Dance-Dance-Convolution",
       description:
@@ -648,66 +686,84 @@ const projects = {
           iconifyClass: "logos-python",
         },
       ],
+      logo_path: "",
+      alt_name: "",
     },
     {
-      id: "11",
+      id: "5",
       name: "Sudoku",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Sudoku",
-      description: "Sudoku validity checker and solver using a backtracking algorithm.",
+      description:
+        "Sudoku validity checker and solver using a backtracking algorithm.",
       languages: [
         {
           name: "C++",
           iconifyClass: "vscode-icons:file-type-cpp3",
         },
       ],
+      logo_path: "",
+      alt_name: "",
     },
     {
-      id: "12",
+      id: "6",
       name: "2048",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/2048",
-      description: "2048 game using the terminal as a GUI. Includes a primitive AI that plays the game using pseudorandom moves.",
+      description:
+        "2048 game using the terminal as a GUI. Includes a primitive AI that plays the game using pseudorandom moves.",
       languages: [
         {
           name: "C++",
           iconifyClass: "vscode-icons:file-type-cpp3",
         },
       ],
+      logo_path: "",
+      alt_name: "",
     },
     {
-      id: "13",
+      id: "7",
       name: "Othello",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Othello",
-      description: "Simple two-player Othello (Reversi) using the terminal as a GUI, with undo moves and move logging.",
+      description:
+        "Simple two-player Othello (Reversi) using the terminal as a GUI, with undo moves and move logging.",
       languages: [
         {
           name: "C++",
           iconifyClass: "vscode-icons:file-type-cpp3",
         },
       ],
+      logo_path: "",
+      alt_name: "",
     },
     {
-      id: "14",
+      id: "8",
       name: "Mastermind",
-      url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Mastermind",
-      description: "AI that efficiently solves the game of Mastermind for randomly generated sequences of symbols for up to length 15 and 15 unique symbols.",
+      url:
+        "https://github.com/cwlroda/First-Year-Projects/tree/master/Mastermind",
+      description:
+        "AI that efficiently solves the game of Mastermind for randomly generated sequences of symbols for up to length 15 and 15 unique symbols.",
       languages: [
         {
           name: "C++",
           iconifyClass: "vscode-icons:file-type-cpp3",
         },
       ],
+      logo_path: "",
+      alt_name: "",
     },
     {
-      id: "15",
+      id: "9",
       name: "Path-Finding Algorithms",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Maze",
-      description: "Maze-solving using Random Path, Breath-First Search, and Depth-First Search algorithms.",
+      description:
+        "Maze-solving using Random Path, Breath-First Search, and Depth-First Search algorithms.",
       languages: [
         {
           name: "C++",
           iconifyClass: "vscode-icons:file-type-cpp3",
         },
       ],
+      logo_path: "",
+      alt_name: "",
     },
   ],
 };
@@ -738,6 +794,7 @@ export {
   certifications,
   experience,
   projectsHeader,
-  contactPageData,
+  hackathons,
   projects,
+  contactPageData,
 };

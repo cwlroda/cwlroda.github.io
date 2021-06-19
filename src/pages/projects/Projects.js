@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Fade } from "react-reveal";
-import { projectsHeader, projects } from "../../portfolio.js";
+import { projectsHeader, hackathons, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
@@ -44,16 +44,34 @@ function Projects(props) {
           </div>
         </Fade>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div className="projects-header-div">
+        <Fade bottom duration={2000} distance="20px">
+          <h1 className="projects-header" style={{ color: theme.text }}>
+            Hackathons
+          </h1>
+        </Fade>
+      </div>
+      <div className="hackathon-cards-div-main">
+        {hackathons.data.map((repo) => {
+          return <ProjectCard repo={repo} theme={theme} />;
+        })}
+      </div>
+      <div className="projects-header-div">
+        <Fade bottom duration={2000} distance="20px">
+          <h1 className="projects-header" style={{ color: theme.text }}>
+            Open-Source
+          </h1>
+        </Fade>
+      </div>
       <div className="repo-cards-div-main">
         {projects.data.map((repo) => {
           return <ProjectCard repo={repo} theme={theme} />;
         })}
       </div>
-      <a
-        {...styles}
-        className="general-btn"
-        href="https://github.com/cwlroda"
-      >
+      <a {...styles} className="general-btn" href="https://github.com/cwlroda">
         More Projects (Github)
       </a>
       <br />
