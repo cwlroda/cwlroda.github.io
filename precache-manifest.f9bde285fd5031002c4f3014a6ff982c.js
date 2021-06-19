@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a55e0bc9fb2914544ee7d0782a8d4221",
+    "revision": "72e53fd78a9134ae033e1262725ab00b",
     "url": "/index.html"
   },
   {
-    "revision": "e6163fb2b407c99e5acf",
-    "url": "/static/css/main.47333d27.chunk.css"
+    "revision": "ee5ee4fa7563edb82c79",
+    "url": "/static/css/main.e8b32990.chunk.css"
   },
   {
-    "revision": "56890dc98c67c5a3fafd",
-    "url": "/static/js/2.db435482.chunk.js"
+    "revision": "752086fba2f3013f37f8",
+    "url": "/static/js/2.cd8ab1bb.chunk.js"
   },
   {
     "revision": "800c417a64b02cee4b8edfe766e3f8a5",
-    "url": "/static/js/2.db435482.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.cd8ab1bb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e6163fb2b407c99e5acf",
-    "url": "/static/js/main.4ceee3f2.chunk.js"
+    "revision": "ee5ee4fa7563edb82c79",
+    "url": "/static/js/main.7ec2beeb.chunk.js"
   },
   {
     "revision": "6b7562e6eab88bbc5f7c",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ee6539921d713482b8ccd4d0d23961bb",
     "url": "/static/media/Montserrat-Regular.ee653992.ttf"
+  },
+  {
+    "revision": "ac14ae075ab72af0ef356742760e2825",
+    "url": "/static/media/aihack.ac14ae07.png"
   },
   {
     "revision": "526a6e8135d51115f37eb1e9ae3589eb",
@@ -132,8 +136,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/github.0ba2aa20.png"
   },
   {
+    "revision": "ff0dd477f4873195255b5489f58d49f2",
+    "url": "/static/media/hackaproject.ff0dd477.png"
+  },
+  {
+    "revision": "fd19d0da4421d70a5275fbb408e66145",
+    "url": "/static/media/hacklytics.fd19d0da.png"
+  },
+  {
+    "revision": "a440fdea1122388e5a9788a230bd9697",
+    "url": "/static/media/hacksheffield.a440fdea.png"
+  },
+  {
+    "revision": "77b7f5181e5cd5b377bceed7d6809a04",
+    "url": "/static/media/hackviolet.77b7f518.png"
+  },
+  {
     "revision": "914012a2c992b1a2b3ec997fbec1c8b9",
     "url": "/static/media/htx.914012a2.png"
+  },
+  {
+    "revision": "8b3b4b8ac6cb3460efc5ddc277e65228",
+    "url": "/static/media/ichack.8b3b4b8a.png"
   },
   {
     "revision": "a122a8c72d3e6427d9f538d5a51e1fda",
