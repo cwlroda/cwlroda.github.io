@@ -470,7 +470,7 @@ const hackathons = {
       name: "blinkr",
       url: "https://github.com/cwlroda/blinkr",
       description:
-        "Web app that promotes good eye habits through curated tips and a remote eye test using speech-to-text-analysis. Entered final round presentations in Hacklytics 2021.",
+        "Web app promoting good eye habits through curated tips, featuring a remote eye test using speech-to-text-analysis. Finalists in Hacklytics 2021.",
       languages: [
         {
           name: "Python",
@@ -522,7 +522,7 @@ const hackathons = {
       name: "Virtualso Piano",
       url: "https://github.com/cwlroda/virtual-piano",
       description:
-        "Virtual interface that uses Computer Vision to track multiple finger movements to simulate playing a piano without requiring any external hardware.",
+        "Virtual interface using Computer Vision to track multiple finger movements to simulate playing a piano without requiring external hardware.",
       languages: [
         {
           name: "Python",
@@ -563,7 +563,7 @@ const hackathons = {
       name: "Dinner-Dash",
       url: "https://github.com/cwlroda/Dinner-Dash",
       description:
-        "Interactive Android app that curates time-saving recipes based on specific ingredients and cookware. Won 4th placing in the IoT category in ICHack 2020.",
+        "Interactive Android app that curates time-saving recipes based on ingredients and cookware. Won 4th place in the IoT category in ICHack 2020.",
       languages: [
         {
           name: "Java",
