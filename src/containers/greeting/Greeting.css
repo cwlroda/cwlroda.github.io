@@ -9,7 +9,7 @@
   max-width: 1370px;
   padding: 0px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
 }
 
@@ -89,21 +89,27 @@
   .button-greeting-div {
     justify-content: space-around;
   }
+
   .greeting-text {
     font-size: 30px;
     margin-top: 0px;
     text-align: center;
   }
+
   .greeting-nickname {
     font-size: 25px;
     text-align: center;
   }
+
   .greeting-text-p {
     font-size: 16px;
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+    margin-left: 8vw;
+    margin-right: 8vw;
   }
+
   .greeting-main {
     display: block;
   }
