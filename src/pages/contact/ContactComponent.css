@@ -40,9 +40,9 @@
 }
 
 .profile-pic {
-  box-shadow: 0 5px 15px #353535;
+  box-shadow: 0 1px 10px #353535;
   border-radius: 30px;
-  width: 70%;
+  width: 60%;
 }
 
 .blog-heading-img-div {
@@ -51,6 +51,8 @@
 }
 
 .contact-heading-text-div {
+  max-width: 100%;
+  margin-top: 4%;
   text-align: center;
 }
 
@@ -101,8 +103,8 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   font-family: "Google Sans Medium";
 }
 
@@ -110,8 +112,8 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   font-family: "Google Sans Medium";
 }
 
@@ -153,7 +155,7 @@
 @media (max-width: 1380px) {
   .contact-heading-text {
     font-size: 50px;
-    margin-top: 60px;
+    margin-top: 0px;
   }
 
   .blog-heading-text {
@@ -202,6 +204,8 @@
 
   .contact-heading-div {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-header-detail-text {
@@ -218,5 +222,9 @@
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .profile-pic {
+    width: 70vw;
   }
 }
