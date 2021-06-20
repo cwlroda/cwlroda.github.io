@@ -44,7 +44,8 @@
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
-  margin-right: 40px;
+  margin-left: 3vw;
+  margin-right: 3vw;
   font-family: "Google Sans Medium";
 }
 
@@ -103,7 +104,6 @@
 
   .greeting-text-p {
     font-size: 16px;
-    margin-right: 0px;
     line-height: normal;
     text-align: center;
     margin-left: 8vw;
