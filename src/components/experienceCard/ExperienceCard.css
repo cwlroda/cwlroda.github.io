@@ -137,10 +137,18 @@ p {
   }
 
   .experience-card-title {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     text-align: center;
   }
 
   .experience-card-company {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     text-align: center;
   }
 
@@ -150,7 +158,6 @@ p {
   }
 
   .experience-card-location {
-    /* text-align: left; */
     text-align: center;
   }
 
@@ -159,8 +166,10 @@ p {
   }
 
   .experience-card-description {
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     text-align: justify;
   }
 }
