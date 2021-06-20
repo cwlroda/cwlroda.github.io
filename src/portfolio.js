@@ -131,7 +131,7 @@ const skills = {
         },
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:nodejs",
+          fontAwesomeClassname: "logos-nodejs-icon",
           style: {
             color: "#339933",
           },
@@ -501,7 +501,7 @@ const hackathons = {
         },
         {
           name: "NodeJS",
-          iconifyClass: "logos-nodejs",
+          iconifyClass: "logos-nodejs-icon",
         },
       ],
       logo_path: "hacklytics.png",
@@ -521,7 +521,7 @@ const hackathons = {
         },
         {
           name: "NodeJS",
-          iconifyClass: "logos-nodejs",
+          iconifyClass: "logos-nodejs-icon",
         },
         {
           name: "Firebase",
@@ -561,7 +561,7 @@ const hackathons = {
       languages: [
         {
           name: "Swift",
-          iconifyClass: "logos-swift",
+          iconifyClass: "vscode-icons:file-type-swift",
         },
         {
           name: "Firebase",
