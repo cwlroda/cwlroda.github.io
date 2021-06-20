@@ -7,6 +7,7 @@
   line-height: 1.1;
   font-family: "Google Sans Regular";
   text-align: center;
+  margin-bottom: 10vw;
 }
 
 .skills-text {
@@ -72,7 +73,7 @@
   .skills-text-div {
     margin-left: 2vw;
     margin-right: 2vw;
-    text-align: justify;
+    text-align: left;
   }
   .skills-text {
     font-size: 16px;
