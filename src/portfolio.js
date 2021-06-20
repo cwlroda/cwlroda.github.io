@@ -44,28 +44,28 @@ const skills = {
       softwareSkills: [
         {
           skillName: "C",
-          fontAwesomeClassname: "simple-icons:c",
+          fontAwesomeClassname: "logos-c",
           style: {
             color: "#A8B9CC",
           },
         },
         {
           skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
+          fontAwesomeClassname: "logos-c-plusplus",
           style: {
             color: "#00599C",
           },
         },
         {
           skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
+          fontAwesomeClassname: "logos-java",
           style: {
             color: "#f89820",
           },
         },
         {
           skillName: "MySQL",
-          fontAwesomeClassname: "simple-icons:mysql",
+          fontAwesomeClassname: "logos-mysql",
           style: {
             color: "#4479A1",
           },
@@ -78,8 +78,15 @@ const skills = {
           },
         },
         {
+          skillName: "GitHub",
+          fontAwesomeClassname: "logos-github-octocat",
+          style: {
+            color: "#181717",
+          },
+        },
+        {
           skillName: "Linux",
-          fontAwesomeClassname: "simple-icons:linux",
+          fontAwesomeClassname: "logos-linux-tux",
           style: {
             color: "#FCC624",
           },
@@ -96,14 +103,14 @@ const skills = {
       softwareSkills: [
         {
           skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          fontAwesomeClassname: "vscode-icons:file-type-html",
           style: {
             color: "#E34F26",
           },
         },
         {
           skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
+          fontAwesomeClassname: "vscode-icons:file-type-css",
           style: {
             color: "#1572B6",
           },
@@ -152,7 +159,7 @@ const skills = {
         },
         {
           skillName: "Swift",
-          fontAwesomeClassname: "simple-icons:swift",
+          fontAwesomeClassname: "vscode-icons:file-type-swift",
           style: {
             color: "#FA7343",
           },
@@ -176,21 +183,21 @@ const skills = {
         },
         {
           skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
+          fontAwesomeClassname: "logos-firebase",
           style: {
             color: "#FFCA28",
           },
         },
         {
           skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
+          fontAwesomeClassname: "logos-docker-icon",
           style: {
             color: "#1488C6",
           },
         },
         {
           skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
+          fontAwesomeClassname: "logos-aws",
           style: {
             color: "#aaaaaa",
           },
@@ -216,14 +223,14 @@ const skills = {
       softwareSkills: [
         {
           skillName: "Python",
-          fontAwesomeClassname: "simple-icons:python",
+          fontAwesomeClassname: "logos-python",
           style: {
             color: "#3776AB",
           },
         },
         {
           skillName: "Tensorflow",
-          fontAwesomeClassname: "simple-icons:tensorflow",
+          fontAwesomeClassname: "logos-tensorflow",
           style: {
             color: "#FF6F00",
           },
@@ -244,9 +251,16 @@ const skills = {
         },
         {
           skillName: "Google Cloud Platform",
-          fontAwesomeClassname: "simple-icons:googlecloud",
+          fontAwesomeClassname: "logos-google-cloud",
           style: {
             color: "#4285F4",
+          },
+        },
+        {
+          skillName: "MATLAB",
+          fontAwesomeClassname: "vscode-icons:file-type-matlab",
+          style: {
+            color: "",
           },
         },
       ],
