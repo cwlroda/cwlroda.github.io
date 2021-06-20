@@ -43,9 +43,10 @@ export default function ProjectCard({ repo, theme }) {
       boxShadow: `0 5px 15px ${theme.accentColor}`,
     },
     "@media (max-width: 768px)": {
-      marginLeft: "50px",
+      justifyContent: "center",
+      marginRight: "0px",
       marginBottom: "15px",
-      width: "175px",
+      width: "40%",
     },
   });
 
@@ -63,9 +64,10 @@ export default function ProjectCard({ repo, theme }) {
       boxShadow: `0 5px 15px ${theme.accentColor}`,
     },
     "@media (max-width: 768px)": {
-      marginLeft: "50px",
+      justifyContent: "center",
+      marginLeft: "0px",
       marginBottom: "15px",
-      width: "175px",
+      width: "40%",
     },
   });
 
@@ -95,20 +97,62 @@ export default function ProjectCard({ repo, theme }) {
       </div>
     );
   } else {
-    if (repo.id % 2 === 0) {
+    if (window.outerWidth <= 768) {
+      return (
+        <div className="repo-card">
+          <Flip top duration={2000}>
+            <div {...left_img}>
+              <a href={repo.logo_link}>
+                <img
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    transform: "scale(75%, 75%)",
+                  }}
+                  src={require(`../../assets/images/${repo.logo_path}`)}
+                  alt={repo.alt_name}
+                />
+              </a>
+            </div>
+          </Flip>
+          <Fade bottom duration={2000} distance="40px">
+            <div
+              {...styles}
+              key={repo.id}
+              onClick={() => openRepoinNewTab(repo.url)}
+              style={{ backgroundColor: theme.projectCard }}
+            >
+              <div className="repo-name-div">
+                <p className="repo-name" style={{ color: theme.text }}>
+                  {repo.name}
+                </p>
+              </div>
+              <p className="repo-description" style={{ color: theme.text }}>
+                {repo.description}
+              </p>
+              <div className="repo-details">
+                <ProjectLanguages logos={repo.languages} />
+              </div>
+            </div>
+          </Fade>
+        </div>
+      );
+    } else if (repo.id % 2 === 0) {
       return (
         <div className="repo-card">
           <Flip left duration={2000}>
             <div {...left_img}>
-              <img
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  transform: "scale(75%, 75%)",
-                }}
-                src={require(`../../assets/images/${repo.logo_path}`)}
-                alt={repo.alt_name}
-              />
+              <a href={repo.logo_link}>
+                <img
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    transform: "scale(75%, 75%)",
+                  }}
+                  src={require(`../../assets/images/${repo.logo_path}`)}
+                  alt={repo.alt_name}
+                />
+              </a>
             </div>
           </Flip>
           <Fade right duration={2000} distance="40px">
@@ -158,15 +202,17 @@ export default function ProjectCard({ repo, theme }) {
           </Fade>
           <Flip right duration={2000}>
             <div {...right_img}>
-              <img
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  transform: "scale(75%, 75%)",
-                }}
-                src={require(`../../assets/images/${repo.logo_path}`)}
-                alt={repo.alt_name}
-              />
+              <a href={repo.logo_link}>
+                <img
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    transform: "scale(75%, 75%)",
+                  }}
+                  src={require(`../../assets/images/${repo.logo_path}`)}
+                  alt={repo.alt_name}
+                />
+              </a>
             </div>
           </Flip>
         </div>

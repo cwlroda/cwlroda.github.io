@@ -464,6 +464,7 @@ const hackathons = {
         },
       ],
       logo_path: "aihack.png",
+      logo_link: "https://2021.aihack.org/",
       alt_name: "AI Hack 2021",
     },
     {
@@ -491,6 +492,7 @@ const hackathons = {
         },
       ],
       logo_path: "hacklytics.png",
+      logo_link: "https://hacklytics.io/",
       alt_name: "Hacklytics 2021",
     },
     {
@@ -514,6 +516,7 @@ const hackathons = {
         },
       ],
       logo_path: "hackviolet.png",
+      logo_link: "https://www.hackviolet.com/",
       alt_name: "HackViolet 2021",
     },
     {
@@ -533,6 +536,7 @@ const hackathons = {
         },
       ],
       logo_path: "hacksheffield.png",
+      logo_link: "https://hs6.hacksheffield.com/",
       alt_name: "hackSheffield 6",
     },
     {
@@ -552,6 +556,8 @@ const hackathons = {
         },
       ],
       logo_path: "hackaproject.png",
+      logo_link:
+        "https://www.facebook.com/facebooklondon/posts/2024153967670042",
       alt_name: "Facebook Hack-A-Project 2020",
     },
     {
@@ -571,6 +577,7 @@ const hackathons = {
         },
       ],
       logo_path: "ichack.png",
+      logo_link: "https://20.ichack.org/",
       alt_name: "IC Hack 2020",
     },
   ],
@@ -599,6 +606,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
     {
@@ -622,6 +630,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
     {
@@ -645,6 +654,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
     {
@@ -664,6 +674,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
     {
@@ -687,6 +698,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
     {
@@ -717,6 +729,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
     {
@@ -732,6 +745,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
     {
@@ -748,6 +762,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
     {
@@ -763,6 +778,7 @@ const projects = {
         },
       ],
       logo_path: "",
+      logo_link: "",
       alt_name: "",
     },
   ],

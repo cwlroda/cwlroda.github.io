@@ -78,8 +78,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-top: 6vw;
   margin-bottom: 6vw;
   margin-left: 12vw;
@@ -90,8 +88,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-top: 6vw;
   margin-bottom: 6vw;
   margin-left: 12vw;
@@ -130,10 +126,22 @@
     text-align: center;
   }
 
-  .repo-cards-div-main {
+  .hackathon-cards-div-main {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
+    gap: 1rem 1rem;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
+
+  .repo-cards-div-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
   }
 }
