@@ -1,6 +1,5 @@
 .experience-card {
   width: 100%;
-  margin-bottom: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -112,7 +111,6 @@ p {
 
 @media (max-width: 768px) {
   .experience-card {
-    margin-bottom: 10px;
     flex-direction: column;
     text-align: center;
   }

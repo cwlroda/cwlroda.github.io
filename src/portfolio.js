@@ -364,73 +364,71 @@ const experience = {
   description:
     "The internships I've done allows me not only to contribute my unique ideas to the companies I've worked with, but also allow me to learn new and exciting technology.",
   header_image_pathz: "experience.svg",
-  sections: [
-    {
-      title: "Internships",
-      experiences: [
-        {
-          title: "Robotics Research Intern",
-          company: "DSO National Laboratories",
-          company_url: "https://www.dso.org.sg/",
-          logo_path: "dso.png",
-          duration: "March 2021 - Present",
-          location: "Office / Work From Home",
-          description:
-            "I am currently developing a distributed framework for multi-robot SLAM using C++ that is robust to scaling and robot failures. I am also integrating real-time semantic mapping and optimisation techniques for enhanced computational time.",
-          color: "#C5E2EE",
-          link: "https://github.com/cwlroda/CSLM/",
-        },
-        {
-          title: "Data Science & Artificial Intelligence Intern",
-          company: "Home Team Science & Technology Agency",
-          company_url: "https://www.htx.gov.sg/",
-          logo_path: "htx.png",
-          duration: "September 2020 - November 2020",
-          location: "Work From Home",
-          description:
-            "I built an abstractive news article summariser web app using NLP techniques in Python, which achieved a ROUGE score of >80%.",
-          color: "#C5E2EE",
-          link: "https://github.com/cwlroda/bart_summariser/",
-        },
-        {
-          title: "Sense-Making & Surveillance Intern",
-          company: "Home Team Science & Technology Agency",
-          company_url: "https://www.htx.gov.sg/",
-          logo_path: "htx.png",
-          duration: "June 2020 - September 2020",
-          location: "Office / Work From Home",
-          description:
-            "I spearheaded the development of a robust pose estimation deep learning model in Python to detect falls on multiple people concurrently on multiple video streams, which achieved an accuracy of 83.33% and an F1 score of 90.91%. I also trained a deep learning model for COVID-19 mask detection using Python that achieved >80% mAP.",
-          color: "#C5E2EE",
-          link: "https://github.com/cwlroda/falldetection_openpifpaf/",
-        },
-        {
-          title: "Product Development Intern",
-          company: "Fashion Learning Hive ",
-          company_url: "https://fashive.org/",
-          logo_path: "fashive.png",
-          duration: "July 2019 - September 2019",
-          location: "Office",
-          description:
-            "I revamped the company website using WordPress, HTML, CSS, and JavaScript, achieving thousands of views within the first month of launch. I also successfully developed a JavaScript API to automate data synchronisation between the website and the LMS portal.",
-          color: "#C5E2EE",
-          link: "https://github.com/cwlroda/",
-        },
-        {
-          title: "Product Optimisation Intern",
-          company: "Trek 2000",
-          company_url: "https://www.trek2000.com.sg/",
-          logo_path: "trek.png",
-          duration: "June 2013",
-          location: "Office",
-          description:
-            "I assisted in optimising algorithms in C++ to enhance security systems.",
-          color: "#C5E2EE",
-          link: "https://github.com/cwlroda/",
-        },
-      ],
-    },
-  ],
+  internships: {
+    title: "Internships",
+    experiences: [
+      {
+        title: "Robotics Research Intern",
+        company: "DSO National Laboratories",
+        company_url: "https://www.dso.org.sg/",
+        logo_path: "dso.png",
+        duration: "March 2021 - Present",
+        location: "Office / Work From Home",
+        description:
+          "I am currently developing a distributed framework for multi-robot SLAM using C++ that is robust to scaling and robot failures. I am also integrating real-time semantic mapping and optimisation techniques for enhanced computational time.",
+        color: "#C5E2EE",
+        link: "https://github.com/cwlroda/CSLM/",
+      },
+      {
+        title: "Data Science & Artificial Intelligence Intern",
+        company: "Home Team Science & Technology Agency",
+        company_url: "https://www.htx.gov.sg/",
+        logo_path: "htx.png",
+        duration: "September 2020 - November 2020",
+        location: "Work From Home",
+        description:
+          "I built an abstractive news article summariser web app using NLP techniques in Python, which achieved a ROUGE score of >80%.",
+        color: "#C5E2EE",
+        link: "https://github.com/cwlroda/bart_summariser/",
+      },
+      {
+        title: "Sense-Making & Surveillance Intern",
+        company: "Home Team Science & Technology Agency",
+        company_url: "https://www.htx.gov.sg/",
+        logo_path: "htx.png",
+        duration: "June 2020 - September 2020",
+        location: "Office / Work From Home",
+        description:
+          "I spearheaded the development of a robust pose estimation deep learning model in Python to detect falls on multiple people concurrently on multiple video streams, which achieved an accuracy of 83.33% and an F1 score of 90.91%. I also trained a deep learning model for COVID-19 mask detection using Python that achieved >80% mAP.",
+        color: "#C5E2EE",
+        link: "https://github.com/cwlroda/falldetection_openpifpaf/",
+      },
+      {
+        title: "Product Development Intern",
+        company: "Fashion Learning Hive ",
+        company_url: "https://fashive.org/",
+        logo_path: "fashive.png",
+        duration: "July 2019 - September 2019",
+        location: "Office",
+        description:
+          "I revamped the company website using WordPress, HTML, CSS, and JavaScript, achieving thousands of views within the first month of launch. I also successfully developed a JavaScript API to automate data synchronisation between the website and the LMS portal.",
+        color: "#C5E2EE",
+        link: "https://github.com/cwlroda/",
+      },
+      {
+        title: "Product Optimisation Intern",
+        company: "Trek 2000",
+        company_url: "https://www.trek2000.com.sg/",
+        logo_path: "trek.png",
+        duration: "June 2013",
+        location: "Office",
+        description:
+          "I assisted in optimising algorithms in C++ to enhance security systems.",
+        color: "#C5E2EE",
+        link: "https://github.com/cwlroda/",
+      },
+    ],
+  },
 };
 
 // Projects Page

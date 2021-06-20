@@ -1,9 +1,10 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
+import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
+import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
 
@@ -42,7 +43,21 @@ function Experience(props) {
           </div>
         </Fade>
       </div>
-      <ExperienceAccordion sections={experience["sections"]} theme={theme} />
+      <div>
+        {experience["internships"]["experiences"].map((experience) => {
+          return (
+            <div className="experience-accord">
+              <ThemeProvider
+                theme={theme.name === "light" ? LightTheme : DarkTheme}
+              >
+                <Fade bottom duration={2000} distance="20px">
+                  <ExperienceCard experience={experience} theme={theme} />
+                </Fade>
+              </ThemeProvider>
+            </div>
+          );
+        })}
+      </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );

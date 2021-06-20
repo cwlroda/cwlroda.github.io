@@ -1,5 +1,5 @@
 .experience-accord {
-  margin: 12vw;
+  margin: 3vw;
   border-radius: 10px;
   border: 0.1px solid rgba(211, 211, 211, 0.397);
   transition: all 0.2s ease-in-out;
@@ -20,6 +20,6 @@
 
 @media (max-width: 768px) {
   .experience-accord {
-    margin: 12vw;
+    margin: 5vw;
   }
 }
