@@ -74,7 +74,7 @@ export default function ProjectCard({ repo, theme }) {
   if (repo.logo_path === "") {
     return (
       <div className="repo-card">
-        <Fade right duration={2000} distance="40px">
+        <Fade bottom duration={2000} distance="40px">
           <div
             {...styles}
             key={repo.id}
