@@ -205,12 +205,13 @@ const skills = {
       ],
     },
     {
-      title: "Machine Learning",
+      title: "Machine/Deep Learning",
       skills: [
         "Experienced in building and training:",
         "⚡ NLP models for text processing and generation",
-        "⚡ Computer Vision models for object detection and motion tracking",
+        "⚡ Computer Vision models for object/feature detection and motion tracking",
         "⚡ Linear regression and LSTM models for data prediction",
+        "⚡ Currently learning RL techniques",
       ],
       softwareSkills: [
         {
@@ -563,7 +564,7 @@ const hackathons = {
       name: "Dinner-Dash",
       url: "https://github.com/cwlroda/Dinner-Dash",
       description:
-        "Interactive Android app that curates time-saving recipes based on ingredients and cookware. Won 4th place in the IoT category in ICHack 2020.",
+        "Android app that curates time-saving recipes based on ingredients and cookware. Won 4th place in the IoT category in ICHack 2020.",
       languages: [
         {
           name: "Java",
