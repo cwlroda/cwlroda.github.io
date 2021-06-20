@@ -5,11 +5,10 @@ import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 // import DesignImg from "./DesignImg";
 import GreetingLottie from "../../components/DisplayLottie";
-import webdev from '../../assets/lottie/webdev.json';
-import ml from '../../assets/lottie/ml.json';
-import cloud from '../../assets/lottie/cloud.json';
-import backend from '../../assets/lottie/backend.json';
-
+import webdev from "../../assets/lottie/webdev.json";
+import ml from "../../assets/lottie/ml.json";
+import cloud from "../../assets/lottie/cloud.json";
+import backend from "../../assets/lottie/backend.json";
 
 function SkillSection(props) {
   const theme = props.theme;
@@ -21,10 +20,7 @@ function SkillSection(props) {
             <div className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  <GreetingLottie
-                    name='backend'
-                    animationData={backend}
-                  />
+                  <GreetingLottie name="backend" animationData={backend} />
                 </div>
               </Fade>
 
@@ -83,24 +79,17 @@ function SkillSection(props) {
               </div>
               <Fade right duration={2000}>
                 <div className="skills-image-div">
-                  <GreetingLottie
-                    name='frontend'
-                    animationData={webdev}
-                  />
+                  <GreetingLottie name="frontend" animationData={webdev} />
                 </div>
               </Fade>
             </div>
           );
-        }
-        else if (index === 2) {
+        } else if (index === 2) {
           return (
             <div className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  <GreetingLottie
-                    name='cloud'
-                    animationData={cloud}
-                  />
+                  <GreetingLottie name="cloud" animationData={cloud} />
                 </div>
               </Fade>
 
@@ -130,8 +119,7 @@ function SkillSection(props) {
               </div>
             </div>
           );
-        }
-        else {
+        } else {
           return (
             <div className="skills-main-div">
               <div className="skills-text-div">
@@ -159,18 +147,17 @@ function SkillSection(props) {
                 </Fade>
               </div>
               <Fade right duration={2000}>
-                <div className="skills-image-div">
-                  <GreetingLottie
-                    name='ml'
-                    animationData={ml}
-                  />
+                <div
+                  className="skills-image-div"
+                  style={{ marginLeft: "-7vw" }}
+                >
+                  <GreetingLottie name="ml" animationData={ml} />
                 </div>
               </Fade>
             </div>
           );
         }
       })}
-
     </div>
   );
 }
