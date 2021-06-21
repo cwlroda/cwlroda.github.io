@@ -68,16 +68,9 @@ function ExperienceCard(props) {
           {experience["description"]}
         </p>
 
-        <a
-          href={experience["link"]}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button
-            {...styles}
-            className="button"
-          >
-            Project GitHub
+        <a href={experience["link"]} target="_blank" rel="noopener noreferrer">
+          <button {...styles} className="button">
+            View Project
           </button>
         </a>
       </div>

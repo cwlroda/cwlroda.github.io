@@ -22,7 +22,8 @@ export default function ProjectCard({ repo, theme }) {
     height: "100%",
     transition: "all 0.2s ease-in-out",
     ":hover": {
-      boxShadow: `${theme.imageDark} 0 2px 15px`,
+      color: "rgba(255, 255, 255, 1)",
+      boxShadow: "0 0px 15px #e2405f",
     },
     "@media (max-width: 768px)": {
       width: "100%",
