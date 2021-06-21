@@ -119,29 +119,30 @@
   }
 
   .projects-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
+    font-size: 20px;
+    margin-right: 8vw;
+    margin-left: 8vw;
     line-height: normal;
     text-align: center;
   }
 
   .hackathon-cards-div-main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem 1rem;
-    margin-top: 6vw;
+    margin-top: 12vw;
     margin-bottom: 6vw;
-    margin-left: 12vw;
-    margin-right: 12vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
   }
 
   .repo-cards-div-main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem 1rem;
     margin-top: 6vw;
     margin-bottom: 6vw;
-    margin-left: 12vw;
-    margin-right: 12vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
   }
 }
