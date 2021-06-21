@@ -4,8 +4,8 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 // import DesignImg from "./DesignImg";
-import GreetingLottie from "../../components/DisplayLottie";
-import webdev from "../../assets/lottie/webdev.json";
+import SkillsLottie from "../../components/DisplayLottie";
+import frontend from "../../assets/lottie/frontend.json";
 import ml from "../../assets/lottie/ml.json";
 import cloud from "../../assets/lottie/cloud.json";
 import backend from "../../assets/lottie/backend.json";
@@ -20,7 +20,7 @@ function SkillSection(props) {
             <div className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  <GreetingLottie name="backend" animationData={backend} />
+                  <SkillsLottie name="backend" animationData={backend} />
                 </div>
               </Fade>
 
@@ -79,7 +79,7 @@ function SkillSection(props) {
               </div>
               <Fade right duration={2000}>
                 <div className="skills-image-div">
-                  <GreetingLottie name="frontend" animationData={webdev} />
+                  <SkillsLottie name="frontend" animationData={frontend} />
                 </div>
               </Fade>
             </div>
@@ -89,7 +89,7 @@ function SkillSection(props) {
             <div className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  <GreetingLottie name="cloud" animationData={cloud} />
+                  <SkillsLottie name="cloud" animationData={cloud} />
                 </div>
               </Fade>
 
@@ -151,7 +151,7 @@ function SkillSection(props) {
                   className="skills-image-div"
                   style={{ marginLeft: "-7vw" }}
                 >
-                  <GreetingLottie name="ml" animationData={ml} />
+                  <SkillsLottie name="ml" animationData={ml} />
                 </div>
               </Fade>
             </div>

@@ -84,6 +84,13 @@
 
   .greet-main {
     max-width: 900px;
+    margin-top: 0rem;
+  }
+
+  .greeting-image-div > * {
+    max-width: 80%;
+    height: auto;
+    margin-top: 12vh;
   }
 }
 @media (max-width: 768px) {
@@ -112,6 +119,13 @@
 
   .greeting-main {
     display: block;
+    margin-top: 4rem;
+  }
+
+  .greeting-image-div > * {
+    max-width: 60%;
+    height: auto;
+    margin-top: 0vh;
   }
 
   .portfolio-repo-btn-div {
