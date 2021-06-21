@@ -44,6 +44,19 @@
   text-align: center;
 }
 
+.subTitle {
+  color: #868e96;
+}
+
+.education-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+}
+
 @media (max-width: 1380px) {
   .heading-text {
     font-size: 50px;

@@ -5,6 +5,7 @@ import Educations from "../../containers/education/Educations";
 import Modules from "../../containers/modules/Modules";
 import Certifications from "../../containers/certifications/Certifications";
 import EducationImg from "./EducationImg";
+import { education } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 
@@ -26,6 +27,12 @@ function Education(props) {
               <h3 className="heading-sub-text" style={{ color: theme.text }}>
                 Qualifications and Certifications
               </h3>
+              <p
+                className="education-detail-text subTitle"
+                style={{ color: theme.secondaryText }}
+              >
+                {education["description"]}
+              </p>
             </div>
           </div>
         </Fade>

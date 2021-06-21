@@ -268,6 +268,11 @@ const skills = {
   ],
 };
 
+const education = {
+  description:
+    "Being accredited for the things I've learnt throughout the years is a great way for me to consolidate my knowledge and skills.",
+};
+
 const degrees = {
   degrees: [
     {
@@ -377,7 +382,7 @@ const experience = {
   title: "Experience",
   subtitle: "Internships",
   description:
-    "The internships I've done allows me not only to contribute my unique ideas to the companies I've worked with, but also allow me to learn new and exciting technology.",
+    "The internships I've done not only allow me to contribute my unique ideas to the companies I've worked with, but also present valuable opportunities to pick up new and exciting technology.",
   header_image_pathz: "experience.svg",
   internships: {
     title: "Internships",
@@ -819,6 +824,7 @@ export {
   greeting,
   socialMediaLinks,
   skills,
+  education,
   degrees,
   certifications,
   experience,
