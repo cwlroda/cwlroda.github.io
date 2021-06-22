@@ -36,10 +36,10 @@ const skills = {
     {
       title: "Back-End Development",
       skills: [
-        "⚡ Proficient in algorithms and optimisation techniques",
-        "⚡ Developing fast and reliable application backend and API integration in C, C++, and Java",
-        "⚡ Large-scale database management using MySQL",
-        "⚡ Experience with low-level development using FPGAs",
+        "⚡\tProficient in algorithms and optimisation techniques",
+        "⚡\tDeveloping fast and reliable application backend and API integration in C, C++, and Java",
+        "⚡\tLarge-scale database management using MySQL",
+        "⚡\tExperience with low-level development using FPGAs",
       ],
       softwareSkills: [
         {
@@ -96,9 +96,9 @@ const skills = {
     {
       title: "Front-End Development",
       skills: [
-        "⚡ Developing responsive web apps in React, F#, and Electron",
-        "⚡ Some experience with building mobile apps (iPhone & Android)",
-        "⚡ Currently learning UI/UX",
+        "⚡\tDeveloping responsive web apps in React, F#, and Electron",
+        "⚡\tSome experience with building mobile apps (iPhone & Android)",
+        "⚡\tCurrently learning UI/UX",
       ],
       softwareSkills: [
         {
@@ -169,9 +169,9 @@ const skills = {
     {
       title: "Cloud Infra-Architecture",
       skills: [
-        "⚡ Worked on and deployed apps to cloud platforms",
-        "⚡ Hosted and managed websites with thousands of views",
-        "⚡ Experience with CI/CD",
+        "⚡\tWorked on and deployed apps to cloud platforms",
+        "⚡\tHosted and managed websites with thousands of views",
+        "⚡\tExperience with CI/CD",
       ],
       softwareSkills: [
         {
@@ -215,10 +215,10 @@ const skills = {
       title: "Machine/Deep Learning",
       skills: [
         "Experienced in building and training:",
-        "⚡ NLP models for text processing and generation",
-        "⚡ Computer Vision models for object/feature detection and motion tracking",
-        "⚡ Linear regression and LSTM models for data prediction",
-        "⚡ Currently learning RL techniques",
+        "⚡\tNLP models for text processing and generation",
+        "⚡\tComputer Vision models for object/feature detection and motion tracking",
+        "⚡\tLinear regression and LSTM models for data prediction",
+        "⚡\tCurrently learning RL techniques",
       ],
       softwareSkills: [
         {
