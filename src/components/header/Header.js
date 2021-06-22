@@ -6,6 +6,12 @@ import { greeting, settings } from "../../portfolio.js";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
+import {
+  AiFillStar,
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+} from "react-icons/ai";
+import { CgFileDocument, CgWorkAlt } from "react-icons/cg";
 
 function Header(props) {
   const theme = props.theme;
@@ -25,8 +31,9 @@ function Header(props) {
     outline: "none",
     transition: "all 0.2s ease-in-out",
     ":hover": {
-      boxShadow: `0 3px 8px ${props.theme.name === "light" ? "#F7D774" : "#646464"
-        }`,
+      boxShadow: `0 3px 8px ${
+        props.theme.name === "light" ? "#F7D774" : "#646464"
+      }`,
     },
   });
 
@@ -85,7 +92,7 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Home
+                <AiOutlineHome style={{ marginBottom: "-2px" }} /> Home
               </NavLink>
             </li>
             <li>
@@ -96,7 +103,7 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Education
+                <CgFileDocument style={{ marginBottom: "-2px" }} /> Education
               </NavLink>
             </li>
             <li>
@@ -107,7 +114,7 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Experience
+                <CgWorkAlt style={{ marginBottom: "-2px" }} /> Experience
               </NavLink>
             </li>
             <li>
@@ -118,6 +125,9 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "-2px" }}
+                />{" "}
                 Projects
               </NavLink>
             </li>
@@ -129,7 +139,7 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Contact
+                <AiFillStar style={{ marginBottom: "-2px" }} /> Contact
               </NavLink>
             </li>
             <button {...styles} onClick={changeTheme}>
