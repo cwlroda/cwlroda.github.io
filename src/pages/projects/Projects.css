@@ -94,6 +94,16 @@
   margin-right: 12vw;
 }
 
+.github-stats-div {
+  margin-top: 6vw;
+}
+
+.contributions {
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 @media (max-width: 1380px) {
   .projects-heading-text {
     font-size: 50px;

@@ -1,5 +1,6 @@
 .skills-main-div {
   display: flex;
+  overflow: hidden;
 }
 
 .skills-header {
@@ -12,6 +13,7 @@
 
 .skills-text {
   font-size: 20px;
+  text-align: left;
 }
 
 .skills-text-div {
@@ -24,12 +26,14 @@
 .skills-main-div > * {
   flex: 1;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .skills-image-div > * {
   max-width: 100%;
   height: auto;
   margin-top: 2vw;
+  overflow: hidden;
 }
 
 .skills-heading {

@@ -7,6 +7,8 @@ import { projectsHeader, hackathons, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
+import ReactTooltip from "react-tooltip";
+import GitHubCalendar from "react-github-calendar";
 
 function Projects(props) {
   const theme = props.theme;
@@ -17,6 +19,11 @@ function Projects(props) {
       boxShadow: `0 5px 15px ${theme.accentBright}`,
     },
   });
+
+  const colourTheme = {
+    background: "transparent",
+    grade0: "#778899",
+  };
 
   return (
     <div className="projects-main">
@@ -76,6 +83,23 @@ function Projects(props) {
       </a>
       <br />
       <br />
+      <div className="github-stats-div">
+        <h1 className="projects-header" style={{ color: theme.text }}>
+          GitHub Stats
+        </h1>
+        <div className="contributions">
+          <GitHubCalendar
+            username="cwlroda"
+            blockSize={22}
+            blockMargin={5}
+            theme={colourTheme}
+            fontSize={16}
+            showTotalCount={false}
+          >
+            <ReactTooltip delayShow={50} html />
+          </GitHubCalendar>
+        </div>
+      </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );

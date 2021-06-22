@@ -6,6 +6,7 @@
 }
 
 .experience-accord:hover {
+  transform: scale(1.02) !important;
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 0px 15px #e2405f;
 }

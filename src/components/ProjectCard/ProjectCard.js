@@ -20,10 +20,11 @@ export default function ProjectCard({ repo, theme }) {
     cursor: "pointer",
     borderRadius: "7px",
     height: "100%",
-    transition: "all 0.2s ease-in-out",
+    transition: "all 0.2s ease-in-out !important",
     ":hover": {
+      transform: "scale(1.02) !important",
       color: "rgba(255, 255, 255, 1)",
-      boxShadow: "0 0px 15px #e2405f",
+      boxShadow: "0 0px 15px #e2405f !important",
     },
     "@media (max-width: 768px)": {
       width: "100%",
@@ -38,8 +39,9 @@ export default function ProjectCard({ repo, theme }) {
     border: `1px solid ${theme.accentColor}`,
     marginRight: "50px",
     boxShadow: `0px 0px 5px ${theme.accentColor}`,
-    transition: "all 0.2s ease-in-out",
+    transition: "all 0.2s ease-in-out !important",
     ":hover": {
+      transform: "scale(1.02) !important",
       color: "rgba(255, 255, 255, 1)",
       boxShadow: `0 5px 15px ${theme.accentColor}`,
     },
@@ -59,8 +61,9 @@ export default function ProjectCard({ repo, theme }) {
     border: `1px solid ${theme.accentColor}`,
     marginLeft: "50px",
     boxShadow: `0px 0px 5px ${theme.accentColor}`,
-    transition: "all 0.2s ease-in-out",
+    transition: "all 0.2s ease-in-out !important",
     ":hover": {
+      transform: "scale(1.02) !important",
       color: "rgba(255, 255, 255, 1)",
       boxShadow: `0 5px 15px ${theme.accentColor}`,
     },

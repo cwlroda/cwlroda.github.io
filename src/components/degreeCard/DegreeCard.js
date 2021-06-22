@@ -17,6 +17,7 @@ function DegreeCard(props) {
     boxShadow: `0px 0px 5px ${theme.accentColor}`,
     transition: "all 0.2s ease-in-out",
     ":hover": {
+      transform: "scale(1.02) !important",
       color: "rgba(255, 255, 255, 1)",
       boxShadow: `0 5px 15px ${theme.accentColor}`,
     },
@@ -38,6 +39,7 @@ function DegreeCard(props) {
     boxShadow: `0px 1px 5px ${theme.accentColor}`,
     transition: "all 0.2s ease-in-out",
     ":hover": {
+      transform: "scale(1.02) !important",
       color: "rgba(255, 255, 255, 1)",
       boxShadow: `0 5px 15px ${theme.accentColor}`,
     },

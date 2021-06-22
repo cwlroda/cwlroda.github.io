@@ -10,6 +10,7 @@ function CertificationCard(props) {
     boxShadow: `0px 2px 5px ${certificate.color_code}`,
     border: `1px solid ${certificate.color_code}`,
     ":hover": {
+      transform: "scale(1.02) !important",
       boxShadow: `0 5px 15px ${certificate.color_code}`,
     },
   });
