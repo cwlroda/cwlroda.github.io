@@ -15,7 +15,7 @@ const greeting = {
   nickname: "Wei Loon",
   full_name: "Wei Loon Cheng",
   subTitle:
-    "Back-End Developer & Machine Learning Engineer with 3.5 years of experience. Currently learning Front-End to be a Full-Stack Developer 🔥.",
+    "Back-End Developer & Machine Learning Engineer. Currently learning Front-End to be a Full-Stack Developer 🔥.",
   resumeLink:
     "https://drive.google.com/uc?export=download&id=1pGTinnif3OEzvgFd_4Tk_5PmqhKzn4sD",
   mail: "mailto:weiloon.c97@gmail.com",
