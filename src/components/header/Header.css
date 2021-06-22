@@ -28,7 +28,7 @@
   float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: -12px;
+  margin-top: 0vh;
   line-height: normal;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .header .menu {
-  margin-top: 10px;
+  margin-top: 2.5vw;
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
