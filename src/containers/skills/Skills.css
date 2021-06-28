@@ -8,7 +8,8 @@
   line-height: 1.1;
   font-family: "Google Sans Regular";
   text-align: center;
-  margin-bottom: 10vw;
+  margin-top: 7vw;
+  margin-bottom: 8vw;
 }
 
 .skills-text {
@@ -26,14 +27,12 @@
 .skills-main-div > * {
   flex: 1;
   margin-bottom: 30px;
-  overflow: hidden;
 }
 
 .skills-image-div > * {
   max-width: 100%;
   height: auto;
   margin-top: 2vw;
-  overflow: hidden;
 }
 
 .skills-heading {
