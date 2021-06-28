@@ -3,10 +3,13 @@ import Header from "../../components/header/Header";
 import Greeting from "../../containers/greeting/Greeting";
 import Skills from "../../containers/skills/Skills";
 import Footer from "../../components/footer/Footer";
+import Particle from "../Particle";
+import "./HomeComponent.css";
 
 function Home(props) {
   return (
-    <div>
+    <div className="home">
+      <Particle />
       <Header theme={props.theme} setTheme={props.setTheme} />
       <Greeting theme={props.theme} />
       <Skills theme={props.theme} />
