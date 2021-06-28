@@ -47,7 +47,7 @@
 }
 
 .header .menu {
-  margin-top: 2.5vw;
+  margin-top: 1.7vw;
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
@@ -180,19 +180,21 @@
 }
 
 /* 48em = 768px */
-
 @media (min-width: 48em) {
   .header li {
     float: left;
   }
+
   .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .header .menu {
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }
@@ -213,6 +215,7 @@
     text-align: center;
   }
 }
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;

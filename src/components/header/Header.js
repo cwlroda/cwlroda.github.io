@@ -70,7 +70,7 @@ function Header(props) {
 
   return (
     <Fade top duration={1000} distance="20px">
-      <div>
+      <div className="header-container">
         <header className="header">
           <NavLink to={link} tag={Link} className="logo">
             <span style={{ color: theme.text }}></span>
