@@ -9,7 +9,7 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Hello! 👋",
+  title: "Hello! ",
   title2: "Wei Loon",
   logo_name: "@cwlroda",
   nickname: "Wei Loon",
