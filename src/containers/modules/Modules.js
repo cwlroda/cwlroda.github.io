@@ -14,10 +14,13 @@ function Modules(props) {
         </Fade>
       </div>
       <div className="modules-body-div">
-        <img className="modules-img"
-          src={require(`../../assets/images/modules_${theme.name}.png`)}
-          alt=""
-        />
+        <Fade bottom duration={2000} distance="20px">
+          <img
+            className="modules-img"
+            src={require(`../../assets/images/modules_${theme.name}.png`)}
+            alt=""
+          />
+        </Fade>
       </div>
     </div>
   );
