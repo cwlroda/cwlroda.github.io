@@ -28,7 +28,9 @@ export default function Greeting(props) {
             <div>
               <h1 className="greeting-text">
                 {greeting.title}
-                <span className="wave">👋🏻</span>
+                <span className="wave" role="img" aria-hidden="true">
+                  👋🏻
+                </span>
               </h1>
               <p
                 className="greeting-text-p subTitle"
