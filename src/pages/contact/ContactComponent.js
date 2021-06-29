@@ -2,14 +2,18 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import BlogsImg from "./BlogsImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
+import Particle from "../Particle";
+import ContactLottie from "../../components/DisplayLottie";
+import bugs from "../../assets/lottie/bugs.json";
+import blog from "../../assets/lottie/blog.json";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
+const bugReporting = contactPageData.bugReporting;
 
 function Contact(props) {
   const theme = props.theme;
@@ -23,10 +27,11 @@ function Contact(props) {
 
   return (
     <div className="contact-main">
+      <Particle />
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-contact">
-        <Fade bottom duration={1000} distance="40px">
-          <div className="contact-heading-div">
+        <div className="contact-heading-div">
+          <Fade left duration={2000} distance="10vw">
             <div className="contact-heading-img-div">
               <img
                 className="profile-pic"
@@ -34,6 +39,8 @@ function Contact(props) {
                 alt=""
               />
             </div>
+          </Fade>
+          <Fade right duration={2000} distance="10vw">
             <div className="contact-heading-text-div">
               <h1
                 className="contact-heading-text"
@@ -54,16 +61,16 @@ function Contact(props) {
                 See my Resume
               </a>
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
         <div>
           <br></br>
           <br></br>
           <br></br>
           <br></br>
         </div>
-        <Fade bottom duration={1000} distance="40px">
-          <div className="blog-heading-div">
+        <div className="blog-heading-div">
+          <Fade left duration={2000} distance="10vw">
             <div className="blog-heading-text-div">
               <h1 className="blog-heading-text" style={{ color: theme.text }}>
                 {blogSection["title"]}
@@ -80,12 +87,51 @@ function Contact(props) {
                 </a>
               </div>
             </div>
+          </Fade>
+          <Fade right duration={2000} distance="10vw">
             <div className="blog-heading-img-div">
-              <BlogsImg theme={theme} />
+              <ContactLottie name="blog" animationData={blog} />
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
+        <div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+        </div>
+        <div className="blog-heading-div">
+          <Fade left duration={2000} distance="10vw">
+            <div className="bugs-heading-img-div">
+              <ContactLottie name="bugs" animationData={bugs} />
+            </div>
+          </Fade>
+          <Fade right duration={2000} distance="10vw">
+            <div className="blog-heading-text-div">
+              <h1 className="blog-heading-text" style={{ color: theme.text }}>
+                {bugReporting["title"]}
+              </h1>
+              <p
+                className="blog-header-detail-text subTitle"
+                style={{ color: theme.secondaryText }}
+              >
+                {bugReporting["subtitle"]}
+              </p>
+              <div className="blogsite-btn-div">
+                <a {...styles} className="general-btn" href={bugReporting.link}>
+                  Report An Issue
+                </a>
+              </div>
+            </div>
+          </Fade>
+        </div>
       </div>
+      <br></br>
+      <br></br>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );

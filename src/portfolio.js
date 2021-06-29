@@ -374,6 +374,22 @@ const certifications = {
       alt_name: "LinkedIn",
       color_code: "#C5E2EE",
     },
+    {
+      title: "HackerRank",
+      subtitle: "",
+      logo_path: "hackerrank.svg",
+      certificate_link: "https://www.hackerrank.com/weiloon_c97",
+      alt_name: "HackerRank",
+      color_code: "#C5E2EE",
+    },
+    {
+      title: "LeetCode",
+      subtitle: "",
+      logo_path: "leetcode.png",
+      certificate_link: "https://leetcode.com/weilooncheng/",
+      alt_name: "LeetCode",
+      color_code: "#C5E2EE",
+    },
   ],
 };
 
@@ -813,9 +829,15 @@ const contactPageData = {
   blogSection: {
     title: "Blogs",
     subtitle:
-      "Check me out on Medium, where I occasionally curate posts related to my projects.",
+      "Check me out on Medium, where I occasionally curate interesting posts related to my projects. Writer for Towards Data Science, Predict, and The Startup.",
     link: "https://medium.com/@cwlroda/ ",
     avatar_image_path: "blogs_image.svg",
+  },
+  bugReporting: {
+    title: "Bug Reporting",
+    subtitle:
+      "This website was built with HTML5, CSS3, NodeJS and React. Do drop a message on my GitHub repo if you find any issues or have any cool new features you would like to be added!",
+    link: "https://github.com/cwlroda/cwlroda.github.io/issues",
   },
 };
 
