@@ -9,6 +9,7 @@ import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
 import ReactTooltip from "react-tooltip";
 import GitHubCalendar from "react-github-calendar";
+import Particle from "../Particle";
 
 function Projects(props) {
   const theme = props.theme;
@@ -27,6 +28,7 @@ function Projects(props) {
 
   return (
     <div className="projects-main">
+      <Particle />
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-projects">
         <Fade bottom duration={2000} distance="40px">

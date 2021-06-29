@@ -8,11 +8,13 @@ import EducationImg from "./EducationImg";
 import { education } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
+import Particle from "../Particle";
 
 function Education(props) {
   const theme = props.theme;
   return (
     <div className="education-main">
+      <Particle />
       <Header theme={props.theme} setTheme={props.setTheme} />
       <div className="basic-education">
         <Fade bottom duration={2000} distance="40px">
@@ -37,7 +39,11 @@ function Education(props) {
           </div>
         </Fade>
         <Educations theme={props.theme} />
+        <br></br>
+        <br></br>
         <Modules theme={props.theme} />
+        <br></br>
+        <br></br>
         <Certifications theme={props.theme} />
       </div>
       <Footer theme={props.theme} />

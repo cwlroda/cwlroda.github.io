@@ -8,12 +8,14 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
+import Particle from "../Particle";
 
 function Experience(props) {
   const theme = props.theme;
   console.log(props.setTheme);
   return (
     <div className="experience-main">
+      <Particle />
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-experience">
         <Fade bottom duration={2000} distance="40px">
