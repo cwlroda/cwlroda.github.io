@@ -44,9 +44,7 @@
 }
 
 .profile-pic {
-  box-shadow: 0 1px 10px #353535;
-  border-radius: 30px;
-  width: 60%;
+  width: 30vw;
 }
 
 .blog-heading-img-div {
@@ -160,10 +158,6 @@
   font-size: 17px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-}
-
-.profile-pic {
-  width: 30vw;
 }
 
 #tsparticles {
