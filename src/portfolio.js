@@ -236,7 +236,7 @@ const skills = {
           },
         },
         {
-          skillName: "Pytorch",
+          skillName: "PyTorch",
           fontAwesomeClassname: "simple-icons:pytorch",
           style: {
             color: "#EE4C2C",
@@ -282,9 +282,9 @@ const degrees = {
       alt_name: "ETH",
       duration: "Starting 2021",
       descriptions: [
-        "⚡ Exchange Masters under the Department of Information Technology and Electrical Engineering",
-        "⚡ Swiss-European Mobility Programme (SEMP) Scholarship holder",
-        "⚡ Taking modules in Natural Language Processing and Computer Vision",
+        "⚡\tExchange Masters under the Department of Information Technology and Electrical Engineering",
+        "⚡\tSwiss-European Mobility Programme (SEMP) Scholarship holder",
+        "⚡\tTaking modules in Natural Language Processing and Computer Vision",
       ],
       website_link:
         "https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/electrical-engineering-and-information-technology.html",
@@ -297,14 +297,396 @@ const degrees = {
       alt_name: "ICL",
       duration: "2018 - Present",
       descriptions: [
-        "⚡ Four-year Direct Masters",
-        "⚡ On track for a First Class Honours",
-        "⚡ Undergraduate Tutor for Information Processing (Year 2) and Software Systems (Year 2)",
-        "⚡ Top 15% in the cohort (Year 1)",
-        "⚡ Achieved the Best First Year Project (2019)",
+        "⚡\tFour-year Direct Masters",
+        "⚡\tOn track for a First Class Honours",
+        "⚡\tUndergraduate Tutor for Information Processing (Year 2) and Software Systems (Year 2)",
+        "⚡\tTop 15% in the cohort (Year 1)",
+        "⚡\tAchieved the Best First Year Project (2019)",
       ],
       website_link:
         "https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electrical-and-electronic-engineering-year-abroad/",
+    },
+  ],
+};
+
+const modules = {
+  groups: [
+    {
+      title: "Hardware & Low-level Programming",
+      data: [
+        {
+          id: "0",
+          name: "Analysis of Circuits",
+          url:
+            "https://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE1-01&s=J3#start",
+          description:
+            "Analysis and modelling of electrical circuit behaviour in the frequency domain.",
+          languages: [],
+        },
+        {
+          id: "1",
+          name: "Feedback Systems",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-21&s=I2#start",
+          description:
+            "Analysis and modelling of linear and non-linear feedback control systems.",
+          languages: [],
+        },
+        {
+          id: "2",
+          name: "Digital Electronics",
+          url:
+            "https://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-01&s=J3#start",
+          description: "Analysis and synthesis of synchronous digital systems.",
+          languages: [
+            {
+              name: "Verilog",
+              iconifyClass: "vscode-icons:file-type-verilog",
+            },
+          ],
+        },
+        {
+          id: "3",
+          name: "Computer Architecture",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-13&s=I2#start",
+          description:
+            "Analysis of how computers work and microprocessor design through assembly instructions to the hardware.",
+          languages: [
+            {
+              name: "Assembly",
+              iconifyClass: "simple-icons:assemblyscript",
+            },
+          ],
+        },
+        {
+          id: "4",
+          name: "Language Processors",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-15&s=I2#start",
+          description:
+            "Design and implementation of language processors and compilers.",
+          languages: [
+            {
+              name: "C",
+              iconifyClass: "logos-c",
+            },
+            {
+              name: "C++",
+              iconifyClass: "vscode-icons:file-type-cpp3",
+            },
+            {
+              name: "Python",
+              iconifyClass: "logos-python",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Software Engineering",
+      data: [
+        {
+          id: "0",
+          name: "Introduction to Computing",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE1-07&s=I2#start",
+          description:
+            "Basic principles of software engineering, program design and implementation.",
+          languages: [
+            {
+              name: "C++",
+              iconifyClass: "vscode-icons:file-type-cpp3",
+            },
+          ],
+        },
+        {
+          id: "1",
+          name: "Algorithms & Data Structures",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE1-08&s=I2#start",
+          description:
+            "Building of abstract data types and algorithms such as lookup and sorting.",
+          languages: [
+            {
+              name: "C++",
+              iconifyClass: "vscode-icons:file-type-cpp3",
+            },
+          ],
+        },
+        {
+          id: "2",
+          name: "Algorithms & Complexity",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-10C&s=I2",
+          description:
+            "Performance analysis and heuristics of algorithmic problems on lists and graphs",
+          languages: [
+            {
+              name: "Python",
+              iconifyClass: "logos-python",
+            },
+          ],
+        },
+        {
+          id: "3",
+          name: "Object-Oriented Programming",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-12&s=I2#start",
+          description:
+            "Designing of abstract and reusable software component using classes.",
+          languages: [
+            {
+              name: "C++",
+              iconifyClass: "vscode-icons:file-type-cpp3",
+            },
+          ],
+        },
+        {
+          id: "4",
+          name: "Software Architecture",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=ELEC50003&s=I2#start",
+          description:
+            "Full product design process from high level goals to detailed design.",
+          languages: [],
+        },
+        {
+          id: "5",
+          name: "Databases",
+          url:
+            "https://www.imperial.ac.uk/computing/current-students/courses/40007/",
+          description:
+            "Modelling of relational databases and normalisation of relation schemas.",
+          languages: [
+            {
+              name: "MySQL",
+              iconifyClass: "logos-mysql",
+            },
+          ],
+        },
+        {
+          id: "6",
+          name: "Computer Networks",
+          url:
+            "http://www.imperial.ac.uk/computing/current-students/courses/70041/",
+          description:
+            "Principles and designing of networks and computer security.",
+          languages: [
+            {
+              name: "Java",
+              iconifyClass: "logos-java",
+            },
+          ],
+        },
+        {
+          id: "7",
+          name: "Distributed Systems",
+          url:
+            "http://www.imperial.ac.uk/computing/current-students/courses/70041/",
+          description: "Designing of distributed system architecture.",
+          languages: [
+            {
+              name: "Java",
+              iconifyClass: "logos-java",
+            },
+          ],
+        },
+        {
+          id: "8",
+          name: "High Level Programming",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE3-22&s=J3#start",
+          description:
+            "Developing and testing large-scale applications using modern functional programming.",
+          languages: [
+            {
+              name: "F#",
+              iconifyClass: "logos-fsharp",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Machine Learning & AI",
+      data: [
+        {
+          id: "0",
+          name: "Artifical Intelligence",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE3-16&s=J3#start",
+          description:
+            "Developing algorithms for problem-solving search and automated reasoning in different logics.",
+          languages: [
+            {
+              name: "SWI-Prolog",
+              iconifyClass: "vscode-icons:file-type-prolog",
+            },
+          ],
+        },
+        {
+          id: "1",
+          name: "Machine Learning",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE3-23&s=J3#start",
+          description:
+            "Modelling learning and inference problems with big data.",
+          languages: [],
+        },
+        {
+          id: "2",
+          name: "Deep Learning",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE3-25&s=J3#start",
+          description:
+            "Developing approaches for learning with deep neural networks.",
+          languages: [
+            {
+              name: "Python",
+              iconifyClass: "logos-python",
+            },
+            {
+              name: "Tensorflow",
+              iconifyClass: "logos-tensorflow",
+            },
+          ],
+        },
+        {
+          id: "3",
+          name: "Computer Vision",
+          url:
+            "http://www.imperial.ac.uk/computing/current-students/courses/60006",
+          description:
+            "Developing algorithms for feature and object detection in images.",
+          languages: [
+            {
+              name: "Python",
+              iconifyClass: "logos-python",
+            },
+            {
+              name: "Tensorflow",
+              iconifyClass: "logos-tensorflow",
+            },
+            {
+              name: "PyTorch",
+              iconifyClass: "simple-icons:pytorch",
+            },
+          ],
+        },
+        {
+          id: "4",
+          name: "Robotics",
+          url:
+            "http://www.imperial.ac.uk/computing/current-students/courses/60019",
+          description:
+            "Developing algorithms for Simultaneous Localisation and Mapping.",
+          languages: [
+            {
+              name: "Lua",
+              iconifyClass: "logos-lua",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Signal Processing",
+      data: [
+        {
+          id: "0",
+          name: "Signals & Linear Systems",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-05&s=J3#start",
+          description: "Modelling signals in time and frequency domains.",
+          languages: [],
+        },
+        {
+          id: "1",
+          name: "Communication Systems",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-04&s=J3#start",
+          description:
+            "Analysis of random processes, noise modelling, and performance of analog and digital communication systems.",
+          languages: [],
+        },
+      ],
+    },
+    {
+      title: "Mathematics",
+      data: [
+        {
+          id: "0",
+          name: "Complex Variables",
+          url:
+            "https://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-08A&s=I2#start",
+          description:
+            "Evaluating complex and improper integrals and Laplace transforms.",
+          languages: [],
+        },
+        {
+          id: "1",
+          name: "Probability & Statistics",
+          url:
+            "https://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE2-08B&s=I2#start",
+          description: "Set and estimation theory for statistical analysis.",
+          languages: [],
+        },
+        {
+          id: "2",
+          name: "Linear Algebra",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE1-10A&s=I1",
+          description: "Analysis of vector and matrix operations.",
+          languages: [],
+        },
+        {
+          id: "3",
+          name: "Numerical Analysis",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE1-10A&s=I1",
+          description:
+            "Solving ordinary and partial differential equations involving scalar and vector fields.",
+          languages: [
+            {
+              name: "MATLAB",
+              iconifyClass: "vscode-icons:file-type-matlab",
+            },
+          ],
+        },
+        {
+          id: "4",
+          name: "Operations Research",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=CO343&s=J3#start",
+          description:
+            "Solving optimisation problems using linear and integer programming.",
+          languages: [],
+        },
+      ],
+    },
+    {
+      title: "Engineering Design",
+      data: [
+        {
+          id: "0",
+          name: "Engineering Design & Practice",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE1-13&s=I2#start",
+          description:
+            "Analysis of approaches to the design, creation and operation of systems and products.",
+          languages: [],
+        },
+        {
+          id: "1",
+          name: "User-Centered Information Systems",
+          url:
+            "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE1-12&s=I2#start",
+          description:
+            "Analysis of interaction and visualisation techniques in the domain of Human-Computer Interaction.",
+          languages: [],
+        },
+      ],
     },
   ],
 };
@@ -848,6 +1230,7 @@ export {
   skills,
   education,
   degrees,
+  modules,
   certifications,
   experience,
   projectsHeader,
