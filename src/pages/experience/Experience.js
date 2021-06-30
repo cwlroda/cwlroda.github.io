@@ -46,7 +46,7 @@ function Experience(props) {
           </div>
         </Fade>
       </div>
-      <div>
+      <div className="experience-body">
         {experience["internships"]["experiences"].map((experience) => {
           return (
             <div className="experience-accord">

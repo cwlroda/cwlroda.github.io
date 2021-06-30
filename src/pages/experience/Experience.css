@@ -8,6 +8,10 @@
   margin-bottom: 10vh;
 }
 
+.experience-body {
+  margin-bottom: 5vw;
+}
+
 .experience-heading-div {
   display: flex;
 }

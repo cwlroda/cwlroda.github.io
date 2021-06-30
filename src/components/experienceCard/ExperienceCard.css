@@ -3,6 +3,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+  padding: 1vw;
 }
 
 .experience-card-logo-div {
@@ -33,7 +34,7 @@
 
 .experience-card-company {
   font-family: "Google Sans Regular";
-  margin: 0;
+  margin-top: 0.5vw;
   text-align: left;
 }
 
@@ -61,7 +62,7 @@
 
 .experience-card-location {
   font-family: "Google Sans Regular";
-  margin: 0;
+  margin-top: 0.5vw;
   text-align: right;
   color: #868e96;
 }
