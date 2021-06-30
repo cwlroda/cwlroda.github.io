@@ -68,6 +68,9 @@ function DegreeCard(props) {
       color: "rgba(255, 255, 255, 1)",
       boxShadow: `0 5px 10px ${theme.accentColor}`,
     },
+    "@media (max-width: 768px)": {
+      width: "80%",
+    },
   });
 
   if (window.outerWidth <= 768) {
