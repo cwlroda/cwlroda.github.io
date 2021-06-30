@@ -45,9 +45,8 @@
 }
 
 .repo-name {
-  white-space: nowrap;
+  white-space: break-spaces;
   line-height: 1.1;
-  text-overflow: ellipsis;
   color: rgb(36, 41, 46);
   font-family: "Google Sans Regular";
   margin-bottom: 0.75rem;
@@ -56,6 +55,7 @@
   letter-spacing: -0.5px;
   overflow: hidden;
   margin: 0px;
+  text-align: left;
 }
 
 .repo-star-svg {
@@ -63,11 +63,11 @@
 }
 
 .repo-description {
-  word-wrap: break-word;
+  white-space: break-spaces;
+  overflow: hidden;
   text-align: left;
   display: -webkit-box;
   font-family: "Google Sans Regular";
-  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
@@ -90,11 +90,11 @@
   }
 
   .repo-name {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .repo-description {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .repo-details {
