@@ -20,7 +20,7 @@ function AnimatedSplash(props) {
 
 function Splash(props) {
   const [redirect, setRedirect] = useState(false);
-  setTimeout(() => setRedirect(true), 2000);
+  setTimeout(() => setRedirect(true), 1000);
 
   return redirect ? (
     <Redirect to="/home" />
