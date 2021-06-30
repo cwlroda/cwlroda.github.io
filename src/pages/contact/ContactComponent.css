@@ -3,13 +3,15 @@
 }
 
 .basic-contact {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
 
 .contact-heading-div {
   display: flex;
   overflow: hidden;
+  margin-top: 7vw;
+  margin-bottom: 7vw;
 }
 
 .blog-heading-div {
@@ -35,9 +37,10 @@
 }
 
 .contact-heading-img-div {
-  margin-left: 13%;
-  margin-bottom: 8%;
-  margin-top: 4%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
@@ -47,14 +50,18 @@
 }
 
 .blog-heading-img-div {
+  margin: auto;
   align-items: center;
   justify-content: center;
 }
 
 .contact-heading-text-div {
   max-width: 100%;
-  margin-top: 4%;
+  max-height: 100%;
+  margin: auto;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .blog-heading-text-div {
@@ -82,7 +89,7 @@
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 0vw;
 }
 
 .blog-heading-text {
@@ -143,6 +150,7 @@
   color: rgba(255, 255, 255, 1);
   padding: 15px 15px;
   margin-top: 25px;
+  margin-bottom: 10vw;
   border-radius: 4px;
   border-width: 0px;
   width: 200px;
@@ -154,6 +162,10 @@
   cursor: pointer;
 }
 
+.profile-pic {
+  width: 30vw;
+}
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -163,18 +175,52 @@
 }
 
 @media (max-width: 1380px) {
+  .contact-heading-text-div {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
   .contact-heading-text {
     font-size: 50px;
     margin-top: 0px;
+  }
+
+  .contact-heading-img-div {
+    margin: 5vw;
+    margin-top: 7vw;
+    justify-content: center;
+    align-items: center;
   }
 
   .blog-heading-text {
     font-size: 50px;
     margin-top: 40px;
   }
+
+  .blog-heading-img-div {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 35vw;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
+  .contact-heading-div {
+    margin-bottom: 10vw;
+  }
+
+  .contact-heading-text-div {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
   .contact-heading-text {
     font-size: 30px;
     margin-top: 0px;
@@ -205,6 +251,8 @@
   }
 
   .blog-heading-text-div {
+    padding-left: 5vw;
+    padding-right: 5vw;
     margin-top: 40px;
   }
 

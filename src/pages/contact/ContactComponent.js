@@ -63,12 +63,6 @@ function Contact(props) {
             </div>
           </Fade>
         </div>
-        <div>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-        </div>
         <div className="blog-heading-div">
           <Fade left duration={2000} distance="10vw">
             <div className="blog-heading-text-div">
@@ -94,19 +88,9 @@ function Contact(props) {
             </div>
           </Fade>
         </div>
-        <div>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-        </div>
         <div className="blog-heading-div">
           <Fade left duration={2000} distance="10vw">
-            <div className="bugs-heading-img-div">
+            <div className="blog-heading-img-div">
               <ContactLottie name="bugs" animationData={bugs} />
             </div>
           </Fade>
@@ -130,8 +114,6 @@ function Contact(props) {
           </Fade>
         </div>
       </div>
-      <br></br>
-      <br></br>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );
