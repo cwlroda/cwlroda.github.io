@@ -855,6 +855,7 @@ const projectsHeader = {
   description:
     "Most of my projects are either done in my free time or in various hackathons to learn more about state-of-the-art technology outside what is taught in university.",
   avatar_image_path: "projects_image.svg",
+  link: "https://github.com/cwlroda/",
 };
 
 const hackathons = {

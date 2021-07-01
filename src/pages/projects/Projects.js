@@ -80,7 +80,7 @@ function Projects(props) {
           return <ProjectCard repo={repo} theme={theme} />;
         })}
       </div>
-      <a {...styles} className="general-btn" href="https://github.com/cwlroda">
+      <a {...styles} className="general-btn" href={projectsHeader.link}>
         More Projects (Github)
       </a>
       <br />
