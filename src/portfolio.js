@@ -1235,19 +1235,19 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "weiloon.png",
     description:
-      "Feel free to drop me a connection request or send a message! I hope to reply by the next day if I'm not too occupied with work.",
+      "Feel free to drop me a connection request or send a message! I'm currently in Singapore (GMT+8), and I hope to reply by the next day if I'm not too occupied with work.",
   },
   blogSection: {
     title: "Blogs",
     subtitle:
-      "Check me out on Medium, where I occasionally curate interesting posts related to my projects. Writer for Towards Data Science, Predict, and The Startup.",
+      "Check me out on Medium, where I occasionally curate interesting posts related to my projects.",
     link: "https://medium.com/@cwlroda/ ",
     avatar_image_path: "blogs_image.svg",
   },
   bugReporting: {
     title: "Bug Reporting",
     subtitle:
-      "This website was built with HTML5, CSS3, NodeJS and React. Do drop a message on my GitHub repo if you find any issues or have any cool new features you would like to be added!",
+      "This portfolio website was built with HTML5, CSS3, NodeJS and React. Do drop a message on my GitHub repo if you find any issues or have any cool new features you would like to be added!",
     link: "https://github.com/cwlroda/cwlroda.github.io/issues",
   },
 };

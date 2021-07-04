@@ -5,6 +5,7 @@
 .basic-contact {
   margin-left: 10vh;
   margin-right: 10vh;
+  overflow: hidden;
 }
 
 .contact-heading-div {
@@ -16,6 +17,7 @@
 
 .blog-heading-div {
   display: flex;
+  margin-bottom: 10vw;
 }
 
 .address-heading-div {
@@ -48,7 +50,8 @@
 }
 
 .blog-heading-img-div {
-  margin: auto;
+  margin: 3vw;
+  margin-top: 8vh;
   align-items: center;
   justify-content: center;
 }
@@ -132,6 +135,7 @@
 
 .blogsite-btn-div {
   width: 100%;
+  height: 20%;
   display: flex;
   justify-content: center;
 }
@@ -147,8 +151,7 @@
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
   padding: 15px 15px;
-  margin-top: 25px;
-  margin-bottom: 10vw;
+  margin-top: 20px;
   border-radius: 4px;
   border-width: 0px;
   width: 200px;
@@ -158,6 +161,19 @@
   font-size: 17px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+.publications {
+  overflow: hidden;
+}
+
+.publication {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: hidden;
 }
 
 #tsparticles {
@@ -202,6 +218,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  /* .publication {
+    flex-direction: column;
+    margin: 0;
+  } */
 }
 
 @media (max-width: 768px) {
@@ -248,6 +269,7 @@
     padding-left: 5vw;
     padding-right: 5vw;
     margin-top: 40px;
+    margin-bottom: 5vw;
   }
 
   .address-heading-text-div {
@@ -277,6 +299,10 @@
   }
 
   .profile-pic {
-    width: 70vw;
+    width: 55vw;
+  }
+
+  .publications {
+    margin-top: 8vw;
   }
 }

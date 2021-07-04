@@ -80,6 +80,37 @@ function Contact(props) {
                   My Medium Profile
                 </a>
               </div>
+              <div className="publications">
+                <p
+                  className="blog-header-detail-text subTitle"
+                  style={{ color: theme.secondaryText }}
+                >
+                  Writer for:
+                </p>
+                <div className="publication">
+                  <a
+                    {...styles}
+                    className="general-btn"
+                    href="https://towardsdatascience.com/"
+                  >
+                    Towards Data Science
+                  </a>
+                  <a
+                    {...styles}
+                    className="general-btn"
+                    href="https://medium.com/predict"
+                  >
+                    Predict
+                  </a>
+                  <a
+                    {...styles}
+                    className="general-btn"
+                    href="https://medium.com/swlh"
+                  >
+                    The Startup
+                  </a>
+                </div>
+              </div>
             </div>
           </Fade>
           <Fade right duration={2000} distance="10vw">
