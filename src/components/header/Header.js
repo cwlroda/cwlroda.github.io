@@ -10,8 +10,8 @@ import {
   AiOutlineStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineGithub,
 } from "react-icons/ai";
+import { FaGithubAlt } from "react-icons/fa";
 import { CgFileDocument, CgWorkAlt } from "react-icons/cg";
 
 function Header(props) {
@@ -144,7 +144,7 @@ function Header(props) {
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                <AiOutlineGithub style={{ marginBottom: "-2px" }} /> Stats
+                <FaGithubAlt style={{ marginBottom: "-2px" }} /> Stats
               </NavLink>
             </li>
             <li>
