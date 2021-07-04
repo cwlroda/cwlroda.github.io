@@ -1061,7 +1061,7 @@ const projects = {
       name: "Tracify",
       url: "https://github.com/cwlroda",
       description:
-        "Mobile Bluetooth tracking service that informs users if they have been in close proximity with suspected or confirmed COVID-19 patients. Includes features for users to self-report and seek medical attention.",
+        "Mobile Bluetooth tracking service informing users if they have been in close proximity with suspected/confirmed COVID-19 cases. Includes features for self-reporting and seeking medical attention.",
       languages: [],
       logo_path: "",
       logo_link: "",
@@ -1188,7 +1188,7 @@ const projects = {
       url:
         "https://github.com/cwlroda/First-Year-Projects/tree/master/Mastermind",
       description:
-        "AI that efficiently solves the game of Mastermind for randomly generated sequences of symbols for up to length 15 and 15 unique symbols.",
+        "AI that efficiently solves the game of Mastermind for randomly generated sequences of symbols.",
       languages: [
         {
           name: "C++",
@@ -1220,7 +1220,7 @@ const projects = {
       name: "EEBug",
       url: "https://github.com/cwlroda",
       description:
-        "Self-built four-wheeled rover that moves towards light sources.",
+        "Four-wheeled rover that self-navigates towards light sources.",
       languages: [],
       logo_path: "",
       logo_link: "",
