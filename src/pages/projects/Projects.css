@@ -94,6 +94,10 @@
   margin-right: 12vw;
 }
 
+.space {
+  margin-top: 8vw;
+}
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -154,8 +158,12 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem 1rem;
     margin-top: 6vw;
-    margin-bottom: 6vw;
+    margin-bottom: 12vw;
     margin-left: 6vw;
     margin-right: 6vw;
+  }
+
+  .space {
+    margin-top: 20vw;
   }
 }

@@ -77,6 +77,7 @@ function Projects(props) {
       <a {...styles} className="general-btn" href={projectsHeader.link}>
         More Projects (Github)
       </a>
+      <div className="space"></div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
       <TopButton theme={props.theme} />
     </div>
