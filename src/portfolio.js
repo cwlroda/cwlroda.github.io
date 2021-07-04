@@ -91,6 +91,13 @@ const skills = {
             color: "#FCC624",
           },
         },
+        {
+          skillName: "Bash",
+          fontAwesomeClassname: "logos-bash-icon",
+          style: {
+            color: "",
+          },
+        },
       ],
     },
     {
@@ -226,6 +233,13 @@ const skills = {
           fontAwesomeClassname: "logos-python",
           style: {
             color: "#3776AB",
+          },
+        },
+        {
+          skillName: "Keras",
+          fontAwesomeClassname: "simple-icons:keras",
+          style: {
+            color: "#D00000",
           },
         },
         {
@@ -467,11 +481,11 @@ const modules = {
         },
         {
           id: "6",
-          name: "Computer Networks",
+          name: "Computer Networks & Distributed Systems",
           url:
             "http://www.imperial.ac.uk/computing/current-students/courses/70041/",
           description:
-            "Principles and designing of networks and computer security.",
+            "Principles and designing of networks, computer security and distributed system architecture.",
           languages: [
             {
               name: "Java",
@@ -481,19 +495,6 @@ const modules = {
         },
         {
           id: "7",
-          name: "Distributed Systems",
-          url:
-            "http://www.imperial.ac.uk/computing/current-students/courses/70041/",
-          description: "Designing of distributed system architecture.",
-          languages: [
-            {
-              name: "Java",
-              iconifyClass: "logos-java",
-            },
-          ],
-        },
-        {
-          id: "8",
           name: "High Level Programming",
           url:
             "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=EE3-22&s=J3#start",
@@ -570,7 +571,7 @@ const modules = {
             },
             {
               name: "PyTorch",
-              iconifyClass: "simple-icons:pytorch",
+              iconifyClass: "logos-pytorch",
             },
           ],
         },
@@ -661,7 +662,12 @@ const modules = {
             "http://intranet.ee.ic.ac.uk/electricalengineering/eecourses_t4/course_content.asp?c=CO343&s=J3#start",
           description:
             "Solving optimisation problems using linear and integer programming.",
-          languages: [],
+          languages: [
+            {
+              name: "MATLAB",
+              iconifyClass: "vscode-icons:file-type-matlab",
+            },
+          ],
         },
       ],
     },
@@ -831,7 +837,7 @@ const experience = {
         description:
           "I revamped the company website using WordPress, HTML, CSS, and JavaScript, achieving thousands of views within the first month of launch. I also successfully developed a JavaScript API to automate data synchronisation between the website and the LMS portal.",
         color: "#C5E2EE",
-        link: "https://github.com/cwlroda/",
+        link: "https://fashive.org/",
       },
       {
         title: "Product Optimisation Intern",
@@ -1052,6 +1058,17 @@ const projects = {
     },
     {
       id: "2",
+      name: "Tracify",
+      url: "https://github.com/cwlroda",
+      description:
+        "Mobile Bluetooth tracking service that informs users if they have been in close proximity with suspected or confirmed COVID-19 patients. Includes features for users to self-report and seek medical attention.",
+      languages: [],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "3",
       name: "C-MIPS-Compiler",
       url: "https://github.com/cwlroda/C-MIPS-Compiler",
       description:
@@ -1075,7 +1092,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "3",
+      id: "4",
       name: "MIPS Simulator",
       url: "https://github.com/cwlroda/MIPS-Simulator",
       description:
@@ -1095,7 +1112,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "4",
+      id: "5",
       name: "Dance Dance Convolution",
       url: "https://github.com/cwlroda/Dance-Dance-Convolution",
       description:
@@ -1119,7 +1136,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "5",
+      id: "6",
       name: "Sudoku",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Sudoku",
       description:
@@ -1134,7 +1151,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "6",
+      id: "7",
       name: "2048",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/2048",
       description:
@@ -1150,7 +1167,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "7",
+      id: "8",
       name: "Othello",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Othello",
       description:
@@ -1166,7 +1183,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "8",
+      id: "9",
       name: "Mastermind",
       url:
         "https://github.com/cwlroda/First-Year-Projects/tree/master/Mastermind",
@@ -1183,7 +1200,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "9",
+      id: "10",
       name: "Path-Finding Algorithms",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Maze",
       description:
@@ -1194,6 +1211,17 @@ const projects = {
           iconifyClass: "vscode-icons:file-type-cpp3",
         },
       ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "11",
+      name: "EEBug",
+      url: "https://github.com/cwlroda",
+      description:
+        "Self-built four-wheeled rover that moves towards light sources.",
+      languages: [],
       logo_path: "",
       logo_link: "",
       alt_name: "",
