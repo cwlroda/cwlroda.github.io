@@ -21,11 +21,6 @@ function Projects(props) {
     },
   });
 
-  const colourTheme = {
-    background: "transparent",
-    grade0: "#778899",
-  };
-
   return (
     <div className="projects-main">
       <Particle />
@@ -83,25 +78,6 @@ function Projects(props) {
       <a {...styles} className="general-btn" href={projectsHeader.link}>
         More Projects (Github)
       </a>
-      <br />
-      <br />
-      <div className="github-stats-div">
-        <h1 className="projects-header" style={{ color: theme.text }}>
-          GitHub Stats
-        </h1>
-        <div className="contributions">
-          <GitHubCalendar
-            username="cwlroda"
-            blockSize={22}
-            blockMargin={5}
-            theme={colourTheme}
-            fontSize={16}
-            showTotalCount={false}
-          >
-            <ReactTooltip delayShow={50} html />
-          </GitHubCalendar>
-        </div>
-      </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );

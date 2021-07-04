@@ -94,16 +94,6 @@
   margin-right: 12vw;
 }
 
-.github-stats-div {
-  margin-top: 6vw;
-}
-
-.contributions {
-  justify-content: center;
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
-
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
