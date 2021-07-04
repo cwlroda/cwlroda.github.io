@@ -192,6 +192,9 @@
 }
 
 @media (max-width: 1368px) {
+  .header .menu {
+    margin-top: 2.2vw;
+  }
   .homei .ec .xp .projects .stats .cr {
     margin: 0;
   }
