@@ -46,6 +46,7 @@ code {
 }
 html,
 body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
@@ -62,11 +63,11 @@ body {
   background: #292a2d;
 }
 ::-webkit-scrollbar-thumb {
-  background: #E3405F;
+  background: #e3405f;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #E3405F;
+  background: #e3405f;
 }
 /* Media Query */
 @media (max-width: 1380px) {
