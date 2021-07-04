@@ -1,0 +1,29 @@
+.pr-chart {
+  width: 100%;
+  text-align: center;
+}
+
+canvas {
+  margin: 0 auto;
+  width: 25vw;
+  height: 25vw;
+}
+
+.pr-chart-header {
+  font-family: "Google Sans Regular";
+}
+
+@media (max-width: 768px) {
+  canvas {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .pr-chart {
+    margin-bottom: 10vw;
+  }
+
+  .pr-chart-header {
+    font-size: 20px;
+  }
+}

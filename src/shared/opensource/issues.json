@@ -1,0 +1,398 @@
+{
+  "closed": 15,
+  "data": [
+    {
+      "id": "MDU6SXNzdWU4NzA4MzI0MzY=",
+      "closed": false,
+      "title": "\"Only change class\" setting doesn't work with brush",
+      "createdAt": "2021-04-29T09:54:54Z",
+      "url": "https://github.com/seraphimstreets/lidar_annotation_tool/issues/3",
+      "number": 3,
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "lidar_annotation_tool",
+        "url": "https://github.com/seraphimstreets/lidar_annotation_tool",
+        "owner": {
+          "login": "seraphimstreets",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/51947676?v=4",
+          "url": "https://github.com/seraphimstreets"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4NjU2NDU2NTk=",
+      "closed": true,
+      "title": "Running on Ubuntu",
+      "createdAt": "2021-04-23T01:08:54Z",
+      "url": "https://github.com/seraphimstreets/lidar_annotation_tool/issues/1",
+      "number": 1,
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "lidar_annotation_tool",
+        "url": "https://github.com/seraphimstreets/lidar_annotation_tool",
+        "owner": {
+          "login": "seraphimstreets",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/51947676?v=4",
+          "url": "https://github.com/seraphimstreets"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4NDEzMTcyMjA=",
+      "closed": true,
+      "title": "NAND and NOR gates messing up wiring",
+      "createdAt": "2021-03-25T21:20:03Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/146",
+      "number": 146,
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4NDEzMDYzNzg=",
+      "closed": true,
+      "title": "Port highlighting bring to front",
+      "createdAt": "2021-03-25T21:03:35Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/144",
+      "number": 144,
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4NDExMDEwNjc=",
+      "closed": true,
+      "title": "Symbols stack when pressing alt-n multiple times",
+      "createdAt": "2021-03-25T16:27:47Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/137",
+      "number": 137,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+            "name": "Ole Strøhm",
+            "url": "https://github.com/OleStrohm"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4NDEwOTc4NTQ=",
+      "closed": true,
+      "title": "Make symbols at least 2 grid intervals apart",
+      "createdAt": "2021-03-25T16:24:06Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/135",
+      "number": 135,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4NDAwNzMyMzg=",
+      "closed": true,
+      "title": "Selected symbols should be brought to front so that they don't go behind other symbols when overlapping",
+      "createdAt": "2021-03-24T19:11:10Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/102",
+      "number": 102,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4MzkyODI0ODk=",
+      "closed": true,
+      "title": "Error messages obstructed by cursor",
+      "createdAt": "2021-03-24T02:28:51Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/94",
+      "number": 94,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4MzkyNjcxMTQ=",
+      "closed": true,
+      "title": "Available ports should be highlighted when dragging wire segments",
+      "createdAt": "2021-03-24T01:55:00Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/93",
+      "number": 93,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4MzkyNDA4Nzc=",
+      "closed": true,
+      "title": "Unnecessary port connection checking when doing manual routing",
+      "createdAt": "2021-03-24T00:49:54Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/92",
+      "number": 92,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4MzkyMTIzNjU=",
+      "closed": true,
+      "title": "Wire segment bounding boxes not drawing correctly",
+      "createdAt": "2021-03-23T23:49:08Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/91",
+      "number": 91,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4MzkxNjYxODk=",
+      "closed": true,
+      "title": "Symbols/wires should naturally be selected upon pasting",
+      "createdAt": "2021-03-23T22:14:47Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/90",
+      "number": 90,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4Mzc0OTgwNzc=",
+      "closed": true,
+      "title": "Invalid wires should update automatically if port connections become valid after other wires/symbols are deleted",
+      "createdAt": "2021-03-22T09:10:40Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/77",
+      "number": 77,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4MzY5OTk0MTM=",
+      "closed": true,
+      "title": "Stress test",
+      "createdAt": "2021-03-21T06:38:38Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/65",
+      "number": 65,
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4MzE5NDI0OTA=",
+      "closed": true,
+      "title": "Universal snap-to-grid helper function",
+      "createdAt": "2021-03-15T15:45:29Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/11",
+      "number": 11,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    },
+    {
+      "id": "MDU6SXNzdWU4MzE5MzYzMTE=",
+      "closed": true,
+      "title": "Wire segments shouldn't be able to be dragged past ports",
+      "createdAt": "2021-03-15T15:38:53Z",
+      "url": "https://github.com/OleStrohm/HLP-2021-team-5/issues/9",
+      "number": 9,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/47574881?u=dac68b69de504bbd54144e42f5f2d83d7740cc10&v=4",
+            "name": "Wei Loon Cheng",
+            "url": "https://github.com/cwlroda"
+          },
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/60655292?v=4",
+            "name": null,
+            "url": "https://github.com/sofiajegnell"
+          }
+        ]
+      },
+      "repository": {
+        "name": "HLP-2021-team-5",
+        "url": "https://github.com/OleStrohm/HLP-2021-team-5",
+        "owner": {
+          "login": "OleStrohm",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6892524?u=0b52f102174b6b10cb09bf0cccc45b489c7405e3&v=4",
+          "url": "https://github.com/OleStrohm"
+        }
+      }
+    }
+  ],
+  "open": 1,
+  "totalCount": 16
+}
