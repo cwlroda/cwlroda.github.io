@@ -19,7 +19,7 @@ export default function ProjectCard({ repo, theme }) {
     padding: "2rem",
     cursor: "pointer",
     borderRadius: "7px",
-    height: "100%",
+    height: "95%",
     transition: "all 0.2s ease-in-out !important",
     ":hover": {
       transform: "scale(1.02) !important",
