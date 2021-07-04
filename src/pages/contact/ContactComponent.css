@@ -218,11 +218,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  /* .publication {
-    flex-direction: column;
-    margin: 0;
-  } */
 }
 
 @media (max-width: 768px) {
