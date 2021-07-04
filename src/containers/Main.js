@@ -4,8 +4,9 @@ import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
-import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import Stats from "../pages/stats/Stats";
+import Contact from "../pages/contact/ContactComponent";
 import { settings } from "../portfolio.js";
 
 export default function Main(propss) {
@@ -57,6 +58,26 @@ export default function Main(propss) {
               )}
             />
             <Route
+              path="/projects"
+              render={(props) => (
+                <Projects
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+            <Route
+              path="/stats"
+              render={(props) => (
+                <Stats
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+            <Route
               path="/contact"
               render={(props) => (
                 <Contact
@@ -70,16 +91,6 @@ export default function Main(propss) {
               path="/splash"
               render={(props) => (
                 <Splash
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/projects"
-              render={(props) => (
-                <Projects
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
@@ -138,9 +149,9 @@ export default function Main(propss) {
               )}
             />
             <Route
-              path="/contact"
+              path="/projects"
               render={(props) => (
-                <Contact
+                <Projects
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
@@ -148,9 +159,19 @@ export default function Main(propss) {
               )}
             />
             <Route
-              path="/projects"
+              path="/stats"
               render={(props) => (
-                <Projects
+                <Stats
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+            <Route
+              path="/contact"
+              render={(props) => (
+                <Contact
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
