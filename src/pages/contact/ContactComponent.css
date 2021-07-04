@@ -17,7 +17,7 @@
 
 .blog-heading-div {
   display: flex;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 }
 
 .address-heading-div {
@@ -187,7 +187,7 @@
 @media (max-width: 1380px) {
   .contact-heading-text-div {
     margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
   }
 
   .contact-heading-text {
@@ -196,10 +196,13 @@
   }
 
   .contact-heading-img-div {
-    margin: 5vw;
     margin-top: 7vw;
     justify-content: center;
     align-items: center;
+  }
+
+  .blog-heading-div {
+    margin-bottom: 10vw;
   }
 
   .blog-heading-text {
@@ -252,7 +255,7 @@
 
   .blog-heading-div {
     flex-direction: column-reverse;
-    margin-top: 60px;
+    margin-top: 10vw;
   }
 
   .address-heading-div {
