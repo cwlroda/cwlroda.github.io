@@ -7,9 +7,10 @@ import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 import {
-  AiFillStar,
+  AiOutlineStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
+  AiOutlineGithub,
 } from "react-icons/ai";
 import { CgFileDocument, CgWorkAlt } from "react-icons/cg";
 
@@ -34,6 +35,10 @@ function Header(props) {
       boxShadow: `0 3px 8px ${
         props.theme.name === "light" ? "#F7D774" : "#646464"
       }`,
+    },
+    "@media (max-width: 1368px)": {
+      height: "35px",
+      width: "35px",
     },
   });
 
@@ -133,13 +138,24 @@ function Header(props) {
             </li>
             <li>
               <NavLink
+                className="stats"
+                to="/stats"
+                tag={Link}
+                activeStyle={{ fontWeight: "bold" }}
+                style={{ borderRadius: 5, color: theme.text }}
+              >
+                <AiOutlineGithub style={{ marginBottom: "-2px" }} /> Stats
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 className="cr"
                 to="/contact"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                <AiFillStar style={{ marginBottom: "-2px" }} /> Contact
+                <AiOutlineStar style={{ marginBottom: "-2px" }} /> Contact
               </NavLink>
             </li>
             <button {...styles} onClick={changeTheme}>
