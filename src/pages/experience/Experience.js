@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import TopButton from "../../components/topButton/TopButton";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
@@ -63,6 +64,7 @@ function Experience(props) {
       </div>
       {/* <ExperienceAccordion sections={experience["sections"]} theme={theme} /> */}
       <Footer theme={props.theme} onToggle={props.onToggle} />
+      <TopButton theme={props.theme} />
     </div>
   );
 }

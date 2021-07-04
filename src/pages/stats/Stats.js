@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
 import "./Stats.css";
 import ReactTooltip from "react-tooltip";
@@ -73,6 +74,7 @@ function Stats(props) {
         })}
       </div>
       <Footer theme={props.theme} onToggle={props.onToggle} />
+      <TopButton theme={props.theme} />
     </div>
   );
 }

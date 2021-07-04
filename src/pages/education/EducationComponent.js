@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import TopButton from "../../components/topButton/TopButton";
 import Educations from "../../containers/education/Educations";
 import Modules from "../../containers/modules/Modules";
 import Certifications from "../../containers/certifications/Certifications";
@@ -47,6 +48,7 @@ function Education(props) {
         <Modules theme={props.theme} />
       </div>
       <Footer theme={props.theme} />
+      <TopButton theme={props.theme} />
     </div>
   );
 }

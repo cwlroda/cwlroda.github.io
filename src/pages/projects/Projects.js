@@ -1,14 +1,13 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import TopButton from "../../components/topButton/TopButton";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Fade } from "react-reveal";
 import { projectsHeader, hackathons, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
-import ReactTooltip from "react-tooltip";
-import GitHubCalendar from "react-github-calendar";
 import Particle from "../Particle";
 
 function Projects(props) {
@@ -79,6 +78,7 @@ function Projects(props) {
         More Projects (Github)
       </a>
       <Footer theme={props.theme} onToggle={props.onToggle} />
+      <TopButton theme={props.theme} />
     </div>
   );
 }
