@@ -33,7 +33,7 @@ export default function ModuleCard({ module, theme }) {
 
   return (
     <div className="module-card">
-      <Fade left duration={2000} distance="40px">
+      <Fade bottom duration={2000} distance="40px">
         <div
           {...styles}
           key={module.id}
