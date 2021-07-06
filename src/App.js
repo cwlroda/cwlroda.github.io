@@ -23,22 +23,20 @@ function App() {
 
   return (
     <ThemeProvider theme={themes[theme]}>
-      <>
-        <GlobalStyles />
-        <div>
-          {useCursor ? (
-            <CursorProvider
-              color={themes[theme].secondaryText}
-              ringSize={25}
-              transitionTime={75}
-            >
-              <Main theme={themes[theme]} setTheme={setTheme} />
-            </CursorProvider>
-          ) : (
+      <GlobalStyles />
+      <div>
+        {useCursor ? (
+          <CursorProvider
+            color={themes[theme].secondaryText}
+            ringSize={25}
+            transitionTime={75}
+          >
             <Main theme={themes[theme]} setTheme={setTheme} />
-          )}
-        </div>
-      </>
+          </CursorProvider>
+        ) : (
+          <Main theme={themes[theme]} setTheme={setTheme} />
+        )}
+      </div>
     </ThemeProvider>
   );
 }
