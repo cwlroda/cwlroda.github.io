@@ -62,7 +62,10 @@ export default function Greeting(props) {
           </div>
           <div className="greeting-image-div">
             <img
-              src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
+              src={
+                require(`../../assets/images/${ContactData["profile_image_path"]}`)
+                  ?.default
+              }
               alt=""
             />
           </div>
