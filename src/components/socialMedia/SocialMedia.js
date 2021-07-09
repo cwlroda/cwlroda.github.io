@@ -59,6 +59,15 @@ export default function socialMedia() {
         <i className="fab fa-instagram"></i>
         <span></span>
       </a>
+      <a
+        href={socialMediaLinks.location}
+        className="icon-button location"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fas fa-map-marker-alt"></i>
+        <span></span>
+      </a>
     </div>
   );
 }

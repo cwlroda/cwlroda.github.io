@@ -29,6 +29,7 @@ const socialMediaLinks = {
   twitter: "https://twitter.com/cwlroda/",
   facebook: "https://www.facebook.com/cwlroda/",
   instagram: "https://www.instagram.com/cwlroda/",
+  location: "https://goo.gl/maps/3pfUkRCJY27LA7e19",
 };
 
 const skills = {
