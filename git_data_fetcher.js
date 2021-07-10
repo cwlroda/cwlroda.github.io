@@ -3,8 +3,8 @@ const openSource = {
   githubUserName: "cwlroda",
 };
 
-const fetch = require("node-fetch");
-var fs = require("fs");
+const fetch = require("node-fetch")?.default;
+var fs = require("fs")?.default;
 
 const query_pr = {
   query: `

@@ -84,7 +84,7 @@ function DegreeCard(props) {
                 maxHeight: "100%",
                 transform: "scale(75%, 75%)",
               }}
-              src={require(`../../assets/images/${degree.logo_path}`)}
+              src={require(`../../assets/images/${degree.logo_path}`)?.default}
               alt={degree.alt_name}
             />
           </div>
@@ -151,7 +151,7 @@ function DegreeCard(props) {
                 maxHeight: "100%",
                 transform: "scale(75%, 75%)",
               }}
-              src={require(`../../assets/images/${degree.logo_path}`)}
+              src={require(`../../assets/images/${degree.logo_path}`)?.default}
               alt={degree.alt_name}
             />
           </div>

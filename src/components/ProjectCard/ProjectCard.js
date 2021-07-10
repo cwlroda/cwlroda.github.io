@@ -113,7 +113,9 @@ export default function ProjectCard({ repo, theme }) {
                     maxHeight: "100%",
                     transform: "scale(75%, 75%)",
                   }}
-                  src={require(`../../assets/images/${repo.logo_path}`)}
+                  src={
+                    require(`../../assets/images/${repo.logo_path}`)?.default
+                  }
                   alt={repo.alt_name}
                 />
               </a>
@@ -153,7 +155,9 @@ export default function ProjectCard({ repo, theme }) {
                     maxHeight: "100%",
                     transform: "scale(75%, 75%)",
                   }}
-                  src={require(`../../assets/images/${repo.logo_path}`)}
+                  src={
+                    require(`../../assets/images/${repo.logo_path}`)?.default
+                  }
                   alt={repo.alt_name}
                 />
               </a>
@@ -213,7 +217,9 @@ export default function ProjectCard({ repo, theme }) {
                     maxHeight: "100%",
                     transform: "scale(75%, 75%)",
                   }}
-                  src={require(`../../assets/images/${repo.logo_path}`)}
+                  src={
+                    require(`../../assets/images/${repo.logo_path}`)?.default
+                  }
                   alt={repo.alt_name}
                 />
               </a>
