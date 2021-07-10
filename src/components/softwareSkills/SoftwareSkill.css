@@ -9,7 +9,8 @@
 
 .software-skill-inline {
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 20px;
   font-family: "Google Sans Regular";
 }
@@ -25,11 +26,14 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .dev-icons {
-    text-align: center;
+    align-items: center;
     margin-left: 1vw;
     margin-right: 1vw;
   }
 }
 
 @media (max-width: 768px) {
+  .dev-icons {
+    align-items: center;
+  }
 }
