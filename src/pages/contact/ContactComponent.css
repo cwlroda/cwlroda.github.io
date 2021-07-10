@@ -1,10 +1,9 @@
 .contact-main {
-  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .basic-contact {
-  margin-left: 10vh;
-  margin-right: 10vh;
   overflow: hidden;
 }
 
@@ -185,6 +184,16 @@
 }
 
 @media (max-width: 1380px) {
+  .contact-main {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .basic-contact {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .contact-heading-text-div {
     margin-top: 5vw;
     margin-bottom: 2vw;
@@ -229,11 +238,10 @@
   }
 
   .contact-heading-text-div {
-    padding-left: 5vw;
-    padding-right: 5vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
   }
+
   .contact-heading-text {
     font-size: 30px;
     margin-top: 0px;
@@ -245,6 +253,7 @@
   }
 
   .contact-heading-img-div {
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -264,8 +273,8 @@
   }
 
   .blog-heading-text-div {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     margin-top: 40px;
     margin-bottom: 5vw;
   }
@@ -282,8 +291,8 @@
 
   .contact-header-detail-text {
     font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     line-height: normal;
     text-align: center;
   }
