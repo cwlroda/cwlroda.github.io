@@ -26,6 +26,31 @@ const EducationLottie = ({ name, animationData }) => {
   )
 }
 
+const ExperienceLottie = ({ name, animationData }) => {
+  var defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      width: '100%',
+      height: '100%',
+      preserveAspectRatio: 'xMaxYMax meet',
+      viewBoxSize: '0 100 506.06371 500.2279'
+    },
+  }
+
+  return (
+    <Suspense>
+      {/* To override default onClick pause by Lottie */}
+      <div onClick={() => null}>
+        <Lottie
+          options={defaultOptions}
+        />
+      </div>
+    </Suspense>
+  )
+}
+
 const SkillsLottie = ({ name, animationData }) => {
   var defaultOptions;
 
@@ -126,6 +151,7 @@ const ContactLottie = ({ name, animationData }) => {
 
 export {
   EducationLottie,
+  ExperienceLottie,
   SkillsLottie,
   ContactLottie,
 };

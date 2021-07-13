@@ -8,8 +8,9 @@ import { experience } from "../../portfolio.js";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
 import { Fade } from "react-reveal";
-import ExperienceImg from "./ExperienceImg";
 import Particle from "../Particle";
+import { ExperienceLottie } from "../../components/DisplayLottie";
+import exp from "../../assets/lottie/work.json";
 
 function Experience(props) {
   const theme = props.theme;
@@ -22,7 +23,7 @@ function Experience(props) {
         <Fade bottom duration={2000} distance="40px">
           <div className="experience-heading-div">
             <div className="experience-heading-img-div">
-              <ExperienceImg theme={theme} />
+              <ExperienceLottie name="exp" animationData={exp} />
             </div>
             <div className="experience-heading-text-div">
               <h1
