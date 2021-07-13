@@ -4,9 +4,9 @@ View portfolio at [cwlroda.github.io](https://cwlroda.github.io)
 
 Developed with HTML5, CSS3, NodeJS, and React.
 
-## References
+## Template References
 
-- https://github.com/harikanani/PortfolioV2
-- https://github.com/ashutosh1919/masterPortfolio/
-- https://github.com/saadpasta/developerFolio
-- https://github.com/soumyajit4419/Portfolio
+- [PortfolioV2](https://github.com/harikanani/PortfolioV2)
+- [Software Developer Master Portfolio](https://github.com/ashutosh1919/masterPortfolio)
+- [Software Developer Folio](https://github.com/saadpasta/developerFolio)
+- [Portfolio Website - v2.0](https://github.com/soumyajit4419/Portfolio)
