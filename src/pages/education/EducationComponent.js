@@ -10,6 +10,8 @@ import { education } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 import Particle from "../Particle";
+import { EducationLottie } from "../../components/DisplayLottie";
+import edu from "../../assets/lottie/education.json";
 
 function Education(props) {
   const theme = props.theme;
@@ -21,7 +23,7 @@ function Education(props) {
         <Fade bottom duration={2000} distance="40px">
           <div className="heading-div">
             <div className="heading-img-div">
-              <EducationImg theme={theme} />
+              <EducationLottie name="edu" animationData={edu} />
             </div>
             <div className="heading-text-div">
               <h1 className="heading-text" style={{ color: theme.text }}>
