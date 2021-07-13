@@ -6,9 +6,10 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Fade } from "react-reveal";
 import { projectsHeader, hackathons, projects } from "../../portfolio.js";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
 import Particle from "../Particle";
+import { ProjectLottie } from "../../components/DisplayLottie";
+import proj from "../../assets/lottie/project.json";
 
 function Projects(props) {
   const theme = props.theme;
@@ -28,7 +29,7 @@ function Projects(props) {
         <Fade bottom duration={2000} distance="40px">
           <div className="projects-heading-div">
             <div className="projects-heading-img-div">
-              <ProjectsImg theme={theme} />
+              <ProjectLottie name="proj" animationData={proj} />
             </div>
             <div className="projects-heading-text-div">
               <h1
@@ -47,9 +48,6 @@ function Projects(props) {
           </div>
         </Fade>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
       <div className="projects-header-div">
         <Fade bottom duration={2000} distance="20px">
           <h1 className="projects-header" style={{ color: theme.text }}>

@@ -4,8 +4,8 @@
 }
 
 .basic-projects {
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .projects-header {
@@ -27,8 +27,13 @@
   }
 }
 
+.projects-header-div {
+  margin-top: 8vw;
+}
+
 .projects-heading-div {
   display: flex;
+  margin-top: 3vw;
 }
 
 .projects-heading-div > * {
@@ -110,7 +115,7 @@
 @media (max-width: 1380px) {
   .projects-heading-text {
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 0px;
   }
   .projects-heading-sub-text {
     font-size: 25px;
@@ -140,27 +145,27 @@
   }
 
   .projects-header-div {
-    margin-top: 15vw;
+    margin-top: 10vh;
   }
 
   .hackathon-cards-div-main {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem 1rem;
     margin-top: 12vw;
     margin-bottom: 6vw;
-    margin-left: 6vw;
-    margin-right: 6vw;
+    margin-left: 10%;
   }
 
   .repo-cards-div-main {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem 1rem;
     margin-top: 6vw;
     margin-bottom: 12vw;
-    margin-left: 6vw;
-    margin-right: 6vw;
+    margin-left: 10%;
   }
 
   .space {
