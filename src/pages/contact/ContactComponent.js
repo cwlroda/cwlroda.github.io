@@ -8,7 +8,7 @@ import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
 import Particle from "../Particle";
-import ContactLottie from "../../components/DisplayLottie";
+import { ContactLottie } from "../../components/DisplayLottie";
 import bugs from "../../assets/lottie/bugs.json";
 import blog from "../../assets/lottie/blog.json";
 
