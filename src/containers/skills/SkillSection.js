@@ -4,7 +4,7 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 // import DesignImg from "./DesignImg";
-import SkillsLottie from "../../components/DisplayLottie";
+import { SkillsLottie } from "../../components/DisplayLottie";
 import frontend from "../../assets/lottie/frontend.json";
 import ml from "../../assets/lottie/ml.json";
 import cloud from "../../assets/lottie/cloud.json";
