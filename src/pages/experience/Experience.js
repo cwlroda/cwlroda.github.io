@@ -17,7 +17,7 @@ function Experience(props) {
   console.log(props.setTheme);
   return (
     <div className="experience-main">
-      <Particle />
+      <Particle theme={props.theme} />
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-experience">
         <Fade bottom duration={2000} distance="40px">

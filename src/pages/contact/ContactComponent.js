@@ -28,7 +28,7 @@ function Contact(props) {
 
   return (
     <div className="contact-main">
-      <Particle />
+      <Particle theme={props.theme} />
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-contact">
         <div className="contact-heading-div">

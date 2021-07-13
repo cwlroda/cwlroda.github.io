@@ -10,7 +10,7 @@ import "./HomeComponent.css";
 function Home(props) {
   return (
     <div className="home">
-      <Particle />
+      <Particle theme={props.theme} />
       <Header theme={props.theme} setTheme={props.setTheme} />
       <Greeting theme={props.theme} />
       <Skills theme={props.theme} />

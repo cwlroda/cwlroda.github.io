@@ -24,7 +24,7 @@ function Stats(props) {
 
   return (
     <div className="stats-main">
-      <Particle />
+      <Particle theme={props.theme} />
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="github-stats-div">
         <Fade bottom duration={2000} distance="40px">

@@ -1,13 +1,13 @@
 import React from "react";
 import Particles from "react-particles-js";
 
-function Particle() {
+function Particle(props) {
   return (
     <Particles
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 200,
             density: {
               enable: true,
               value_area: 1500,
@@ -30,6 +30,9 @@ function Particle() {
               speed: 1,
               opacity_min: 0.05,
             },
+          },
+          color: {
+            value: props.theme.text,
           },
         },
         interactivity: {
