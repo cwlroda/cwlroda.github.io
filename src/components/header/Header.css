@@ -57,7 +57,6 @@
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
   float: right;
   padding: 28px 20px;
   position: relative;
@@ -99,7 +98,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 380px;
+  max-height: 400px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -238,11 +237,5 @@
   .header {
     padding-top: 10px;
     text-align: center;
-  }
-}
-
-@media (max-width: 960px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
   }
 }
