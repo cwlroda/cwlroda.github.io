@@ -6,6 +6,8 @@ import IssueData from "../../shared/opensource/issues.json";
 
 class IssueChart extends Component {
   render() {
+    const theme = this.props.theme;
+
     const data = {
       labels: ["Open", "Closed"],
       datasets: [
@@ -24,14 +26,25 @@ class IssueChart extends Component {
           <Doughnut
             data={data}
             options={{
-              margin: "0",
               padding: "0",
+              margin: "0",
               responsive: true,
               maintainAspectRatio: true,
               animation: {
                 duration: 4000,
               },
               borderColor: "transparent",
+              plugins: {
+                legend: {
+                  labels: {
+                    font: {
+                      size: "16",
+                      family: "Google Sans Regular",
+                    },
+                    color: theme.text,
+                  },
+                },
+              },
             }}
           />
         </Fade>

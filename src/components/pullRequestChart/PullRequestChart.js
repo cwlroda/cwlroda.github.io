@@ -6,6 +6,8 @@ import PullRequestData from "../../shared/opensource/pull_requests.json";
 
 class PullRequestChart extends Component {
   render() {
+    const theme = this.props.theme;
+
     const data = {
       labels: ["Open", "Merged", "Closed"],
       datasets: [
@@ -24,7 +26,7 @@ class PullRequestChart extends Component {
     return (
       <div class="pr-chart">
         <Fade left duration={2000}>
-          <h2 className="pr-chart-header">Pull Request Distribution</h2>
+          <h2 className="pr-chart-header">PR Distribution</h2>
           <Doughnut
             data={data}
             options={{
@@ -36,6 +38,17 @@ class PullRequestChart extends Component {
                 duration: 4000,
               },
               borderColor: "transparent",
+              plugins: {
+                legend: {
+                  labels: {
+                    font: {
+                      size: "16",
+                      family: "Google Sans Regular",
+                    },
+                    color: theme.text,
+                  },
+                },
+              },
             }}
           />
         </Fade>

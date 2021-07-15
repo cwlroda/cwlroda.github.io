@@ -30,6 +30,7 @@
 
 .contributions {
   justify-content: center;
+  margin-top: 4vw;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -60,6 +61,11 @@
 }
 
 @media (max-width: 1380px) {
+  .stats-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
   .github-stats-header {
     font-size: 50px;
   }
