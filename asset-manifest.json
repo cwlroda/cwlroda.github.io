@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfe125d5.chunk.css",
-    "main.js": "/static/js/main.22e5be86.chunk.js",
-    "main.js.map": "/static/js/main.22e5be86.chunk.js.map",
+    "main.css": "/static/css/main.4994a523.chunk.css",
+    "main.js": "/static/js/main.8bdec36b.chunk.js",
+    "main.js.map": "/static/js/main.8bdec36b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5f9ed396.js",
     "runtime-main.js.map": "/static/js/runtime-main.5f9ed396.js.map",
     "static/js/2.a6383308.chunk.js": "/static/js/2.a6383308.chunk.js",
     "static/js/2.a6383308.chunk.js.map": "/static/js/2.a6383308.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.bfe125d5.chunk.css.map": "/static/css/main.bfe125d5.chunk.css.map",
+    "static/css/main.4994a523.chunk.css.map": "/static/css/main.4994a523.chunk.css.map",
     "static/js/2.a6383308.chunk.js.LICENSE.txt": "/static/js/2.a6383308.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Montserrat-Regular.3cd78665.ttf",
     "static/media/aihack.png": "/static/media/aihack.e7e24b82.png",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.5f9ed396.js",
     "static/js/2.a6383308.chunk.js",
-    "static/css/main.bfe125d5.chunk.css",
-    "static/js/main.22e5be86.chunk.js"
+    "static/css/main.4994a523.chunk.css",
+    "static/js/main.8bdec36b.chunk.js"
   ]
 }
