@@ -295,11 +295,12 @@ const degrees = {
       subtitle: "Master Electrical Engineering and Information Technology",
       logo_path: "eth.png",
       alt_name: "ETH",
-      duration: "Starting 2021",
+      duration: "2021 - Present",
       descriptions: [
         "⚡\tExchange Masters under the Department of Information Technology and Electrical Engineering",
         "⚡\tSwiss-European Mobility Programme (SEMP) Scholarship holder",
-        "⚡\tTaking modules in Natural Language Processing and Computer Vision",
+        "⚡\tTaking modules in Robotics and Computer Vision",
+        "⚡\tSpecialising in Real-time 3D Multi-Object Tracking",
       ],
       website_link:
         "https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/electrical-engineering-and-information-technology.html",
@@ -1011,6 +1012,54 @@ const projects = {
   data: [
     {
       id: "0",
+      name: "Scalabel",
+      url: "https://github.com/scalabel/scalabel",
+      description:
+        "Spearheaded an accurate and intuitive annotation method for 3D point clouds on a versatile and scalable annotation platform.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "Typescript",
+          iconifyClass: "logos-typescript-icon",
+        },
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "1",
+      name: "DH3D",
+      url: "https://github.com/cwlroda/DH3D",
+      description:
+        "Integrated a deep hierarchical 3D local and global descriptor detection model into a multi-robot collaborative SLAM system.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "Tensorflow",
+          iconifyClass: "logos-tensorflow",
+        },
+        {
+          name: "MATLAB",
+          iconifyClass: "vscode-icons:file-type-matlab",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "2",
       name: "3DFeatNet",
       url: "https://github.com/cwlroda/3DFeatNet",
       description:
@@ -1034,7 +1083,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "1",
+      id: "3",
       name: "ISSIE",
       url: "https://github.com/cwlroda/issie",
       description:
@@ -1058,7 +1107,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "2",
+      id: "4",
       name: "Tracify",
       url: "https://github.com/cwlroda",
       description:
@@ -1069,7 +1118,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "3",
+      id: "5",
       name: "C-MIPS-Compiler",
       url: "https://github.com/cwlroda/C-MIPS-Compiler",
       description:
@@ -1093,7 +1142,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "4",
+      id: "6",
       name: "MIPS Simulator",
       url: "https://github.com/cwlroda/MIPS-Simulator",
       description:
@@ -1113,7 +1162,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "5",
+      id: "7",
       name: "Dance Dance Convolution",
       url: "https://github.com/cwlroda/Dance-Dance-Convolution",
       description:
@@ -1137,7 +1186,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "6",
+      id: "8",
       name: "Sudoku",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Sudoku",
       description:
@@ -1152,7 +1201,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "7",
+      id: "9",
       name: "2048",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/2048",
       description:
@@ -1168,7 +1217,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "8",
+      id: "10",
       name: "Othello",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Othello",
       description:
@@ -1184,7 +1233,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "9",
+      id: "11",
       name: "Mastermind",
       url:
         "https://github.com/cwlroda/First-Year-Projects/tree/master/Mastermind",
@@ -1201,7 +1250,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "10",
+      id: "12",
       name: "Path-Finding Algorithms",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Maze",
       description:
@@ -1217,7 +1266,7 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "11",
+      id: "13",
       name: "EEBug",
       url: "https://github.com/cwlroda",
       description:
