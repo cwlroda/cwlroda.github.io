@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5a7dc0ac.chunk.css",
-    "main.js": "/static/js/main.e8026470.chunk.js",
-    "main.js.map": "/static/js/main.e8026470.chunk.js.map",
+    "main.js": "/static/js/main.670706ea.chunk.js",
+    "main.js.map": "/static/js/main.670706ea.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5f9ed396.js",
     "runtime-main.js.map": "/static/js/runtime-main.5f9ed396.js.map",
     "static/js/2.1e399c44.chunk.js": "/static/js/2.1e399c44.chunk.js",
@@ -29,7 +29,7 @@
     "static/media/leetcode.png": "/static/media/leetcode.fd3c9a86.png",
     "static/media/modules_dark.png": "/static/media/modules_dark.d165e1f4.png",
     "static/media/modules_light.png": "/static/media/modules_light.0f2f2ef6.png",
-    "static/media/preview.png": "/static/media/preview.a58fa6e3.png",
+    "static/media/preview.png": "/static/media/preview.1e775aa4.png",
     "static/media/qwiklabs1.png": "/static/media/qwiklabs1.90af665c.png",
     "static/media/qwiklabs2.png": "/static/media/qwiklabs2.5584d417.png",
     "static/media/qwiklabs3.png": "/static/media/qwiklabs3.1fa54c0d.png",
@@ -43,6 +43,6 @@
     "static/js/runtime-main.5f9ed396.js",
     "static/js/2.1e399c44.chunk.js",
     "static/css/main.5a7dc0ac.chunk.css",
-    "static/js/main.e8026470.chunk.js"
+    "static/js/main.670706ea.chunk.js"
   ]
 }
