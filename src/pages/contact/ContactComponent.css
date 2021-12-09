@@ -183,6 +183,17 @@
   height: 100%;
 }
 
+@media (min-width: 1921px) {
+  .basic-contact {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .contact-main {
+    margin: 0;
+  }
+}
+
 @media (max-width: 1380px) {
   .contact-main {
     margin-left: 0%;

@@ -19,6 +19,7 @@ const greeting = {
   resumeLink:
     "https://drive.google.com/uc?export=download&id=1pGTinnif3OEzvgFd_4Tk_5PmqhKzn4sD",
   mail: "mailto:weiloon.c97@gmail.com",
+  profile_image_path: "weiloon.png",
 };
 
 const socialMediaLinks = {
@@ -1314,9 +1315,9 @@ const projects = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "weiloon.png",
+    profile_image_path: "contact.png",
     description:
-      "Feel free to drop me a connection request or send a message! I'm currently in Singapore (GMT+8), and I hope to reply by the next day if I'm not too occupied with work.",
+      "Feel free to drop me a connection request or send a message! I'm currently in Zurich, Switzerland (GMT +1), and I hope to reply by the next day if I'm not too occupied with work.",
   },
   blogSection: {
     title: "Blogs",

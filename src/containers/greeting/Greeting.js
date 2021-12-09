@@ -1,13 +1,11 @@
 import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { greeting, contactPageData } from "../../portfolio";
+import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import { useHistory } from "react-router-dom";
 import { style } from "glamor";
 import Typewriter from "./Typewriter";
-
-const ContactData = contactPageData.contactSection;
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -63,7 +61,7 @@ export default function Greeting(props) {
           <div className="greeting-image-div">
             <img
               src={
-                require(`../../assets/images/${ContactData["profile_image_path"]}`)
+                require(`../../assets/images/${greeting.profile_image_path}`)
                   ?.default
               }
               alt=""
