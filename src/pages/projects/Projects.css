@@ -112,6 +112,12 @@
   z-index: -1;
 }
 
+@media (min-width: 1921px) {
+  .hackathon-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  }
+}
+
 @media (max-width: 1380px) {
   .projects-heading-text {
     font-size: 50px;
