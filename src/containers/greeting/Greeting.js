@@ -61,7 +61,7 @@ export default function Greeting(props) {
           <div className="greeting-image-div">
             <img
               src={
-                require(`../../assets/images/${greeting["profile_image_path"]}`)
+                require(`../../assets/images/${greeting.profile_image_path}`)
                   ?.default
               }
               alt=""

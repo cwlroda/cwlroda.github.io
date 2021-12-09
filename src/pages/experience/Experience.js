@@ -14,7 +14,6 @@ import exp from "../../assets/lottie/work.json";
 
 function Experience(props) {
   const theme = props.theme;
-  console.log(props.setTheme);
   return (
     <div className="experience-main">
       <Particle theme={props.theme} />
