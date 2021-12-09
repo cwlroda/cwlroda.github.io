@@ -14,9 +14,7 @@ function ExperienceAccordion(props) {
           return (
             <Fade bottom duration={2000} distance="20px">
               {section["experiences"].map((experience) => {
-                return (
-                  <ExperienceCard experience={experience} theme={theme} />
-                );
+                return <ExperienceCard experience={experience} theme={theme} />;
               })}
             </Fade>
           );
