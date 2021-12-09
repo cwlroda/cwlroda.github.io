@@ -1,4 +1,4 @@
-/* Change this file to get your personal Porfolio */
+/* Change this file to get your personal Portfolio */
 
 // Website related settings
 const settings = {
@@ -579,6 +579,37 @@ const modules = {
         },
         {
           id: "4",
+          name: "Image Analysis & Computer Vision",
+          url: "https://people.ee.ethz.ch/~cvcourse/",
+          description:
+            "Image formation, perception and analysis, and deep learning and AI-based approaches to computer vision.",
+          languages: [
+            {
+              name: "Python",
+              iconifyClass: "logos-python",
+            },
+            {
+              name: "Tensorflow",
+              iconifyClass: "logos-tensorflow",
+            },
+          ],
+        },
+        {
+          id: "5",
+          name: "Theory of Robotics and Mechatronics",
+          url:
+            "http://www.imperial.ac.uk/computing/current-students/courses/60019",
+          description:
+            "Theoretical fundamentals of robotics, including perception, manipulation, and cognition.",
+          languages: [
+            {
+              name: "MATLAB",
+              iconifyClass: "vscode-icons:file-type-matlab",
+            },
+          ],
+        },
+        {
+          id: "6",
           name: "Robotics",
           url:
             "http://www.imperial.ac.uk/computing/current-students/courses/60019",
