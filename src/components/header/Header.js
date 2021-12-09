@@ -74,6 +74,8 @@ function Header(props) {
       />
     );
 
+  const GreetingData = greeting.data;
+
   return (
     <Fade top duration={1000} distance="20px">
       <div className="header-container">
@@ -81,7 +83,7 @@ function Header(props) {
           <NavLink to={link} tag={Link} className="logo">
             <span style={{ color: theme.text }}></span>
             <span className="logo-name" style={{ color: theme.text }}>
-              {greeting.logo_name}
+              {GreetingData.logo_name}
             </span>
             <span style={{ color: theme.text }}></span>
           </NavLink>

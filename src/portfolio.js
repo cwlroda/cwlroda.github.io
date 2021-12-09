@@ -9,17 +9,19 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Hello! ",
-  title2: "Wei Loon",
-  logo_name: "@cwlroda",
-  nickname: "Wei Loon",
-  full_name: "Wei Loon Cheng",
-  subTitle:
-    "Back-End Developer & Machine Learning Engineer. Currently learning Front-End to be a Full-Stack Developer 🔥.",
-  resumeLink:
-    "https://drive.google.com/uc?export=download&id=1pGTinnif3OEzvgFd_4Tk_5PmqhKzn4sD",
-  mail: "mailto:weiloon.c97@gmail.com",
-  profile_image_path: "weiloon.png",
+  data: {
+    title: "Hello! ",
+    title2: "Wei Loon",
+    logo_name: "@cwlroda",
+    nickname: "Wei Loon",
+    full_name: "Wei Loon Cheng",
+    subTitle:
+      "Back-End Developer & Machine Learning Engineer. Currently learning Front-End to be a Full-Stack Developer 🔥.",
+    resumeLink:
+      "https://drive.google.com/uc?export=download&id=1pGTinnif3OEzvgFd_4Tk_5PmqhKzn4sD",
+    mail: "mailto:weiloon.c97@gmail.com",
+    profile_image_path: "weiloon.png",
+  },
 };
 
 const socialMediaLinks = {

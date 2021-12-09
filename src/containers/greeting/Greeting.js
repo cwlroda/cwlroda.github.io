@@ -10,6 +10,7 @@ import Typewriter from "./Typewriter";
 export default function Greeting(props) {
   const theme = props.theme;
   const history = useHistory();
+  const GreetingData = greeting.data;
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
@@ -25,7 +26,7 @@ export default function Greeting(props) {
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text">
-                {greeting.title}
+                {GreetingData.title}
                 <span className="wave" role="img" aria-hidden="true">
                   👋🏻
                 </span>
@@ -36,13 +37,13 @@ export default function Greeting(props) {
               >
                 <span>I'm </span>
                 <span style={{ color: theme.accentColor }}>
-                  {greeting.full_name}.{" "}
+                  {GreetingData.full_name}.{" "}
                 </span>
                 <br></br>
                 <div className="typewriter">
                   <Typewriter />
                 </div>
-                {/* {greeting.subTitle} */}
+                {/* {GreetingData.subTitle} */}
               </p>
               <SocialMedia />
               <div className="portfolio-repo-btn-div">
@@ -61,7 +62,7 @@ export default function Greeting(props) {
           <div className="greeting-image-div">
             <img
               src={
-                require(`../../assets/images/${greeting.profile_image_path}`)
+                require(`../../assets/images/${GreetingData.profile_image_path}`)
                   ?.default
               }
               alt=""

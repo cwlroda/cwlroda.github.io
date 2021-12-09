@@ -15,6 +15,7 @@ import blog from "../../assets/lottie/blog.json";
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 const bugReporting = contactPageData.bugReporting;
+const GreetingData = greeting.data;
 
 function Contact(props) {
   const theme = props.theme;
@@ -61,7 +62,11 @@ function Contact(props) {
               <SocialMedia />
               <br />
               <br />
-              <a {...styles} className="general-btn" href={greeting.resumeLink}>
+              <a
+                {...styles}
+                className="general-btn"
+                href={GreetingData.resumeLink}
+              >
                 See my Resume
               </a>
             </div>
