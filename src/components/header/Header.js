@@ -12,6 +12,7 @@ import {
   AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
 import { FaGithubAlt } from "react-icons/fa";
+import { GiSnail } from "react-icons/gi";
 import { CgFileDocument, CgWorkAlt } from "react-icons/cg";
 
 function Header(props) {
@@ -149,6 +150,15 @@ function Header(props) {
               >
                 <FaGithubAlt style={{ marginBottom: "-2px" }} /> Stats
               </NavLink>
+            </li>
+            <li>
+              <a
+                className="snailstrail"
+                href="/snailstrail/"
+                style={{ borderRadius: 5, color: theme.text }}
+              >
+                <GiSnail style={{ marginBottom: "-2px" }} /> Snail&apos;s Trail
+              </a>
             </li>
             <li>
               <NavLink
