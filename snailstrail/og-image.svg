@@ -1,0 +1,82 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8ede4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Decorative snails -->
+  <g opacity="0.15">
+    <!-- Left snail -->
+    <g transform="translate(150, 150)">
+      <path d="M 30 20 Q 30 10 40 10 Q 50 10 50 20 Q 50 30 40 30 Q 35 30 35 25"
+            fill="none" stroke="#2d5016" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="30" cy="40" rx="8" ry="10" fill="#8b9d6f"/>
+      <circle cx="30" cy="48" r="5" fill="#8b9d6f"/>
+    </g>
+
+    <!-- Right snail -->
+    <g transform="translate(1000, 450) scale(-1, 1)">
+      <path d="M 30 20 Q 30 10 40 10 Q 50 10 50 20 Q 50 30 40 30 Q 35 30 35 25"
+            fill="none" stroke="#2d5016" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="30" cy="40" rx="8" ry="10" fill="#8b9d6f"/>
+      <circle cx="30" cy="48" r="5" fill="#8b9d6f"/>
+    </g>
+  </g>
+
+  <!-- Main content -->
+  <g>
+    <!-- Large snail icon in center -->
+    <g transform="translate(100, 180)">
+      <!-- Spiral shell -->
+      <path d="M 45 35 Q 45 25 55 25 Q 65 25 65 35 Q 65 45 55 45 Q 50 45 50 40"
+            fill="none" stroke="#c0956d" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 45 40 Q 45 32 53 32 Q 60 32 60 38 Q 60 42 53 42 Q 50 42 50 39"
+            fill="none" stroke="#d4a574" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Snail body -->
+      <ellipse cx="45" cy="55" rx="12" ry="15" fill="#8b9d6f"/>
+
+      <!-- Snail head -->
+      <circle cx="45" cy="68" r="8" fill="#8b9d6f"/>
+
+      <!-- Eyes -->
+      <line x1="42" y1="68" x2="40" y2="62" stroke="#2d5016" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="40" cy="61" r="2" fill="#2d5016"/>
+
+      <line x1="48" y1="68" x2="50" y2="62" stroke="#2d5016" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="50" cy="61" r="2" fill="#2d5016"/>
+
+      <!-- Trail -->
+      <ellipse cx="35" cy="72" rx="4" ry="3" fill="#d4e8c1" opacity="0.7"/>
+      <ellipse cx="28" cy="71" rx="3" ry="2.5" fill="#d4e8c1" opacity="0.5"/>
+    </g>
+
+    <!-- Title -->
+    <text x="380" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#2d5016">
+      Snail's Trail
+    </text>
+
+    <!-- Subtitle -->
+    <text x="380" y="280" font-family="Arial, sans-serif" font-size="40" font-weight="500" fill="#5a7c3e">
+      Daily Wikipedia Navigation
+    </text>
+
+    <!-- Description -->
+    <text x="380" y="350" font-family="Arial, sans-serif" font-size="32" fill="#6b8e4f">
+      Hop between articles to reach the target
+    </text>
+
+    <!-- Tagline -->
+    <text x="380" y="400" font-family="Arial, sans-serif" font-size="32" fill="#6b8e4f">
+      Wordle meets WikiGame
+    </text>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="600" width="1200" height="30" fill="#2d5016" opacity="0.1"/>
+</svg>
