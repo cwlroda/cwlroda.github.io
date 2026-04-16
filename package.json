@@ -6,7 +6,7 @@
   "scripts": {
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject",
     "snailstrail:sync": "npm run build --prefix ../snails-trail && rm -rf public/snailstrail && mkdir -p public/snailstrail && cp -r ../snails-trail/dist/. public/snailstrail/",
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
