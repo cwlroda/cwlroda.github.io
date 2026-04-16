@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "homepage": "https://cwlroda.github.io/",
   "scripts": {
-    "snailstrail:sync": "npm run build --prefix ../snails-trail && rm -rf public/snailstrail && mkdir -p public/snailstrail && cp -r ../snails-trail/dist/. public/snailstrail/",
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
+    "snailstrail:sync": "npm run build --prefix ../snails-trail && rm -rf public/snailstrail && mkdir -p public/snailstrail && cp -r ../snails-trail/dist/. public/snailstrail/",
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "test": "react-scripts test"
   },
@@ -16,6 +16,7 @@
     "@sideway/address": "^4.1.2",
     "baseui": "^9.109.0",
     "bootstrap": "^4.6.0",
+    "chart.js": "^3.9.1",
     "fs": "0.0.1-security",
     "gh-pages": "^3.1.0",
     "glamor": "^2.17.9",
@@ -43,9 +44,11 @@
     "styled-components": "^5.2.1",
     "styletron-engine-atomic": "^1.4.6",
     "styletron-react": "^5.2.7",
+    "tsparticles": "^3.9.1",
     "typewriter-effect": "^2.18.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.0",
     "@iconify-icons/logos": "^1.1.10",
     "@iconify/icons-logos": "^1.1.5",
     "@iconify/react": "^1.1.4",

@@ -7,6 +7,7 @@ import Experience from "../pages/experience/Experience";
 import Projects from "../pages/projects/Projects";
 import Stats from "../pages/stats/Stats";
 import Contact from "../pages/contact/ContactComponent";
+import SnailsTrail from "../pages/snailstrail/SnailsTrail";
 import { settings } from "../portfolio.js";
 
 export default function Main(propss) {
@@ -97,6 +98,16 @@ export default function Main(propss) {
                 />
               )}
             />
+            <Route
+              path="/snailstrail"
+              render={(props) => (
+                <SnailsTrail
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
           </Switch>
         </HashRouter>
       </div>
@@ -172,6 +183,16 @@ export default function Main(propss) {
               path="/contact"
               render={(props) => (
                 <Contact
+                  {...props}
+                  theme={propss.theme}
+                  setTheme={propss.setTheme}
+                />
+              )}
+            />
+            <Route
+              path="/snailstrail"
+              render={(props) => (
+                <SnailsTrail
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
