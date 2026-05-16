@@ -1,21 +1,27 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Greeting from "../../containers/greeting/Greeting";
-import Skills from "../../containers/skills/Skills";
-import Footer from "../../components/footer/Footer";
-import TopButton from "../../components/topButton/TopButton";
-import Particle from "../Particle";
+import AuroraNav from "../../aurora/Nav";
+import AuroraHero from "../../aurora/Hero";
+import AuroraWork from "../../aurora/Work";
+import AuroraProjects from "../../aurora/Projects";
+import AuroraStack from "../../aurora/Stack";
+import AuroraEducation from "../../aurora/Education";
+import AuroraContact from "../../aurora/Contact";
+import AuroraFooter from "../../aurora/Footer";
+import { AUR } from "../../aurora/tokens";
+import "../../aurora/aurora.css";
 import "./HomeComponent.css";
 
-function Home(props) {
+function Home() {
   return (
-    <div className="home">
-      <Particle theme={props.theme} />
-      <Header theme={props.theme} setTheme={props.setTheme} />
-      <Greeting theme={props.theme} />
-      <Skills theme={props.theme} />
-      <Footer theme={props.theme} />
-      <TopButton theme={props.theme} />
+    <div className="aur-root" style={{ background: AUR.bg, color: AUR.ink }}>
+      <AuroraNav />
+      <AuroraHero />
+      <AuroraWork />
+      <AuroraProjects />
+      <AuroraStack />
+      <AuroraEducation />
+      <AuroraContact />
+      <AuroraFooter />
     </div>
   );
 }

@@ -1,0 +1,75 @@
+/* Aurora theme — responsive adjustments for the inline-styled components. */
+
+.aur-root {
+  background: #0b0d12;
+  color: #e7eaf0;
+  min-height: 100vh;
+}
+
+.aur-proj-card {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.aur-proj-card:hover {
+  transform: translateY(-2px);
+  border-color: #2a2f3d !important;
+}
+
+.aur-exp-row {
+  transition: border-color 0.2s ease;
+}
+
+.aur-exp-row:hover {
+  border-color: #2a2f3d !important;
+}
+
+@media (max-width: 1024px) {
+  .aur-hero-title {
+    font-size: 56px !important;
+  }
+  .aur-hero-panel {
+    grid-template-columns: 1fr !important;
+  }
+  .aur-proj-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .aur-stack-grid,
+  .aur-edu-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .aur-exp-row {
+    grid-template-columns: 1fr !important;
+  }
+  .aur-contact-title {
+    font-size: 48px !important;
+  }
+  .aur-contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .aur-hero-title {
+    font-size: 40px !important;
+  }
+  .aur-hero-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .aur-hero-stats > div {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+  .aur-proj-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .aur-proj-grid > a {
+    grid-column: span 1 !important;
+  }
+  .aur-nav-tag,
+  .aur-nav-links {
+    display: none !important;
+  }
+  .aur-contact-title {
+    font-size: 36px !important;
+  }
+}
