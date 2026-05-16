@@ -1,0 +1,293 @@
+/* On-screen wrapper. The resume itself is always rendered on white "paper",
+   regardless of the active Aurora theme, so the page matches the PDF output. */
+.resume-stage {
+  padding: 40px 20px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-toolbar {
+  position: sticky;
+  top: 64px;
+  z-index: 10;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+  background: var(--resume-toolbar-bg, transparent);
+}
+
+.resume-toolbar-inner {
+  width: 100%;
+  max-width: 210mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.resume-toolbar-title {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.resume-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resume-version-select {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.resume-download-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.resume-download-btn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+  transform: none;
+}
+
+/* A4 sheet — 210mm × 297mm, padded by 15mm so on-screen margins match
+   the @page margins in the PDF export. */
+.resume-page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm;
+  background: #ffffff;
+  color: #222222;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+}
+
+.resume-page *,
+.resume-page *::before,
+.resume-page *::after {
+  box-sizing: border-box;
+}
+
+.resume-page h1 {
+  font-size: 24pt;
+  color: #1a252f;
+  margin: 0 0 4px 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.resume-page .resume-subtitle {
+  font-size: 11pt;
+  color: #34495e;
+  margin-bottom: 6px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.resume-page .resume-contact {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #555555;
+  font-size: 10pt;
+}
+
+.resume-page .resume-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resume-page h2 {
+  font-size: 13pt;
+  color: #2c3e50;
+  border-bottom: 1.5px solid #bdc3c7;
+  padding-bottom: 4px;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  page-break-after: avoid;
+}
+
+.resume-page h3 {
+  font-size: 11.5pt;
+  color: #1a252f;
+  margin: 0;
+  font-weight: 600;
+  page-break-after: avoid;
+}
+
+.resume-page p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+.resume-page .resume-job-title {
+  font-size: 11pt;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.resume-page .resume-date-location {
+  font-size: 10pt;
+  color: #555555;
+  text-align: right;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.resume-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 4px;
+}
+
+.resume-page table.resume-row-spaced {
+  margin-top: 10px;
+}
+
+.resume-page td {
+  vertical-align: bottom;
+  padding: 0;
+}
+
+.resume-page .resume-left-col {
+  text-align: left;
+}
+
+.resume-page .resume-right-col {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.resume-page ul {
+  margin: 0 0 12px 0;
+  padding-left: 18px;
+}
+
+.resume-page li {
+  margin-bottom: 5px;
+  text-align: justify;
+  color: #333333;
+  page-break-inside: avoid;
+}
+
+.resume-page .resume-skills {
+  margin-bottom: 12px;
+}
+
+.resume-page .resume-skills-row {
+  margin-bottom: 4px;
+}
+
+.resume-page .resume-skills-category {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Avoid splitting a job/education block across pages where possible. */
+.resume-page .resume-entry {
+  page-break-inside: avoid;
+}
+
+/* Responsive zoom for narrow viewports — keep the A4 sheet legible on phones
+   without changing its physical dimensions. */
+@media (max-width: 900px) {
+  .resume-stage {
+    padding: 16px 0 40px;
+  }
+  .resume-page {
+    transform: scale(0.7);
+    transform-origin: top center;
+    margin-bottom: calc(-0.3 * 297mm);
+  }
+}
+
+@media (max-width: 640px) {
+  .resume-page {
+    transform: scale(0.5);
+    margin-bottom: calc(-0.5 * 297mm);
+  }
+  .resume-toolbar-inner {
+    max-width: 100%;
+  }
+}
+
+/* Print pipeline. The "Download PDF" button calls window.print(); these rules
+   make the printed output match Ctrl-P → Save as PDF: vector text, selectable
+   copy, live hyperlinks, and real page breaks instead of a rasterized canvas. */
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Strip everything that isn't the resume itself: nav, toolbar, footer, and
+     the dark Aurora backdrop. */
+  header,
+  footer,
+  .resume-toolbar {
+    display: none !important;
+  }
+
+  .aur-root {
+    background: #ffffff !important;
+    color: #222222 !important;
+    min-height: 0 !important;
+  }
+
+  .resume-stage {
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  /* The on-screen sheet is a fixed 210mm with its own 15mm padding and a drop
+     shadow. For print, hand width/margins back to @page so the content flows
+     edge-to-edge inside the printer margin box without double-margining. */
+  .resume-page {
+    width: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    background: #ffffff !important;
+  }
+
+  .resume-page a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

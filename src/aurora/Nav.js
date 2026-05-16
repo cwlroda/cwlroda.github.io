@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { HiMoon, HiSun } from "react-icons/hi";
 import { useAur, aurMono, aurSans } from "./tokens";
 import { settings } from "../portfolio";
@@ -10,6 +10,7 @@ const links = [
   { to: "/projects", label: "Projects" },
   { to: "/education", label: "Education" },
   { to: "/stats", label: "Stats" },
+  { to: "/resume", label: "Resume" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -23,7 +24,7 @@ export default function AuroraNav({ setTheme }) {
     try {
       localStorage.setItem("theme", next);
     } catch (_) {
-      /* localStorage unavailable — ignore */
+      /* localStorage unavailable; ignore */
     }
   };
 
@@ -46,7 +47,6 @@ export default function AuroraNav({ setTheme }) {
     >
       <NavLink
         to={homeLink}
-        tag={Link}
         style={{
           ...aurSans,
           fontSize: 15,
@@ -86,7 +86,7 @@ export default function AuroraNav({ setTheme }) {
             marginLeft: 4,
           }}
         >
-          · AI engineer
+          · ML engineer
         </span>
       </NavLink>
       <nav
@@ -103,13 +103,11 @@ export default function AuroraNav({ setTheme }) {
           <NavLink
             key={l.to}
             to={l.to}
-            tag={Link}
-            style={{
+            style={({ isActive }) => ({
               textDecoration: "none",
-              color: AUR.mutedHi,
-              fontWeight: 400,
-            }}
-            activeStyle={{ color: AUR.inkBold, fontWeight: 500 }}
+              color: isActive ? AUR.inkBold : AUR.mutedHi,
+              fontWeight: isActive ? 500 : 400,
+            })}
           >
             {l.label}
           </NavLink>
@@ -171,7 +169,7 @@ export default function AuroraNav({ setTheme }) {
               boxShadow: `0 0 8px ${AUR.ok}`,
             }}
           />
-          Open to Q4 '26
+          Let's talk
         </a>
       </div>
     </header>

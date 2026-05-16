@@ -16,7 +16,7 @@ const greeting = {
     nickname: "Wei Loon",
     full_name: "Wei Loon Cheng",
     subTitle:
-      "Back-End Developer & Machine Learning Engineer. Currently learning Front-End to be a Full-Stack Developer 🔥.",
+      "Machine Learning Engineer at Datature. I work on computer vision, vision-language models, and the MLOps glue that gets them into production.",
     resumeLink:
       "https://drive.google.com/uc?export=download&id=1pGTinnif3OEzvgFd_4Tk_5PmqhKzn4sD",
     mail: "mailto:weiloon.c97@gmail.com",
@@ -38,12 +38,126 @@ const socialMediaLinks = {
 const skills = {
   data: [
     {
-      title: "Back-End Development",
+      title: "Machine Learning & Vision-Language Models",
       skills: [
-        "⚡\tProficient in algorithms and optimisation techniques",
-        "⚡\tDeveloping fast and reliable application backend and API integration in C, C++, and Java",
-        "⚡\tLarge-scale database management using MySQL",
-        "⚡\tExperience with low-level development using FPGAs",
+        "⚡\tDesigning end-to-end MLOps pipelines for vision and vision-language models",
+        "⚡\tDistributed fine-tuning with DeepSpeed, PEFT and LoRA on tight GPU budgets",
+        "⚡\tInference optimisation with vLLM, TRT-LLM and NVIDIA NIM, including tensor parallelism, quantisation and dynamic batching (up to 5x throughput)",
+        "⚡\tMultimodal retrieval (RAG) with dense embeddings on FAISS and Pinecone",
+        "⚡\tSynthetic data generation with diffusion models and LLMs, plus automated curation with t-SNE and deduplication",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "logos-python",
+          style: {
+            color: "#3776AB",
+          },
+        },
+        {
+          skillName: "PyTorch",
+          fontAwesomeClassname: "simple-icons:pytorch",
+          style: {
+            color: "#EE4C2C",
+          },
+        },
+        {
+          skillName: "Tensorflow",
+          fontAwesomeClassname: "logos-tensorflow",
+          style: {
+            color: "#FF6F00",
+          },
+        },
+        {
+          skillName: "OpenCV",
+          fontAwesomeClassname: "simple-icons:opencv",
+          style: {
+            color: "#5C3EE8",
+          },
+        },
+        {
+          skillName: "HuggingFace",
+          fontAwesomeClassname: "simple-icons:huggingface",
+          style: {
+            color: "#FFD21E",
+          },
+        },
+        {
+          skillName: "ONNX",
+          fontAwesomeClassname: "simple-icons:onnx",
+          style: {
+            color: "#005CED",
+          },
+        },
+      ],
+    },
+    {
+      title: "MLOps, Infra & Deployment",
+      skills: [
+        "⚡\tCI/CD pipelines that have cut time-to-production by up to 90%",
+        "⚡\tContainerised model serving, GPU acceleration, and edge deployment",
+        "⚡\tDeploying ML systems on AWS and GCP at scale",
+        "⚡\tAgentic frameworks and orchestration baked into production products",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "logos-docker-icon",
+          style: {
+            color: "#1488C6",
+          },
+        },
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "logos-aws",
+          style: {
+            color: "#aaaaaa",
+          },
+        },
+        {
+          skillName: "Google Cloud Platform",
+          fontAwesomeClassname: "logos-google-cloud",
+          style: {
+            color: "#4285F4",
+          },
+        },
+        {
+          skillName: "GitHub Actions",
+          fontAwesomeClassname: "simple-icons:githubactions",
+          style: {
+            color: "#5b77ef",
+          },
+        },
+        {
+          skillName: "Linux",
+          fontAwesomeClassname: "logos-linux-tux",
+          style: {
+            color: "#FCC624",
+          },
+        },
+        {
+          skillName: "Bash",
+          fontAwesomeClassname: "logos-bash-icon",
+          style: {
+            color: "",
+          },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
+          style: {
+            color: "#E94E32",
+          },
+        },
+      ],
+    },
+    {
+      title: "Software Engineering",
+      skills: [
+        "⚡\tFive-plus years across systems, backends and ML platform code",
+        "⚡\tFast, reliable backends in Python, C, C++ and Java",
+        "⚡\tLarge-scale database work with MySQL",
+        "⚡\tComfortable going low-level when needed, including FPGAs",
       ],
       softwareSkills: [
         {
@@ -68,6 +182,13 @@ const skills = {
           },
         },
         {
+          skillName: "Flask",
+          fontAwesomeClassname: "simple-icons:flask",
+          style: {
+            color: "#aaaaaa",
+          },
+        },
+        {
           skillName: "MySQL",
           fontAwesomeClassname: "logos-mysql",
           style: {
@@ -75,43 +196,43 @@ const skills = {
           },
         },
         {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
+          skillName: "NodeJS",
+          fontAwesomeClassname: "logos-nodejs-icon",
           style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "GitHub",
-          fontAwesomeClassname: "logos-github-octocat",
-          style: {
-            color: "#181717",
-          },
-        },
-        {
-          skillName: "Linux",
-          fontAwesomeClassname: "logos-linux-tux",
-          style: {
-            color: "#FCC624",
-          },
-        },
-        {
-          skillName: "Bash",
-          fontAwesomeClassname: "logos-bash-icon",
-          style: {
-            color: "",
+            color: "#339933",
           },
         },
       ],
     },
     {
-      title: "Front-End Development",
+      title: "Web & Tooling",
       skills: [
-        "⚡\tDeveloping responsive web apps in React, F#, and Electron",
-        "⚡\tSome experience with building mobile apps (iPhone & Android)",
-        "⚡\tCurrently learning UI/UX",
+        "⚡\tResponsive web apps in React and TypeScript",
+        "⚡\tDesktop tooling in F# and Electron",
+        "⚡\tA bit of mobile work in Swift",
       ],
       softwareSkills: [
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          style: {
+            color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "TypeScript",
+          fontAwesomeClassname: "simple-icons:typescript",
+          style: {
+            color: "#3178C6",
+          },
+        },
+        {
+          skillName: "React",
+          fontAwesomeClassname: "simple-icons:react",
+          style: {
+            color: "#61DAFB",
+          },
+        },
         {
           skillName: "HTML5",
           fontAwesomeClassname: "vscode-icons:file-type-html",
@@ -124,34 +245,6 @@ const skills = {
           fontAwesomeClassname: "vscode-icons:file-type-css",
           style: {
             color: "#1572B6",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "Flask",
-          fontAwesomeClassname: "simple-icons:flask",
-          style: {
-            color: "#aaaaaa",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "logos-nodejs-icon",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "React",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
           },
         },
         {
@@ -177,133 +270,28 @@ const skills = {
         },
       ],
     },
-    {
-      title: "Cloud Infra-Architecture",
-      skills: [
-        "⚡\tWorked on and deployed apps to cloud platforms",
-        "⚡\tHosted and managed websites with thousands of views",
-        "⚡\tExperience with CI/CD",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Heroku",
-          fontAwesomeClassname: "simple-icons:heroku",
-          style: {
-            color: "#6863A6",
-          },
-        },
-        {
-          skillName: "Firebase",
-          fontAwesomeClassname: "logos-firebase",
-          style: {
-            color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "logos-docker-icon",
-          style: {
-            color: "#1488C6",
-          },
-        },
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "logos-aws",
-          style: {
-            color: "#aaaaaa",
-          },
-        },
-        {
-          skillName: "GitHub Actions",
-          fontAwesomeClassname: "simple-icons:githubactions",
-          style: {
-            color: "#5b77ef",
-          },
-        },
-      ],
-    },
-    {
-      title: "Machine/Deep Learning",
-      skills: [
-        "Experienced in building and training:",
-        "⚡\tNLP models for text processing and generation",
-        "⚡\tComputer Vision models for object/feature detection and motion tracking",
-        "⚡\tLinear regression and LSTM models for data prediction",
-        "⚡\tCurrently learning RL techniques",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "logos-python",
-          style: {
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            color: "#FF6F00",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "simple-icons:pytorch",
-          style: {
-            color: "#EE4C2C",
-          },
-        },
-        {
-          skillName: "OpenCV",
-          fontAwesomeClassname: "simple-icons:opencv",
-          style: {
-            color: "#5C3EE8",
-          },
-        },
-        {
-          skillName: "Google Cloud Platform",
-          fontAwesomeClassname: "logos-google-cloud",
-          style: {
-            color: "#4285F4",
-          },
-        },
-        {
-          skillName: "MATLAB",
-          fontAwesomeClassname: "vscode-icons:file-type-matlab",
-          style: {
-            color: "",
-          },
-        },
-      ],
-    },
   ],
 };
 
 const education = {
   description:
-    "Being accredited for the things I've learnt throughout the years is a great way for me to consolidate my knowledge and skills.",
+    "A quick run-down of where I studied and what I picked up along the way.",
 };
 
 const degrees = {
   degrees: [
     {
       title: "ETH Zurich",
-      subtitle: "Master Electrical Engineering and Information Technology",
+      subtitle:
+        "Joint Master's in Information Technology & Electrical Engineering",
       logo_path: "eth.png",
       alt_name: "ETH",
-      duration: "2021 - Present",
+      duration: "2021 to 2022",
       descriptions: [
-        "⚡\tExchange Masters under the Department of Information Technology and Electrical Engineering",
-        "⚡\tSwiss-European Mobility Programme (SEMP) Scholarship holder",
-        "⚡\tTaking modules in Robotics and Computer Vision",
-        "⚡\tSpecialising in Real-time 3D Multi-Object Tracking",
+        "⚡\tSwiss-European Mobility Programme (SEMP) scholarship holder",
+        "⚡\tMaster's thesis on resilient ML inference serving (AWS), roughly doubled multi-node throughput",
+        "⚡\tSemester thesis: a 3D point-cloud annotation tool in TypeScript and Three.js (+67% throughput)",
+        "⚡\tFinal GPA 5.33 / 6.00",
       ],
       website_link:
         "https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/electrical-engineering-and-information-technology.html",
@@ -314,13 +302,12 @@ const degrees = {
         "MEng Electronic and Information Engineering with a Year Abroad",
       logo_path: "imperial.png",
       alt_name: "ICL",
-      duration: "2018 - Present",
+      duration: "2018 to 2022",
       descriptions: [
-        "⚡\tFour-year Direct Masters",
-        "⚡\tOn track for a First Class Honours",
-        "⚡\tUndergraduate Tutor for Information Processing (Year 2) and Software Systems (Year 2)",
-        "⚡\tTop 15% in the cohort (Year 1)",
-        "⚡\tAchieved the Best First Year Project (2019)",
+        "⚡\tFirst Class Honours, in the top 10% of the cohort",
+        "⚡\tUndergraduate tutor for Information Processing and Software Systems",
+        "⚡\tBest First Year Project (2019) for Dance Dance Convolution",
+        "⚡\tIEEE Associate Member",
       ],
       website_link:
         "https://www.imperial.ac.uk/study/ug/courses/electrical-engineering-department/electrical-and-electronic-engineering-year-abroad/",
@@ -820,22 +807,34 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Internships",
+  subtitle: "Roles & Internships",
   description:
-    "The internships I've done not only allow me to contribute my unique ideas to the companies I've worked with, but also present valuable opportunities to pick up new and exciting technology.",
+    "Three years as a Machine Learning Engineer at Datature, with a research stint at DSO and a couple of DSAI internships at HTX before that. Most of the through-line is taking interesting research and turning it into something teams can actually run in production.",
   header_image_pathz: "experience.svg",
   internships: {
-    title: "Internships",
+    title: "Roles & Internships",
     experiences: [
+      {
+        title: "Machine Learning Engineer",
+        company: "Datature",
+        company_url: "https://www.datature.io/",
+        logo_path: "datature.png",
+        duration: "November 2022 to Present",
+        location: "Singapore",
+        description:
+          "I work across Datature's two products. Nexus (since 2022) is our no-code computer vision platform for training, evaluating and deploying detection, segmentation and classification models. Vi (since 2025) is the newer VLMOps stack for fine-tuning and deploying vision-language models like Qwen-VL, InternVL and Llama 4. Day to day that covers (Q)LoRA training on DeepSpeed, inference serving with vLLM, TRT-LLM and NVIDIA NIM (up to 5x throughput), multimodal RAG on FAISS and Pinecone, synthetic data pipelines, and edge deployment containers wired into agentic workflows. The CI/CD work alone has trimmed time-to-production by up to 90% on customer projects in manufacturing, agriculture and healthcare.",
+        color: "#C5E2EE",
+        link: "https://www.datature.io/",
+      },
       {
         title: "Robotics Research Intern",
         company: "DSO National Laboratories",
         company_url: "https://www.dso.org.sg/",
         logo_path: "dso.png",
-        duration: "March 2021 - Present",
+        duration: "March 2021 to September 2021",
         location: "Office / Work From Home",
         description:
-          "I am currently developing a distributed framework for multi-robot SLAM using C++ that is robust to scaling and robot failures. I am also integrating real-time semantic mapping and optimisation techniques for enhanced computational time.",
+          "Spent the internship profiling and rewriting the hot paths in a multi-robot collaborative SLAM system. Two of the pipeline stages came out 40x and 20x faster than where they started.",
         color: "#C5E2EE",
         link: "https://github.com/cwlroda/CSLM/",
       },
@@ -844,10 +843,10 @@ const experience = {
         company: "Home Team Science & Technology Agency",
         company_url: "https://www.htx.gov.sg/",
         logo_path: "htx.png",
-        duration: "September 2020 - November 2020",
+        duration: "September 2020 to November 2020",
         location: "Work From Home",
         description:
-          "I built an abstractive news article summariser web app using NLP techniques in Python, which achieved a ROUGE score of >80%.",
+          "Built an abstractive news summariser web app on top of BART. ROUGE came in above 0.80 on the evaluation set, which was nice.",
         color: "#C5E2EE",
         link: "https://github.com/cwlroda/bart_summariser/",
       },
@@ -856,10 +855,10 @@ const experience = {
         company: "Home Team Science & Technology Agency",
         company_url: "https://www.htx.gov.sg/",
         logo_path: "htx.png",
-        duration: "June 2020 - September 2020",
+        duration: "June 2020 to September 2020",
         location: "Office / Work From Home",
         description:
-          "I spearheaded the development of a robust pose estimation deep learning model in Python to detect falls on multiple people concurrently on multiple video streams, which achieved an accuracy of 83.33% and an F1 score of 90.91%. I also trained a deep learning model for COVID-19 mask detection using Python that achieved >80% mAP.",
+          "Led the build of a multi-person, multi-stream fall-detection CNN in Python (83.3% precision, F1 of 90.9). Also trained and deployed a COVID-19 mask-detection CNN above 80% mAP, used to help with public-safety enforcement during the pandemic.",
         color: "#C5E2EE",
         link: "https://github.com/cwlroda/falldetection_openpifpaf/",
       },
@@ -868,10 +867,10 @@ const experience = {
         company: "Fashion Learning Hive ",
         company_url: "https://fashive.org/",
         logo_path: "fashive.png",
-        duration: "July 2019 - September 2019",
+        duration: "July 2019 to September 2019",
         location: "Office",
         description:
-          "I revamped the company website using WordPress, HTML, CSS, and JavaScript, achieving thousands of views within the first month of launch. I also successfully developed a JavaScript API to automate data synchronisation between the website and the LMS portal.",
+          "Rebuilt the company website from scratch with WordPress, HTML, CSS and JavaScript. It picked up thousands of views in the first month. I also wrote a small JavaScript API to keep course data in sync between the website and the LMS portal.",
         color: "#C5E2EE",
         link: "https://fashive.org/",
       },
@@ -883,7 +882,7 @@ const experience = {
         duration: "June 2013",
         location: "Office",
         description:
-          "I assisted in optimising algorithms in C++ to enhance security systems.",
+          "My first taste of industry as a school-age intern. Mostly tightening up C++ algorithms in their embedded security products.",
         color: "#C5E2EE",
         link: "https://github.com/cwlroda/",
       },
@@ -895,7 +894,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "Most of my projects are either done in my free time or in various hackathons to learn more about state-of-the-art technology outside what is taught in university.",
+    "A mix of work projects, weekend builds and the odd hackathon. Most of these started as an excuse to try something new outside of the day job.",
   avatar_image_path: "projects_image.svg",
   link: "https://github.com/cwlroda/",
 };
@@ -907,7 +906,7 @@ const hackathons = {
       name: "BITweets",
       url: "https://github.com/cwlroda/btc-predictor",
       description:
-        "Predicting Bitcoin prices using a multi-dimensional bi-directional LSTM and sentiment analysis of tweets. Achieved 3rd place in AIHack 2021.",
+        "A weekend punt at predicting Bitcoin prices with a multi-dimensional bidirectional LSTM, fed by tweet sentiment as a side signal. Came third at AIHack 2021.",
       languages: [
         {
           name: "Python",
@@ -931,7 +930,7 @@ const hackathons = {
       name: "blinkr",
       url: "https://github.com/cwlroda/blinkr",
       description:
-        "Web app promoting good eye habits through curated tips, featuring a remote eye test using speech-to-text-analysis. Finalists in Hacklytics 2021.",
+        "A small web app nudging people into better screen habits, with a remote eye test that uses speech-to-text instead of an in-person chart. Made the Hacklytics 2021 finals.",
       languages: [
         {
           name: "Python",
@@ -959,7 +958,7 @@ const hackathons = {
       name: "em.",
       url: "https://github.com/cwlroda/em",
       description:
-        "Web app that personalises exercise programs for women to reduce period pain and discomfort. Won the Best Domain Award in HackViolet 2021.",
+        "A web app that builds personalised exercise plans for women, aimed at easing period pain and discomfort. Picked up the Best Domain Award at HackViolet 2021.",
       languages: [
         {
           name: "Wix",
@@ -983,7 +982,7 @@ const hackathons = {
       name: "Virtualso Piano",
       url: "https://github.com/cwlroda/virtual-piano",
       description:
-        "Virtual interface using Computer Vision to track multiple finger movements to simulate playing a piano without requiring external hardware.",
+        "Play a piano with nothing but your webcam. Computer vision tracks all ten fingers in real time and maps their motion to notes, so any flat surface works as a keyboard.",
       languages: [
         {
           name: "Python",
@@ -1003,7 +1002,7 @@ const hackathons = {
       name: "Don8te",
       url: "https://github.com/cwlroda/Hack-A-Project-20",
       description:
-        "Item donation iOS app to help the needy and promote item re-usability. Won 3rd place in the prototype forum in Facebook Hack-A-Project 2020.",
+        "An iOS app that matches donors with people who actually need the things they're giving away. Took third in the prototype forum at Facebook Hack-A-Project 2020.",
       languages: [
         {
           name: "Swift",
@@ -1024,7 +1023,7 @@ const hackathons = {
       name: "Dinner-Dash",
       url: "https://github.com/cwlroda/Dinner-Dash",
       description:
-        "Android app that curates time-saving recipes based on ingredients and cookware. Won 4th place in the IoT category in ICHack 2020.",
+        "An Android app that picks quick recipes from what's in your fridge and the cookware you actually own. Came fourth in the IoT category at ICHack 2020.",
       languages: [
         {
           name: "Java",
@@ -1046,10 +1045,102 @@ const projects = {
   data: [
     {
       id: "0",
+      name: "Nexus (Datature)",
+      url: "https://datature.io/product/train",
+      description:
+        "Datature's no-code computer vision platform for training, evaluating and deploying detection, segmentation and classification models. Drag-and-drop training workflows around FasterRCNN and YOLOX, IntelliBrush for AI-assisted labelling of masks, polygons and boxes, and managed cloud-API deployment with load balancing.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "PyTorch",
+          iconifyClass: "logos-pytorch",
+        },
+        {
+          name: "Docker",
+          iconifyClass: "logos-docker-icon",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "1",
+      name: "Vi (Datature)",
+      url: "https://vi.datature.com",
+      description:
+        "Datature's VLMOps platform for fine-tuning and deploying vision-language models. Supports phrase grounding, VQA, chain-of-thought and VLA labels, with (Q)LoRA and SFT training on anything from T4 to B200, plus NF4 quantisation. Ships through a local SDK or NVIDIA NIM containers with OpenAI-compatible APIs.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "PyTorch",
+          iconifyClass: "logos-pytorch",
+        },
+        {
+          name: "Docker",
+          iconifyClass: "logos-docker-icon",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "2",
+      name: "Snail's Trail",
+      url: "https://cwlroda.github.io/snailstrail/",
+      description:
+        "A daily word game for Wikipedia obsessives. You're dropped on a random article and have to hop, link by link, to a target article in ten moves or fewer. Behind the scenes there's a small embedding model running in the browser to rank which links bring you closer, so the suggestions stay snappy without a backend.",
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Typescript",
+          iconifyClass: "logos-typescript-icon",
+        },
+        {
+          name: "Vite",
+          iconifyClass: "logos-vitejs",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "3",
+      name: "Datature Portal",
+      url: "https://github.com/datature/portal",
+      description:
+        "Open-source viewer for loading deep neural networks and running them against images and videos. I contribute to it.",
+      languages: [
+        {
+          name: "Typescript",
+          iconifyClass: "logos-typescript-icon",
+        },
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "4",
       name: "Scalabel",
       url: "https://github.com/scalabel/scalabel",
       description:
-        "Spearheaded an accurate and intuitive annotation method for 3D point clouds on a versatile and scalable annotation platform.",
+        "Built out the 3D point-cloud annotation workflow on Scalabel, an open-source labelling platform used by research groups including Berkeley DeepDrive. The goal was making 3D labels feel as quick to place as 2D ones.",
       languages: [
         {
           name: "Python",
@@ -1069,11 +1160,11 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "1",
+      id: "5",
       name: "DH3D",
       url: "https://github.com/cwlroda/DH3D",
       description:
-        "Integrated a deep hierarchical 3D local and global descriptor detection model into a multi-robot collaborative SLAM system.",
+        "Plugged a hierarchical 3D local and global descriptor model into a multi-robot collaborative SLAM stack. Did wonders for cross-robot loop-closure precision.",
       languages: [
         {
           name: "Python",
@@ -1093,11 +1184,11 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "2",
+      id: "6",
       name: "3DFeatNet",
       url: "https://github.com/cwlroda/3DFeatNet",
       description:
-        "Optimising a weakly supervised local 3D feature detection model for better point cloud geometric registration.",
+        "Tuning a weakly-supervised 3D feature detector for point-cloud registration on the Oxford RobotCar dataset. Lots of careful sweeps to squeeze out accuracy without ground-truth correspondences.",
       languages: [
         {
           name: "Python",
@@ -1117,11 +1208,11 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "3",
+      id: "7",
       name: "ISSIE",
       url: "https://github.com/cwlroda/issie",
       description:
-        "Fast and reliable 2D drawing library for a digital circuit design and simulation app for first year undergraduates to learn about circuits.",
+        "Wrote a fast 2D drawing library for ISSIE, a digital-circuit design and simulation app that Imperial uses to teach first-year undergrads. The trick was keeping it smooth with hundreds of wires on screen.",
       languages: [
         {
           name: "F#",
@@ -1141,22 +1232,22 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "4",
+      id: "8",
       name: "Tracify",
       url: "https://github.com/cwlroda",
       description:
-        "Mobile Bluetooth tracking service informing users if they have been in close proximity with suspected/confirmed COVID-19 cases. Includes features for self-reporting and seeking medical attention.",
+        "A Bluetooth-based contact-tracing prototype from early COVID. It warned people who had been near suspected or confirmed cases, with a self-reporting flow and links to medical help.",
       languages: [],
       logo_path: "",
       logo_link: "",
       alt_name: "",
     },
     {
-      id: "5",
+      id: "9",
       name: "C-MIPS-Compiler",
       url: "https://github.com/cwlroda/C-MIPS-Compiler",
       description:
-        "Lightweight compiler from C89 to MIPS Assembly and translator from C to Python.",
+        "A small compiler that translates C89 down to MIPS assembly, plus a sister tool that goes from C to Python. Built as a coursework project, kept around because compiler internals are too fun to delete.",
       languages: [
         {
           name: "C",
@@ -1176,11 +1267,11 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "6",
+      id: "10",
       name: "MIPS Simulator",
       url: "https://github.com/cwlroda/MIPS-Simulator",
       description:
-        "MIPS CPU simulator that accurately executes MIPS-1 big-endian binaries using instructions specified by the MIPS ISA.",
+        "A MIPS-1 big-endian CPU simulator that runs binaries instruction by instruction, following the ISA spec faithfully enough to debug homework with.",
       languages: [
         {
           name: "C++",
@@ -1196,11 +1287,11 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "7",
+      id: "11",
       name: "Dance Dance Convolution",
       url: "https://github.com/cwlroda/Dance-Dance-Convolution",
       description:
-        "Interactive gesture recognition game running on an Xilinx PYNQ-Z1 FPGA, inspired by Just Dance 2019. Won the Best First Year Project in university.",
+        "A rhythm game inspired by Just Dance, running on an Xilinx PYNQ-Z1 FPGA with a CNN doing gesture recognition right on the board. Won Best First Year Project at Imperial.",
       languages: [
         {
           name: "C",
@@ -1220,11 +1311,11 @@ const projects = {
       alt_name: "",
     },
     {
-      id: "8",
+      id: "12",
       name: "Sudoku",
       url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Sudoku",
       description:
-        "Sudoku validity checker and solver using a backtracking algorithm.",
+        "A Sudoku validator and solver built around a basic backtracking search. The kind of project that's a rite of passage in any algorithms course.",
       languages: [
         {
           name: "C++",
@@ -1232,79 +1323,79 @@ const projects = {
         },
       ],
       logo_path: "",
-      alt_name: "",
-    },
-    {
-      id: "9",
-      name: "2048",
-      url: "https://github.com/cwlroda/First-Year-Projects/tree/master/2048",
-      description:
-        "2048 game using the terminal as a GUI. Includes a primitive AI that plays the game using pseudorandom moves.",
-      languages: [
-        {
-          name: "C++",
-          iconifyClass: "vscode-icons:file-type-cpp3",
-        },
-      ],
-      logo_path: "",
-      logo_link: "",
-      alt_name: "",
-    },
-    {
-      id: "10",
-      name: "Othello",
-      url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Othello",
-      description:
-        "Simple two-player Othello (Reversi) using the terminal as a GUI, with undo moves and move logging.",
-      languages: [
-        {
-          name: "C++",
-          iconifyClass: "vscode-icons:file-type-cpp3",
-        },
-      ],
-      logo_path: "",
-      logo_link: "",
-      alt_name: "",
-    },
-    {
-      id: "11",
-      name: "Mastermind",
-      url:
-        "https://github.com/cwlroda/First-Year-Projects/tree/master/Mastermind",
-      description:
-        "AI that efficiently solves the game of Mastermind for randomly generated sequences of symbols.",
-      languages: [
-        {
-          name: "C++",
-          iconifyClass: "vscode-icons:file-type-cpp3",
-        },
-      ],
-      logo_path: "",
-      logo_link: "",
-      alt_name: "",
-    },
-    {
-      id: "12",
-      name: "Path-Finding Algorithms",
-      url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Maze",
-      description:
-        "Maze-solving using Random Path, Breath-First Search, and Depth-First Search algorithms.",
-      languages: [
-        {
-          name: "C++",
-          iconifyClass: "vscode-icons:file-type-cpp3",
-        },
-      ],
-      logo_path: "",
-      logo_link: "",
       alt_name: "",
     },
     {
       id: "13",
+      name: "2048",
+      url: "https://github.com/cwlroda/First-Year-Projects/tree/master/2048",
+      description:
+        "A terminal-only clone of 2048 with a side mode where a small AI plays itself using pseudorandom moves. Surprisingly entertaining to watch lose.",
+      languages: [
+        {
+          name: "C++",
+          iconifyClass: "vscode-icons:file-type-cpp3",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "14",
+      name: "Othello",
+      url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Othello",
+      description:
+        "Two-player Othello (Reversi) in the terminal, with undo support and a move log so you can replay your worst losses.",
+      languages: [
+        {
+          name: "C++",
+          iconifyClass: "vscode-icons:file-type-cpp3",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "15",
+      name: "Mastermind",
+      url:
+        "https://github.com/cwlroda/First-Year-Projects/tree/master/Mastermind",
+      description:
+        "An AI that plays Mastermind. It guesses, narrows the search space against the feedback, and tends to find the answer in only a handful of turns.",
+      languages: [
+        {
+          name: "C++",
+          iconifyClass: "vscode-icons:file-type-cpp3",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "16",
+      name: "Path-Finding Algorithms",
+      url: "https://github.com/cwlroda/First-Year-Projects/tree/master/Maze",
+      description:
+        "A small playground for maze-solving algorithms: random walks, breadth-first search and depth-first search, all running on the same grid for an honest comparison.",
+      languages: [
+        {
+          name: "C++",
+          iconifyClass: "vscode-icons:file-type-cpp3",
+        },
+      ],
+      logo_path: "",
+      logo_link: "",
+      alt_name: "",
+    },
+    {
+      id: "17",
       name: "EEBug",
       url: "https://github.com/cwlroda",
       description:
-        "Four-wheeled rover that self-navigates towards light sources.",
+        "A four-wheeled rover that hunts light sources, built as part of a hands-on EE module. Mostly an exercise in keeping the wiring tidy.",
       languages: [],
       logo_path: "",
       logo_link: "",
@@ -1319,19 +1410,19 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "contact.png",
     description:
-      "Feel free to drop me a connection request or send a message! I'm currently in Zurich, Switzerland (GMT +1), and I hope to reply by the next day if I'm not too occupied with work.",
+      "Feel free to drop me a connection request or send a message! I'm based in Singapore (GMT +8), and I usually reply within a working day.",
   },
   blogSection: {
     title: "Blogs",
     subtitle:
-      "Check me out on Medium, where I occasionally curate interesting posts related to my projects.",
+      "I write the occasional post over on Medium, usually about something I've been building or learning recently.",
     link: "https://medium.com/@cwlroda/ ",
     avatar_image_path: "blogs_image.svg",
   },
   bugReporting: {
     title: "Bug Reporting",
     subtitle:
-      "This portfolio website was built with HTML5, CSS3, NodeJS and React. Do drop a message on my GitHub repo if you find any issues or have any cool new features you would like to be added!",
+      "This site is just HTML, CSS, Node and React. If you spot a bug or have an idea for something to add, open an issue on the repo and I'll take a look.",
     link: "https://github.com/cwlroda/cwlroda.github.io/issues",
   },
 };

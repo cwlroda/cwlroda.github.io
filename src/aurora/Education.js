@@ -5,27 +5,28 @@ import SectionHead from "./SectionHead";
 const schools = [
   {
     name: "ETH Zürich",
-    sub: "Exchange MSc · EE & Information Technology",
-    dur: "2021 — Now",
+    sub: "Joint MSc in Information Technology & Electrical Engineering",
+    dur: "2021 to 2022",
     loc: "Zürich, CH",
     glow: "glowA",
     notes: [
-      "Swiss-European Mobility Programme scholar",
-      "Specialising in real-time 3D multi-object tracking",
-      "Modules in robotics and computer vision",
+      "Swiss-European Mobility Programme (SEMP) scholar",
+      "Master's thesis on resilient ML inference serving (AWS), roughly doubled multi-node throughput",
+      "Semester thesis: a 3D point-cloud annotation tool in TypeScript and Three.js (+67% throughput)",
+      "GPA 5.33 / 6.00",
     ],
   },
   {
     name: "Imperial College London",
-    sub: "MEng Electronic & Information Engineering",
-    dur: "2018 — Now",
+    sub: "MEng Electronic & Information Engineering (Year Abroad)",
+    dur: "2018 to 2022",
     loc: "London, UK",
     glow: "glowB",
     notes: [
-      "On track for First Class Honours",
-      "UG tutor — Information Processing & Software Systems",
-      "Best First Year Project (2019)",
-      "Top 15% of cohort, Year 1",
+      "First Class Honours, top 10% of the cohort",
+      "Undergrad tutor for Information Processing and Software Systems",
+      "Won Best First Year Project in 2019 for Dance Dance Convolution",
+      "IEEE Associate Member",
     ],
   },
 ];
@@ -38,7 +39,7 @@ export default function AuroraEducation() {
         k="05"
         label="Education"
         title="Schools."
-        kicker="Two universities. Currently splitting time between Zürich and London."
+        kicker="A four-year MEng at Imperial, with the final year done as a joint master's at ETH Zürich."
       />
       <div
         className="aur-edu-grid"
@@ -133,7 +134,7 @@ export default function AuroraEducation() {
                   key={n}
                   style={{ display: "flex", gap: 10, padding: "3px 0" }}
                 >
-                  <span style={{ color: AUR.link }}>—</span>
+                  <span style={{ color: AUR.link }}>·</span>
                   <span>{n}</span>
                 </li>
               ))}

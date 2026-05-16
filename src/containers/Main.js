@@ -1,186 +1,46 @@
-import React from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
-import Home from "../pages/home/HomeComponent";
-import Splash from "../pages/splash/Splash";
-import Education from "../pages/education/EducationComponent";
-import Experience from "../pages/experience/Experience";
-import Projects from "../pages/projects/Projects";
-import Stats from "../pages/stats/Stats";
-import Contact from "../pages/contact/ContactComponent";
+import React, { Suspense, lazy } from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { settings } from "../portfolio.js";
+import PageTransition from "../aurora/PageTransition";
 
-export default function Main(propss) {
-  if (settings.isSplash) {
-    return (
-      <div>
-        <HashRouter basename="/">
-          <Switch>
-            <Route
-              path="/"
-              exact
-              render={(props) => (
-                <Splash
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/home"
-              render={(props) => (
-                <Home
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/experience"
-              exact
-              render={(props) => (
-                <Experience
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/education"
-              render={(props) => (
-                <Education
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/projects"
-              render={(props) => (
-                <Projects
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/stats"
-              render={(props) => (
-                <Stats
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/contact"
-              render={(props) => (
-                <Contact
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/splash"
-              render={(props) => (
-                <Splash
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-          </Switch>
-        </HashRouter>
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        <HashRouter basename="/">
-          <Switch>
-            <Route
-              path="/"
-              exact
-              render={(props) => (
-                <Home
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/home"
-              render={(props) => (
-                <Home
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/experience"
-              exact
-              render={(props) => (
-                <Experience
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/education"
-              render={(props) => (
-                <Education
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/projects"
-              render={(props) => (
-                <Projects
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/stats"
-              render={(props) => (
-                <Stats
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-            <Route
-              path="/contact"
-              render={(props) => (
-                <Contact
-                  {...props}
-                  theme={propss.theme}
-                  setTheme={propss.setTheme}
-                />
-              )}
-            />
-          </Switch>
-        </HashRouter>
-      </div>
-    );
-  }
+// Route-level code splitting: each page (and its dependencies — chart.js,
+// etc.) becomes a separate chunk loaded on demand. The Aurora home
+// page is the main entry, so it stays in the initial bundle.
+import Home from "../pages/home/HomeComponent";
+const Splash = lazy(() => import("../pages/splash/Splash"));
+const Education = lazy(() => import("../pages/education/EducationComponent"));
+const Experience = lazy(() => import("../pages/experience/Experience"));
+const Projects = lazy(() => import("../pages/projects/Projects"));
+const Stats = lazy(() => import("../pages/stats/Stats"));
+const Contact = lazy(() => import("../pages/contact/ContactComponent"));
+const Resume = lazy(() => import("../pages/resume/Resume"));
+
+const RouteFallback = () => null;
+
+export default function Main({ theme, setTheme }) {
+  const isSplash = settings.isSplash;
+  const themed = (Component) => <Component theme={theme} setTheme={setTheme} />;
+
+  return (
+    <div>
+      <BrowserRouter basename="/">
+        <Suspense fallback={<RouteFallback />}>
+          <PageTransition>
+            <Routes>
+              <Route path="/" element={themed(isSplash ? Splash : Home)} />
+              <Route path="/home" element={themed(Home)} />
+              <Route path="/splash" element={themed(Splash)} />
+              <Route path="/experience" element={themed(Experience)} />
+              <Route path="/education" element={themed(Education)} />
+              <Route path="/projects" element={themed(Projects)} />
+              <Route path="/stats" element={themed(Stats)} />
+              <Route path="/contact" element={themed(Contact)} />
+              <Route path="/resume" element={themed(Resume)} />
+              <Route path="/resume/:id" element={themed(Resume)} />
+            </Routes>
+          </PageTransition>
+        </Suspense>
+      </BrowserRouter>
+    </div>
+  );
 }

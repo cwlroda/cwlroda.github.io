@@ -84,8 +84,9 @@ export default function AuroraContact() {
             maxWidth: 640,
           }}
         >
-          Open to research collaborations and perception / robotics roles
-          starting Q4 2026. I aim to reply within a working day.
+          Happy to talk about VLMs, vision pipelines, MLOps, or anything that
+          pushes models from a notebook into production. I usually reply within
+          a working day.
         </p>
         <div
           className="aur-contact-grid"

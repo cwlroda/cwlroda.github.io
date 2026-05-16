@@ -1,7 +1,7 @@
 // Aurora design tokens.
 // useAur() returns the active theme (light or dark) from styled-components'
 // ThemeProvider so components re-render whenever the theme toggle fires.
-// Font helpers stay static — they don't vary with theme.
+// Font helpers stay static; they don't vary with theme.
 
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";

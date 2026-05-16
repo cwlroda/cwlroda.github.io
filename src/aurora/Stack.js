@@ -4,50 +4,73 @@ import SectionHead from "./SectionHead";
 
 const groups = [
   {
-    h: "Machine Learning / CV",
+    h: "VLM / LLM Training & Serving",
     glow: "glowA",
+    items: [
+      "vLLM",
+      "TRT-LLM",
+      "NVIDIA NIM",
+      "DeepSpeed",
+      "PEFT / LoRA",
+      "HuggingFace",
+      "ONNX",
+      "Quantisation",
+    ],
+  },
+  {
+    h: "Machine Learning / CV",
+    glow: "glowB",
     items: [
       "PyTorch",
       "TensorFlow",
       "OpenCV",
-      "OpenPifPaf",
       "NumPy",
-      "Jupyter",
       "scikit-learn",
-      "HuggingFace",
+      "Diffusion Models",
+      "t-SNE / PCA",
+      "Jupyter",
     ],
   },
   {
-    h: "Systems / Robotics",
-    glow: "glowB",
-    items: ["C", "C++", "CUDA", "ROS", "PCL", "Linux", "Bash", "Verilog"],
-  },
-  {
-    h: "Product / Web",
+    h: "Retrieval & Data Systems",
     glow: "glowC",
     items: [
-      "Python",
-      "TypeScript",
-      "React",
-      "Node.js",
-      "F#",
-      "Electron",
-      "Swift",
-      "Flask",
+      "FAISS",
+      "Pinecone",
+      "Dense Embeddings",
+      "Multimodal RAG",
+      "Synthetic Data",
+      "Agentic Workflows",
+      "MySQL",
+      "Data Curation",
     ],
   },
   {
-    h: "Infra / Ops",
+    h: "Infra / MLOps",
     glow: "glowD",
     items: [
       "Docker",
       "AWS",
       "GCP",
-      "Firebase",
       "GitHub Actions",
-      "MySQL",
-      "Heroku",
+      "CI/CD",
+      "Linux",
+      "Bash",
       "Git",
+    ],
+  },
+  {
+    h: "Languages & Frameworks",
+    glow: "glowA",
+    items: [
+      "Python",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Flask",
+      "C / C++",
+      "Java",
+      "F#",
     ],
   },
 ];
@@ -60,7 +83,7 @@ export default function AuroraStack() {
         k="04"
         label="Stack"
         title="Tools I reach for."
-        kicker="What's loaded in muscle memory. Grouped by domain."
+        kicker="What ends up open in my editor most days, grouped by domain."
       />
       <div
         className="aur-stack-grid"

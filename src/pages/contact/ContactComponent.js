@@ -1,161 +1,347 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import TopButton from "../../components/topButton/TopButton";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { Fade } from "react-reveal";
-import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
-import { style } from "glamor";
-import Particle from "../Particle";
-import { ContactLottie } from "../../components/DisplayLottie";
-import bugs from "../../assets/lottie/bugs.json";
-import blog from "../../assets/lottie/blog.json";
+import AuroraNav from "../../aurora/Nav";
+import AuroraFooter from "../../aurora/Footer";
+import AuroraContact from "../../aurora/Contact";
+import PageHero from "../../aurora/PageHero";
+import SectionHead from "../../aurora/SectionHead";
+import LocationWidget from "../../aurora/widgets/Location";
+import NewsletterWidget from "../../aurora/widgets/Newsletter";
+import { useAur, aurSans, aurMono } from "../../aurora/tokens";
+import { contactPageData, greeting } from "../../portfolio";
+import "../../aurora/aurora.css";
 
-const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 const bugReporting = contactPageData.bugReporting;
-const GreetingData = greeting.data;
 
 function Contact(props) {
-  const theme = props.theme;
-
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
-
+  const AUR = useAur();
   return (
-    <div className="contact-main">
-      <Particle theme={props.theme} />
-      <Header theme={theme} setTheme={props.setTheme} />
-      <div className="basic-contact">
-        <div className="contact-heading-div">
-          <Fade left duration={2000} distance="10vw">
-            <div className="contact-heading-img-div">
-              <img
-                className="profile-pic"
-                src={
-                  require(`../../assets/images/${ContactData["profile_image_path"]}`)
-                    ?.default
-                }
-                alt=""
+    <div
+      className="aur-root"
+      style={{ background: AUR.bg, color: AUR.ink, minHeight: "100vh" }}
+    >
+      <AuroraNav setTheme={props.setTheme} />
+      <PageHero
+        kicker="01 / Contact"
+        title={contactPageData.contactSection.title}
+        description={contactPageData.contactSection.description}
+        chips={[
+          { label: "● Open to chat", color: AUR.ok },
+          { label: "Singapore · GMT+8", color: AUR.link },
+        ]}
+      />
+
+      <section>
+        <SectionHead
+          k="02"
+          label="Channels"
+          title="Where to reach me."
+          kicker="Email is fastest. Everything else routes back here eventually."
+        />
+        <div style={{ padding: "0 40px 32px", maxWidth: 1280, margin: "0 auto" }}>
+          <div
+            className="aur-stack-grid"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1.4fr 1fr",
+              gap: 16,
+            }}
+          >
+            <div
+              style={{
+                position: "relative",
+                background: AUR.panel,
+                border: `1px solid ${AUR.rule}`,
+                borderRadius: 16,
+                padding: 28,
+                overflow: "hidden",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  width: 320,
+                  height: 320,
+                  top: -160,
+                  right: -160,
+                  background: `radial-gradient(circle, ${AUR.glowA} 0%, transparent 65%)`,
+                  filter: "blur(50px)",
+                  pointerEvents: "none",
+                }}
               />
-            </div>
-          </Fade>
-          <Fade right duration={2000} distance="10vw">
-            <div className="contact-heading-text-div">
-              <h1
-                className="contact-heading-text"
-                style={{ color: theme.text }}
-              >
-                {ContactData["title"]}
-              </h1>
-              <p
-                className="contact-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {ContactData["description"]}
-              </p>
-              <SocialMedia />
-              <br />
-              <br />
-              <a
-                {...styles}
-                className="general-btn"
-                href={GreetingData.resumeLink}
-              >
-                See my Resume
-              </a>
-            </div>
-          </Fade>
-        </div>
-        <div className="blog-heading-div">
-          <Fade left duration={2000} distance="10vw">
-            <div className="blog-heading-text-div">
-              <h1 className="blog-heading-text" style={{ color: theme.text }}>
-                {blogSection["title"]}
-              </h1>
-              <p
-                className="blog-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {blogSection["subtitle"]}
-              </p>
-              <div className="blogsite-btn-div">
-                <a {...styles} className="general-btn" href={blogSection.link}>
-                  My Medium Profile
-                </a>
-              </div>
-              <div className="publications">
-                <p
-                  className="blog-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
+              <div style={{ position: "relative" }}>
+                <div
+                  style={{
+                    ...aurMono,
+                    fontSize: 11,
+                    color: AUR.mutedHi,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.08em",
+                    marginBottom: 12,
+                  }}
                 >
-                  Writer for:
+                  ✉ Direct lines
+                </div>
+                <h3
+                  style={{
+                    ...aurSans,
+                    fontSize: 26,
+                    fontWeight: 600,
+                    color: AUR.inkBold,
+                    letterSpacing: "-0.02em",
+                    margin: 0,
+                  }}
+                >
+                  Send me a note.
+                </h3>
+                <p
+                  style={{
+                    ...aurSans,
+                    fontSize: 15,
+                    lineHeight: 1.6,
+                    color: AUR.mutedHi,
+                    marginTop: 12,
+                  }}
+                >
+                  Happy to talk about VLMs, vision pipelines, MLOps, or anything
+                  that pushes models from a notebook into production. I usually
+                  reply within a working day.
                 </p>
-                <div className="publication">
+                <div
+                  style={{
+                    marginTop: 24,
+                    display: "flex",
+                    gap: 10,
+                    flexWrap: "wrap",
+                  }}
+                >
                   <a
-                    {...styles}
-                    className="general-btn"
-                    href="https://towardsdatascience.com/"
+                    href={greeting.data.mail}
+                    style={{
+                      ...aurSans,
+                      fontSize: 14,
+                      fontWeight: 500,
+                      padding: "12px 20px",
+                      borderRadius: 10,
+                      background: AUR.inkBold,
+                      color: AUR.inkInverse,
+                      textDecoration: "none",
+                    }}
                   >
-                    Towards Data Science
+                    Email me →
                   </a>
                   <a
-                    {...styles}
-                    className="general-btn"
-                    href="https://medium.com/predict"
+                    href={greeting.data.resumeLink}
+                    style={{
+                      ...aurSans,
+                      fontSize: 14,
+                      fontWeight: 500,
+                      padding: "12px 20px",
+                      borderRadius: 10,
+                      background: AUR.panelHi,
+                      color: AUR.ink,
+                      textDecoration: "none",
+                      border: `1px solid ${AUR.rule}`,
+                    }}
                   >
-                    Predict
-                  </a>
-                  <a
-                    {...styles}
-                    className="general-btn"
-                    href="https://medium.com/swlh"
-                  >
-                    The Startup
+                    Download résumé
                   </a>
                 </div>
               </div>
             </div>
-          </Fade>
-          <Fade right duration={2000} distance="10vw">
-            <div className="blog-heading-img-div">
-              <ContactLottie name="blog" animationData={blog} />
-            </div>
-          </Fade>
+
+            <LocationWidget />
+          </div>
         </div>
-        <div className="blog-heading-div">
-          <Fade left duration={2000} distance="10vw">
-            <div className="blog-heading-img-div">
-              <ContactLottie name="bugs" animationData={bugs} />
-            </div>
-          </Fade>
-          <Fade right duration={2000} distance="10vw">
-            <div className="blog-heading-text-div">
-              <h1 className="blog-heading-text" style={{ color: theme.text }}>
-                {bugReporting["title"]}
-              </h1>
-              <p
-                className="blog-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {bugReporting["subtitle"]}
-              </p>
-              <div className="blogsite-btn-div">
-                <a {...styles} className="general-btn" href={bugReporting.link}>
-                  Report An Issue
-                </a>
-              </div>
-            </div>
-          </Fade>
+      </section>
+
+      <AuroraContact />
+
+      <section>
+        <SectionHead
+          k="03"
+          label="Writing & feedback"
+          title="The slower channels."
+          kicker="Newsletter for occasional long-form, GitHub issues for bugs and ideas on this site, Medium for everything else."
+        />
+        <div style={{ padding: "0 40px 32px", maxWidth: 1280, margin: "0 auto" }}>
+          <NewsletterWidget />
         </div>
-      </div>
-      <Footer theme={props.theme} onToggle={props.onToggle} />
-      <TopButton theme={props.theme} />
+
+        <div
+          style={{
+            padding: "16px 40px 80px",
+            maxWidth: 1280,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: 16,
+          }}
+          className="aur-stack-grid"
+        >
+          <a
+            href={blogSection.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              position: "relative",
+              background: AUR.panel,
+              border: `1px solid ${AUR.rule}`,
+              borderRadius: 16,
+              padding: 24,
+              textDecoration: "none",
+              color: AUR.ink,
+              overflow: "hidden",
+              display: "block",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                width: 260,
+                height: 260,
+                top: -130,
+                right: -130,
+                background: `radial-gradient(circle, ${AUR.glowC} 0%, transparent 65%)`,
+                filter: "blur(40px)",
+                pointerEvents: "none",
+              }}
+            />
+            <div
+              style={{
+                ...aurMono,
+                fontSize: 11,
+                color: AUR.muted,
+                textTransform: "uppercase",
+                letterSpacing: "0.08em",
+                marginBottom: 8,
+                position: "relative",
+              }}
+            >
+              ✎ Writing
+            </div>
+            <h3
+              style={{
+                ...aurSans,
+                fontSize: 20,
+                fontWeight: 600,
+                color: AUR.inkBold,
+                letterSpacing: "-0.015em",
+                margin: 0,
+                position: "relative",
+              }}
+            >
+              {blogSection.title}
+            </h3>
+            <p
+              style={{
+                ...aurSans,
+                fontSize: 14,
+                lineHeight: 1.6,
+                color: AUR.mutedHi,
+                marginTop: 8,
+                position: "relative",
+              }}
+            >
+              {blogSection.subtitle}
+            </p>
+            <div
+              style={{
+                ...aurSans,
+                fontSize: 13,
+                color: AUR.link,
+                fontWeight: 500,
+                marginTop: 16,
+                position: "relative",
+              }}
+            >
+              My Medium profile →
+            </div>
+          </a>
+
+          <a
+            href={bugReporting.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              position: "relative",
+              background: AUR.panel,
+              border: `1px solid ${AUR.rule}`,
+              borderRadius: 16,
+              padding: 24,
+              textDecoration: "none",
+              color: AUR.ink,
+              overflow: "hidden",
+              display: "block",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                width: 260,
+                height: 260,
+                top: -130,
+                right: -130,
+                background: `radial-gradient(circle, ${AUR.glowD} 0%, transparent 65%)`,
+                filter: "blur(40px)",
+                pointerEvents: "none",
+              }}
+            />
+            <div
+              style={{
+                ...aurMono,
+                fontSize: 11,
+                color: AUR.muted,
+                textTransform: "uppercase",
+                letterSpacing: "0.08em",
+                marginBottom: 8,
+                position: "relative",
+              }}
+            >
+              ⚠ Site feedback
+            </div>
+            <h3
+              style={{
+                ...aurSans,
+                fontSize: 20,
+                fontWeight: 600,
+                color: AUR.inkBold,
+                letterSpacing: "-0.015em",
+                margin: 0,
+                position: "relative",
+              }}
+            >
+              {bugReporting.title}
+            </h3>
+            <p
+              style={{
+                ...aurSans,
+                fontSize: 14,
+                lineHeight: 1.6,
+                color: AUR.mutedHi,
+                marginTop: 8,
+                position: "relative",
+              }}
+            >
+              {bugReporting.subtitle}
+            </p>
+            <div
+              style={{
+                ...aurSans,
+                fontSize: 13,
+                color: AUR.link,
+                fontWeight: 500,
+                marginTop: 16,
+                position: "relative",
+              }}
+            >
+              Open a GitHub issue →
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <AuroraFooter />
     </div>
   );
 }

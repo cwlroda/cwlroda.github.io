@@ -1,83 +1,111 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import TopButton from "../../components/topButton/TopButton";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { Fade } from "react-reveal";
-import { projectsHeader, hackathons, projects } from "../../portfolio.js";
-import "./Projects.css";
-import { style } from "glamor";
-import Particle from "../Particle";
-import { ProjectLottie } from "../../components/DisplayLottie";
-import proj from "../../assets/lottie/project.json";
+import AuroraNav from "../../aurora/Nav";
+import AuroraFooter from "../../aurora/Footer";
+import PageHero from "../../aurora/PageHero";
+import SectionHead from "../../aurora/SectionHead";
+import HackathonCard from "../../aurora/widgets/HackathonCard";
+import ProjectArchiveCard from "../../aurora/widgets/ProjectArchiveCard";
+import AuroraProjects from "../../aurora/Projects";
+import { useAur, aurSans } from "../../aurora/tokens";
+import { projectsHeader, hackathons, projects } from "../../portfolio";
+import "../../aurora/aurora.css";
 
 function Projects(props) {
-  const theme = props.theme;
-
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
-
+  const AUR = useAur();
   return (
-    <div className="projects-main">
-      <Particle theme={props.theme} />
-      <Header theme={theme} setTheme={props.setTheme} />
-      <div className="basic-projects">
-        <Fade bottom duration={2000} distance="40px">
-          <div className="projects-heading-div">
-            <div className="projects-heading-img-div">
-              <ProjectLottie name="proj" animationData={proj} />
-            </div>
-            <div className="projects-heading-text-div">
-              <h1
-                className="projects-heading-text"
-                style={{ color: theme.text }}
-              >
-                {projectsHeader.title}
-              </h1>
-              <p
-                className="projects-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {projectsHeader["description"]}
-              </p>
-            </div>
-          </div>
-        </Fade>
-      </div>
-      <div className="projects-header-div">
-        <Fade bottom duration={2000} distance="20px">
-          <h1 className="projects-header" style={{ color: theme.text }}>
-            Hackathons
-          </h1>
-        </Fade>
-      </div>
-      <div className="hackathon-cards-div-main">
-        {hackathons.data.map((repo) => {
-          return <ProjectCard repo={repo} theme={theme} />;
-        })}
-      </div>
-      <div className="projects-header-div">
-        <Fade bottom duration={2000} distance="20px">
-          <h1 className="projects-header" style={{ color: theme.text }}>
-            Open-Source
-          </h1>
-        </Fade>
-      </div>
-      <div className="repo-cards-div-main">
-        {projects.data.map((repo) => {
-          return <ProjectCard repo={repo} theme={theme} />;
-        })}
-      </div>
-      <a {...styles} className="general-btn" href={projectsHeader.link}>
-        More Projects (Github)
-      </a>
-      <div className="space"></div>
-      <Footer theme={props.theme} onToggle={props.onToggle} />
-      <TopButton theme={props.theme} />
+    <div
+      className="aur-root"
+      style={{ background: AUR.bg, color: AUR.ink, minHeight: "100vh" }}
+    >
+      <AuroraNav setTheme={props.setTheme} />
+      <PageHero
+        kicker="01 / Projects"
+        title={projectsHeader.title}
+        description={projectsHeader.description}
+        chips={[
+          { label: `${hackathons.data.length} hackathons`, color: AUR.link },
+          { label: `${projects.data.length} open-source`, color: AUR.ok },
+        ]}
+      />
+
+      <AuroraProjects />
+
+      <section>
+        <SectionHead
+          k="04"
+          label="Hackathons"
+          title="Weekend builds."
+          kicker="Submissions from the hackathon era, most of them award-winning by some measure."
+        />
+        <div
+          className="aur-proj-grid"
+          style={{
+            padding: "0 40px 32px",
+            maxWidth: 1280,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: 16,
+          }}
+        >
+          {hackathons.data.map((repo, i) => (
+            <HackathonCard key={repo.id} repo={repo} index={i} />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <SectionHead
+          k="05"
+          label="Open-source"
+          title="The archive."
+          kicker="Personal repos and contributions worth showing."
+        />
+        <div
+          className="aur-proj-grid"
+          style={{
+            padding: "0 40px 32px",
+            maxWidth: 1280,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: 16,
+          }}
+        >
+          {projects.data.map((repo, i) => (
+            <ProjectArchiveCard key={repo.id} repo={repo} index={i} />
+          ))}
+        </div>
+        <div
+          style={{
+            padding: "0 40px 80px",
+            maxWidth: 1280,
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <a
+            href={projectsHeader.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              ...aurSans,
+              fontSize: 14,
+              fontWeight: 500,
+              padding: "12px 20px",
+              borderRadius: 10,
+              background: AUR.inkBold,
+              color: AUR.inkInverse,
+              textDecoration: "none",
+            }}
+          >
+            More on GitHub ↗
+          </a>
+        </div>
+      </section>
+
+      <AuroraFooter />
     </div>
   );
 }

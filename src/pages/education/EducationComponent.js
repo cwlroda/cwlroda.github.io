@@ -1,55 +1,75 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import TopButton from "../../components/topButton/TopButton";
-import Educations from "../../containers/education/Educations";
-import Modules from "../../containers/modules/Modules";
-import Certifications from "../../containers/certifications/Certifications";
+import AuroraNav from "../../aurora/Nav";
+import AuroraFooter from "../../aurora/Footer";
+import PageHero from "../../aurora/PageHero";
+import SectionHead from "../../aurora/SectionHead";
+import Degrees from "../../aurora/widgets/Degrees";
+import CertificationsWidget from "../../aurora/widgets/Certifications";
+import ModulesWidget from "../../aurora/widgets/Modules";
+import AwardsWidget from "../../aurora/widgets/Awards";
+import { useAur } from "../../aurora/tokens";
 import { education } from "../../portfolio";
-import "./EducationComponent.css";
-import { Fade } from "react-reveal";
-import Particle from "../Particle";
-import { EducationLottie } from "../../components/DisplayLottie";
-import edu from "../../assets/lottie/education.json";
+import "../../aurora/aurora.css";
 
 function Education(props) {
-  const theme = props.theme;
+  const AUR = useAur();
   return (
-    <div className="education-main">
-      <Particle theme={props.theme} />
-      <Header theme={props.theme} setTheme={props.setTheme} />
-      <div className="basic-education">
-        <Fade bottom duration={2000} distance="40px">
-          <div className="heading-div">
-            <div className="heading-img-div">
-              <EducationLottie name="edu" animationData={edu} />
-            </div>
-            <div className="heading-text-div">
-              <h1 className="heading-text" style={{ color: theme.text }}>
-                Education
-              </h1>
-              <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                Qualifications and Certifications
-              </h3>
-              <p
-                className="education-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {education["description"]}
-              </p>
-            </div>
-          </div>
-        </Fade>
-        <Educations theme={props.theme} />
-        <br></br>
-        <br></br>
-        <Certifications theme={props.theme} />
-        <br></br>
-        <br></br>
-        <Modules theme={props.theme} />
-      </div>
-      <Footer theme={props.theme} />
-      <TopButton theme={props.theme} />
+    <div
+      className="aur-root"
+      style={{ background: AUR.bg, color: AUR.ink, minHeight: "100vh" }}
+    >
+      <AuroraNav setTheme={props.setTheme} />
+      <PageHero
+        kicker="01 / Education"
+        title="Schools, modules, and the odd certificate."
+        description={education.description}
+        chips={[
+          { label: "MEng · Imperial College London", color: AUR.link },
+          { label: "Joint MSc · ETH Zürich", color: AUR.ok },
+        ]}
+      />
+
+      <section style={{ padding: "0 40px 64px", maxWidth: 1280, margin: "0 auto" }}>
+        <Degrees />
+      </section>
+
+      <section>
+        <SectionHead
+          k="02"
+          label="Awards"
+          title="Recognition along the way."
+          kicker="Hackathon placings, scholarships, and the occasional course prize."
+        />
+        <div style={{ padding: "0 40px 32px", maxWidth: 1280, margin: "0 auto" }}>
+          <AwardsWidget />
+        </div>
+      </section>
+
+      <section>
+        <SectionHead
+          k="03"
+          label="Certifications"
+          title="Credentials worth keeping."
+          kicker="Mostly cloud-ML coursework, a few extras."
+        />
+        <div style={{ padding: "0 40px 32px", maxWidth: 1280, margin: "0 auto" }}>
+          <CertificationsWidget />
+        </div>
+      </section>
+
+      <section>
+        <SectionHead
+          k="04"
+          label="Coursework"
+          title="The fuller module list."
+          kicker="What I actually sat exams on, grouped by area."
+        />
+        <div style={{ padding: "0 40px 80px", maxWidth: 1280, margin: "0 auto" }}>
+          <ModulesWidget />
+        </div>
+      </section>
+
+      <AuroraFooter />
     </div>
   );
 }

@@ -9,93 +9,139 @@ const projects = [
   {
     span: 2,
     glow: "glowA",
-    kind: "OPEN-SOURCE · FEATURED",
-    year: "2023",
-    name: "Scalabel — 3D point-cloud annotation",
+    kind: "SIDE PROJECT, LIVE",
+    year: "2026",
+    name: "Snail's Trail",
     desc:
-      "Led an intuitive 3D point-cloud annotation workflow on the Scalabel platform, used by Berkeley DeepDrive and external research teams for autonomous-driving datasets.",
-    stack: ["Python", "TypeScript", "React", "PointCloud"],
+      "A daily word game for Wikipedia obsessives. You're dropped on a random article and have to hop, link by link, to a target article in ten moves or fewer. Behind the scenes there's an on-device embedding model ranking which links bring you closer, so the suggestions stay snappy without a backend.",
+    stack: ["React", "TypeScript", "Embeddings", "Vite"],
   },
   {
     span: 2,
     glow: "glowB",
-    kind: "RESEARCH · SLAM",
-    year: "2022",
-    name: "DH3D · Hierarchical 3D descriptors",
+    kind: "WORK, DATATURE",
+    year: "2022 to Now",
+    name: "Nexus",
     desc:
-      "Integrated a hierarchical 3D local + global descriptor model into a multi-robot collaborative SLAM stack. Improved cross-robot loop-closure precision.",
-    stack: ["Python", "TensorFlow", "MATLAB"],
+      "Datature's flagship platform for training, evaluating and deploying computer vision models without writing code. Drag-and-drop training workflows around FasterRCNN and YOLOX, IntelliBrush for AI-assisted labelling of masks, polygons and boxes, and managed cloud-API deployment with load balancing.",
+    stack: ["PyTorch", "FastAPI", "Docker", "AWS"],
   },
   {
-    glow: "glowB",
-    kind: "RESEARCH",
-    year: "2022",
-    name: "3DFeatNet",
-    desc:
-      "Weakly-supervised 3D feature detector for point-cloud registration on Oxford RobotCar.",
-    stack: ["Python", "TF"],
-  },
-  {
+    span: 2,
     glow: "glowC",
-    kind: "PRODUCTION · HTX",
-    year: "2020",
-    name: "Fall Detection",
+    kind: "WORK, DATATURE",
+    year: "2025 to Now",
+    name: "Vi",
     desc:
-      "Multi-person pose-estimation for fall detection across concurrent CCTV feeds. 83% / F1 91.",
-    stack: ["Python", "OpenPifPaf"],
-  },
-  {
-    glow: "glowC",
-    kind: "NLP · HTX",
-    year: "2020",
-    name: "BART Summariser",
-    desc:
-      "Abstractive news summariser fine-tuned on BART. ROUGE > 0.80 on the production corpus.",
-    stack: ["Python", "BART"],
+      "Our VLMOps platform for fine-tuning and deploying vision-language models. Supports phrase grounding, VQA, chain-of-thought and VLA labels, with (Q)LoRA and SFT training on anything from T4 to B200, plus evaluation on F1, IoU, BLEU and BERTScore. Ships through a local SDK or NVIDIA NIM containers with OpenAI-compatible APIs.",
+    stack: ["Qwen-VL", "vLLM", "NIM", "QLoRA"],
   },
   {
     glow: "glowD",
-    kind: "AIHACK 2021",
-    year: "2021",
-    name: "BITweets",
+    kind: "WORK, DATATURE",
+    year: "2023 to Now",
+    name: "Multimodal RAG & Retrieval",
     desc:
-      "Bi-directional LSTM for BTC price prediction with tweet sentiment as side-channel.",
-    stack: ["Python", "TF"],
-  },
-  {
-    glow: "glowB",
-    kind: "WINNER · HACKVIOLET",
-    year: "2021",
-    name: "em.",
-    desc:
-      "Personalised exercise plans for women to reduce menstrual pain. Won Best Domain Award.",
-    stack: ["Wix", "Node"],
-  },
-  {
-    glow: "glowD",
-    kind: "HACKSHEFFIELD 6",
-    year: "2020",
-    name: "Virtualso Piano",
-    desc:
-      "Real-time multi-finger tracking with OpenCV — play a piano on any flat surface.",
-    stack: ["Python", "OpenCV"],
+      "Image-retrieval pipelines powering production workloads. Dense embeddings indexed in FAISS or Pinecone, served alongside vLLM and TRT-LLM. Tensor parallelism plus dynamic batching pushed throughput up to 5x.",
+    stack: ["FAISS", "Pinecone", "vLLM"],
   },
   {
     glow: "glowA",
-    kind: "FB HACK-A-PROJECT",
-    year: "2020",
-    name: "Don8te",
+    kind: "WORK, DATATURE",
+    year: "2024",
+    name: "Synthetic Data Pipeline",
     desc:
-      "Donation iOS app pairing givers with the needy. Third in the prototype forum.",
-    stack: ["Swift", "Firebase"],
+      "Multimodal synthetic data generation mixing diffusion models with LLMs, plus t-SNE and uniqueness-score curation to cut the manual labelling bill.",
+    stack: ["Diffusion", "LLMs", "t-SNE"],
+  },
+  {
+    glow: "glowB",
+    kind: "WORK, DATATURE",
+    year: "2024",
+    name: "Edge Deployment Stack",
+    desc:
+      "Customisable container framework for real-time inference on edge devices, with an agentic orchestrator wired into our products.",
+    stack: ["Docker", "ONNX", "Agentic"],
   },
   {
     glow: "glowC",
-    kind: "BEST 1ST-YEAR",
-    year: "2019",
-    name: "Dance Dance Conv.",
+    kind: "OPEN SOURCE, DATATURE",
+    year: "2023",
+    name: "Portal",
     desc:
-      "Gesture-recognition rhythm game on Xilinx PYNQ-Z1 with CNN inference.",
+      "Open-source viewer for loading deep neural networks and running them on images and videos. I contribute to it.",
+    stack: ["TypeScript", "React"],
+  },
+  {
+    glow: "glowB",
+    kind: "MSC THESIS, ETH",
+    year: "2022",
+    name: "Resilient ML Inference Serving",
+    desc:
+      "Wrote a custom scheduler for ML inference serving on AWS. Multi-node throughput came out roughly twice what we had before.",
+    stack: ["Python", "AWS", "Distributed"],
+  },
+  {
+    glow: "glowC",
+    kind: "SEMESTER, ETH",
+    year: "2022",
+    name: "Scalabel 3D Annotation",
+    desc:
+      "A point-cloud annotation tool in TypeScript and Three.js. Annotators ended up about 67% faster on the same datasets.",
+    stack: ["TS", "Three.js"],
+  },
+  {
+    glow: "glowB",
+    kind: "RESEARCH, DSO",
+    year: "2021",
+    name: "DH3D 3D Descriptors",
+    desc:
+      "Plugged a hierarchical local + global 3D descriptor model into a multi-robot collaborative SLAM stack. Two of the pipeline stages came out 40x and 20x faster.",
+    stack: ["Python", "TF"],
+  },
+  {
+    glow: "glowC",
+    kind: "PRODUCTION, HTX",
+    year: "2020",
+    name: "Fall Detection",
+    desc:
+      "Multi-person pose estimation running across several CCTV feeds at once to flag falls in real time. 83% precision and F1 of 91.",
+    stack: ["Python", "OpenPifPaf"],
+  },
+  {
+    glow: "glowD",
+    kind: "NLP, HTX",
+    year: "2020",
+    name: "BART Summariser",
+    desc:
+      "Abstractive news summariser fine-tuned on BART. Cleared ROUGE 0.80 on the production corpus.",
+    stack: ["Python", "BART"],
+  },
+  {
+    glow: "glowA",
+    kind: "AIHACK 2021, 3RD",
+    year: "2021",
+    name: "BITweets",
+    desc:
+      "Bi-directional LSTM that predicts Bitcoin prices, with Twitter sentiment piped in as a side-channel. Took third at AIHack.",
+    stack: ["Python", "TF"],
+  },
+  {
+    glow: "glowB",
+    kind: "WINNER, HACKVIOLET",
+    year: "2021",
+    name: "em.",
+    desc:
+      "Personalised exercise plans aimed at easing period pain. Won the Best Domain Award at HackViolet.",
+    stack: ["Wix", "Node"],
+  },
+  {
+    glow: "glowC",
+    kind: "BEST 1ST-YEAR, ICL",
+    year: "2019",
+    name: "Dance Dance Convolution",
+    desc:
+      "A rhythm game inspired by Just Dance, running on an Xilinx PYNQ-Z1 FPGA with on-board CNN gesture recognition. Picked up Best First Year Project at Imperial.",
     stack: ["C++", "Python", "FPGA"],
   },
 ];
@@ -206,7 +252,7 @@ export default function AuroraProjects() {
         k="03"
         label="Projects"
         title="Things I've built."
-        kicker="A working subset of the 14+ projects in the archive — research, hackathons, and weekend code."
+        kicker="A working subset. Production ML at Datature, a couple of master's theses, side projects on weekends, and the odd hackathon."
       />
       <div
         className="aur-proj-grid"
@@ -234,10 +280,10 @@ export default function AuroraProjects() {
         }}
       >
         <span style={{ ...aurSans, fontSize: 14, color: AUR.mutedHi }}>
-          + 4 more in the archive
+          + more in the archive
         </span>
         <a
-          href="/#/projects"
+          href="/projects"
           style={{
             ...aurSans,
             fontSize: 14,

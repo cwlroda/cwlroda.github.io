@@ -4,10 +4,10 @@ import { AurChip, AurPh } from "./primitives";
 import { greeting, socialMediaLinks } from "../portfolio";
 
 const stats = [
-  ["Currently", "ETH MSc thesis"],
-  ["Focus", "CV · SLAM · 3D"],
-  ["Years", "5+ in research"],
-  ["Projects", "14 shipped"],
+  ["Currently", "MLE at Datature"],
+  ["Focus", "VLMs, MLOps, CV"],
+  ["Years", "3 in MLE, 5 in SWE"],
+  ["Sectors", "Mfg, Agri, Health"],
 ];
 
 export default function AuroraHero() {
@@ -44,8 +44,8 @@ export default function AuroraHero() {
             flexWrap: "wrap",
           }}
         >
-          <AurChip color={AUR.ok}>● Available Q4 2026</AurChip>
-          <AurChip color={AUR.link}>Zürich · GMT+1</AurChip>
+          <AurChip color={AUR.ok}>● Open to chat</AurChip>
+          <AurChip color={AUR.link}>Singapore, GMT+8</AurChip>
         </div>
 
         <h1
@@ -61,7 +61,7 @@ export default function AuroraHero() {
             maxWidth: 1100,
           }}
         >
-          AI engineer building{" "}
+          ML engineer shipping{" "}
           <span
             style={{
               background:
@@ -71,9 +71,9 @@ export default function AuroraHero() {
               backgroundClip: "text",
             }}
           >
-            perception systems
+            vision &amp; language models
           </span>{" "}
-          for the physical world.
+          from research to production.
         </h1>
 
         <p
@@ -86,11 +86,14 @@ export default function AuroraHero() {
             maxWidth: 720,
           }}
         >
-          I'm {greeting.data.nickname}. Finishing a master's at ETH Zürich on
-          real-time 3D multi-object tracking. Previously researched SLAM at DSO
-          and shipped ML &amp; surveillance tooling at HTX. I care about systems
-          that perceive — point clouds, video, language — and the messy
-          engineering that takes them from notebooks to production.
+          I'm {greeting.data.nickname}, an ML engineer at Datature. I work on
+          two products: Nexus, our no-code computer vision platform, and Vi,
+          our newer VLMOps stack for fine-tuning and deploying vision-language
+          models. Day to day that means a lot of (Q)LoRA training with
+          DeepSpeed, serving models through vLLM, TRT-LLM and NVIDIA NIM,
+          building multimodal retrieval on FAISS and Pinecone, and squeezing
+          latency out of edge deployments. Three years in so far, across
+          customers in manufacturing, agriculture and healthcare.
         </p>
 
         <div

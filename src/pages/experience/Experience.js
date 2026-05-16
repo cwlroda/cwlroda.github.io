@@ -1,69 +1,61 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import TopButton from "../../components/topButton/TopButton";
-import "./Experience.css";
-import { experience } from "../../portfolio.js";
-import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
-import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
-import { Fade } from "react-reveal";
-import Particle from "../Particle";
-import { ExperienceLottie } from "../../components/DisplayLottie";
-import exp from "../../assets/lottie/work.json";
+import AuroraNav from "../../aurora/Nav";
+import AuroraFooter from "../../aurora/Footer";
+import PageHero from "../../aurora/PageHero";
+import SectionHead from "../../aurora/SectionHead";
+import ExperienceList from "../../aurora/widgets/ExperienceList";
+import SkillBarsWidget from "../../aurora/widgets/SkillBars";
+import SpeakingWidget from "../../aurora/widgets/Speaking";
+import { useAur } from "../../aurora/tokens";
+import { experience } from "../../portfolio";
+import "../../aurora/aurora.css";
 
 function Experience(props) {
-  const theme = props.theme;
+  const AUR = useAur();
   return (
-    <div className="experience-main">
-      <Particle theme={props.theme} />
-      <Header theme={theme} setTheme={props.setTheme} />
-      <div className="basic-experience">
-        <Fade bottom duration={2000} distance="40px">
-          <div className="experience-heading-div">
-            <div className="experience-heading-img-div">
-              <ExperienceLottie name="exp" animationData={exp} />
-            </div>
-            <div className="experience-heading-text-div">
-              <h1
-                className="experience-heading-text"
-                style={{ color: theme.text }}
-              >
-                {experience.title}
-              </h1>
-              <h3
-                className="experience-heading-sub-text"
-                style={{ color: theme.text }}
-              >
-                {experience["subtitle"]}
-              </h3>
-              <p
-                className="experience-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {experience["description"]}
-              </p>
-            </div>
-          </div>
-        </Fade>
-      </div>
-      <div className="experience-body">
-        {experience["internships"]["experiences"].map((experience) => {
-          return (
-            <div className="experience-accord">
-              <ThemeProvider
-                theme={theme.name === "light" ? LightTheme : DarkTheme}
-              >
-                <Fade bottom duration={2000} distance="20px">
-                  <ExperienceCard experience={experience} theme={theme} />
-                </Fade>
-              </ThemeProvider>
-            </div>
-          );
-        })}
-      </div>
-      {/* <ExperienceAccordion sections={experience["sections"]} theme={theme} /> */}
-      <Footer theme={props.theme} onToggle={props.onToggle} />
-      <TopButton theme={props.theme} />
+    <div
+      className="aur-root"
+      style={{ background: AUR.bg, color: AUR.ink, minHeight: "100vh" }}
+    >
+      <AuroraNav setTheme={props.setTheme} />
+      <PageHero
+        kicker="01 / Experience"
+        title={experience.title}
+        description={experience.description}
+        chips={[
+          { label: experience.subtitle, color: AUR.link },
+          { label: "3+ years MLE", color: AUR.ok },
+        ]}
+      />
+
+      <section style={{ padding: "0 40px 32px", maxWidth: 1280, margin: "0 auto" }}>
+        <ExperienceList />
+      </section>
+
+      <section>
+        <SectionHead
+          k="02"
+          label="Proficiency"
+          title="What I reach for."
+          kicker="A self-rated snapshot across the stack I work in day to day."
+        />
+        <div
+          style={{
+            padding: "0 40px 32px",
+            maxWidth: 1280,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: 16,
+          }}
+          className="aur-stack-grid"
+        >
+          <SkillBarsWidget />
+          <SpeakingWidget />
+        </div>
+      </section>
+
+      <AuroraFooter />
     </div>
   );
 }

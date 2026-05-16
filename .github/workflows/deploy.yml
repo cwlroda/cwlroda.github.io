@@ -27,19 +27,24 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version-file: ".nvmrc"
           cache: "npm"
+          cache-dependency-path: |
+            package-lock.json
+            snailstrail/package-lock.json
 
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm ci --prefer-offline --no-audit --no-fund
+
+      - name: Cache snailstrail node_modules
+        uses: actions/cache@v4
+        with:
+          path: snailstrail/node_modules
+          key: snailstrail-node-modules-${{ runner.os }}-${{ hashFiles('snailstrail/package-lock.json') }}
 
       - name: Build
-        # CI=false so warnings don't fail the build — react-scripts 4 with
-        # the legacy openssl provider needs the same flag the local script
-        # passes.
-        env:
-          CI: false
-          NODE_OPTIONS: --openssl-legacy-provider
+        # Main app builds with Vite, then chains into the Vite build for the
+        # Snail's Trail game (snailstrail/ -> build/snailstrail/).
         run: npm run build
 
       - name: Configure Pages
