@@ -1,0 +1,39 @@
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-family: "Google Sans Regular";
+}
+
+.software-skill-inline > i {
+  color: #868e96;
+}
+
+.software-skill-inline > i:hover {
+  color: #645beb;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .dev-icons {
+    align-items: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .dev-icons {
+    align-items: center;
+  }
+}

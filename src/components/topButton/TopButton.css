@@ -1,0 +1,25 @@
+#topButton {
+  visibility: hidden;
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.5rem;
+  cursor: pointer;
+  padding: 15px;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #topButton {
+    visibility: hidden;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    cursor: pointer;
+    padding: 7px;
+    outline: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+  }
+}
