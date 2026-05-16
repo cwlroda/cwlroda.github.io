@@ -1,5 +1,5 @@
 import React from "react";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { useAur, aurMono, aurSans } from "./tokens";
 import { AurChip, AurPh } from "./primitives";
 import { greeting, socialMediaLinks } from "../portfolio";
 
@@ -11,6 +11,7 @@ const stats = [
 ];
 
 export default function AuroraHero() {
+  const AUR = useAur();
   return (
     <section
       style={{
@@ -43,8 +44,8 @@ export default function AuroraHero() {
             flexWrap: "wrap",
           }}
         >
-          <AurChip color="#34d399">● Available Q4 2026</AurChip>
-          <AurChip color="#a5b4fc">Zürich · GMT+1</AurChip>
+          <AurChip color={AUR.ok}>● Available Q4 2026</AurChip>
+          <AurChip color={AUR.link}>Zürich · GMT+1</AurChip>
         </div>
 
         <h1
@@ -64,7 +65,7 @@ export default function AuroraHero() {
           <span
             style={{
               background:
-                "linear-gradient(135deg, #a5b4fc 0%, #f0abfc 50%, #67e8f9 100%)",
+                "linear-gradient(135deg, #6366f1 0%, #ec4899 50%, #06b6d4 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -109,7 +110,7 @@ export default function AuroraHero() {
               padding: "12px 20px",
               borderRadius: 10,
               background: AUR.inkBold,
-              color: AUR.bg,
+              color: AUR.inkInverse,
               textDecoration: "none",
             }}
           >
@@ -163,6 +164,7 @@ export default function AuroraHero() {
           }}
         >
           <div
+            className="aur-hero-stats"
             style={{
               background: AUR.panel,
               border: `1px solid ${AUR.rule}`,
@@ -172,7 +174,6 @@ export default function AuroraHero() {
               gridTemplateColumns: "repeat(4, 1fr)",
               gap: 24,
             }}
-            className="aur-hero-stats"
           >
             {stats.map(([k, v], i) => (
               <div

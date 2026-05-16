@@ -1,26 +1,18 @@
-/* Aurora theme — responsive adjustments for the inline-styled components. */
-
-.aur-root {
-  background: #0b0d12;
-  color: #e7eaf0;
-  min-height: 100vh;
-}
+/* Aurora theme — responsive adjustments + hover transitions for the
+   inline-styled components. Colors are not hardcoded here; the inline
+   styles read from useAur() and the parent .aur-root applies the
+   theme-aware background. */
 
 .aur-proj-card {
   transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.aur-proj-card:hover {
-  transform: translateY(-2px);
-  border-color: #2a2f3d !important;
 }
 
 .aur-exp-row {
   transition: border-color 0.2s ease;
 }
 
-.aur-exp-row:hover {
-  border-color: #2a2f3d !important;
+.aur-theme-toggle:hover {
+  color: inherit;
 }
 
 @media (max-width: 1024px) {
@@ -62,11 +54,12 @@
   .aur-proj-grid {
     grid-template-columns: 1fr !important;
   }
-  .aur-proj-grid > a {
+  .aur-proj-grid > div {
     grid-column: span 1 !important;
   }
   .aur-nav-tag,
-  .aur-nav-links {
+  .aur-nav-links,
+  .aur-nav-cta {
     display: none !important;
   }
   .aur-contact-title {

@@ -1,5 +1,5 @@
 import React from "react";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { useAur, aurMono, aurSans } from "./tokens";
 import SectionHead from "./SectionHead";
 
 const schools = [
@@ -8,7 +8,7 @@ const schools = [
     sub: "Exchange MSc · EE & Information Technology",
     dur: "2021 — Now",
     loc: "Zürich, CH",
-    glow: AUR.glowA,
+    glow: "glowA",
     notes: [
       "Swiss-European Mobility Programme scholar",
       "Specialising in real-time 3D multi-object tracking",
@@ -20,7 +20,7 @@ const schools = [
     sub: "MEng Electronic & Information Engineering",
     dur: "2018 — Now",
     loc: "London, UK",
-    glow: AUR.glowB,
+    glow: "glowB",
     notes: [
       "On track for First Class Honours",
       "UG tutor — Information Processing & Software Systems",
@@ -31,6 +31,7 @@ const schools = [
 ];
 
 export default function AuroraEducation() {
+  const AUR = useAur();
   return (
     <section>
       <SectionHead
@@ -69,7 +70,9 @@ export default function AuroraEducation() {
                 height: 260,
                 top: -130,
                 right: -130,
-                background: `radial-gradient(circle, ${s.glow} 0%, transparent 65%)`,
+                background: `radial-gradient(circle, ${
+                  AUR[s.glow]
+                } 0%, transparent 65%)`,
                 filter: "blur(40px)",
                 pointerEvents: "none",
               }}

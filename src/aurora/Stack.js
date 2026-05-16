@@ -1,11 +1,11 @@
 import React from "react";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { useAur, aurMono, aurSans } from "./tokens";
 import SectionHead from "./SectionHead";
 
 const groups = [
   {
     h: "Machine Learning / CV",
-    glow: AUR.glowA,
+    glow: "glowA",
     items: [
       "PyTorch",
       "TensorFlow",
@@ -19,12 +19,12 @@ const groups = [
   },
   {
     h: "Systems / Robotics",
-    glow: AUR.glowB,
+    glow: "glowB",
     items: ["C", "C++", "CUDA", "ROS", "PCL", "Linux", "Bash", "Verilog"],
   },
   {
     h: "Product / Web",
-    glow: AUR.glowC,
+    glow: "glowC",
     items: [
       "Python",
       "TypeScript",
@@ -38,7 +38,7 @@ const groups = [
   },
   {
     h: "Infra / Ops",
-    glow: AUR.glowD,
+    glow: "glowD",
     items: [
       "Docker",
       "AWS",
@@ -53,6 +53,7 @@ const groups = [
 ];
 
 export default function AuroraStack() {
+  const AUR = useAur();
   return (
     <section>
       <SectionHead
@@ -91,7 +92,9 @@ export default function AuroraStack() {
                 height: 240,
                 top: -120,
                 right: -120,
-                background: `radial-gradient(circle, ${g.glow} 0%, transparent 65%)`,
+                background: `radial-gradient(circle, ${
+                  AUR[g.glow]
+                } 0%, transparent 65%)`,
                 filter: "blur(40px)",
                 pointerEvents: "none",
               }}

@@ -1,12 +1,14 @@
 import React from "react";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { useAur, aurMono, aurSans } from "./tokens";
 import { AurChip, AurPh } from "./primitives";
 import SectionHead from "./SectionHead";
 
+// `glow` is a theme key (resolved at render time) so washes flip when the
+// theme toggles.
 const projects = [
   {
     span: 2,
-    glow: AUR.glowA,
+    glow: "glowA",
     kind: "OPEN-SOURCE · FEATURED",
     year: "2023",
     name: "Scalabel — 3D point-cloud annotation",
@@ -16,7 +18,7 @@ const projects = [
   },
   {
     span: 2,
-    glow: AUR.glowB,
+    glow: "glowB",
     kind: "RESEARCH · SLAM",
     year: "2022",
     name: "DH3D · Hierarchical 3D descriptors",
@@ -25,7 +27,7 @@ const projects = [
     stack: ["Python", "TensorFlow", "MATLAB"],
   },
   {
-    glow: AUR.glowB,
+    glow: "glowB",
     kind: "RESEARCH",
     year: "2022",
     name: "3DFeatNet",
@@ -34,7 +36,7 @@ const projects = [
     stack: ["Python", "TF"],
   },
   {
-    glow: AUR.glowC,
+    glow: "glowC",
     kind: "PRODUCTION · HTX",
     year: "2020",
     name: "Fall Detection",
@@ -43,7 +45,7 @@ const projects = [
     stack: ["Python", "OpenPifPaf"],
   },
   {
-    glow: AUR.glowC,
+    glow: "glowC",
     kind: "NLP · HTX",
     year: "2020",
     name: "BART Summariser",
@@ -52,7 +54,7 @@ const projects = [
     stack: ["Python", "BART"],
   },
   {
-    glow: AUR.glowD,
+    glow: "glowD",
     kind: "AIHACK 2021",
     year: "2021",
     name: "BITweets",
@@ -61,7 +63,7 @@ const projects = [
     stack: ["Python", "TF"],
   },
   {
-    glow: AUR.glowB,
+    glow: "glowB",
     kind: "WINNER · HACKVIOLET",
     year: "2021",
     name: "em.",
@@ -70,7 +72,7 @@ const projects = [
     stack: ["Wix", "Node"],
   },
   {
-    glow: AUR.glowD,
+    glow: "glowD",
     kind: "HACKSHEFFIELD 6",
     year: "2020",
     name: "Virtualso Piano",
@@ -79,7 +81,7 @@ const projects = [
     stack: ["Python", "OpenCV"],
   },
   {
-    glow: AUR.glowA,
+    glow: "glowA",
     kind: "FB HACK-A-PROJECT",
     year: "2020",
     name: "Don8te",
@@ -88,7 +90,7 @@ const projects = [
     stack: ["Swift", "Firebase"],
   },
   {
-    glow: AUR.glowC,
+    glow: "glowC",
     kind: "BEST 1ST-YEAR",
     year: "2019",
     name: "Dance Dance Conv.",
@@ -99,6 +101,7 @@ const projects = [
 ];
 
 function ProjectCard({ name, kind, year, desc, stack, span = 1, glow }) {
+  const AUR = useAur();
   return (
     <div
       className="aur-proj-card"
@@ -118,7 +121,7 @@ function ProjectCard({ name, kind, year, desc, stack, span = 1, glow }) {
       <AurPh
         h={span === 2 ? 260 : 180}
         label={name.toLowerCase()}
-        glow={glow}
+        glow={AUR[glow]}
       />
       <div
         style={{
@@ -196,6 +199,7 @@ function ProjectCard({ name, kind, year, desc, stack, span = 1, glow }) {
 }
 
 export default function AuroraProjects() {
+  const AUR = useAur();
   return (
     <section>
       <SectionHead

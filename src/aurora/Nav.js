@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { HiMoon, HiSun } from "react-icons/hi";
+import { useAur, aurMono, aurSans } from "./tokens";
 import { settings } from "../portfolio";
 
 const links = [
@@ -12,8 +13,19 @@ const links = [
   { to: "/contact", label: "Contact" },
 ];
 
-export default function AuroraNav() {
+export default function AuroraNav({ setTheme }) {
+  const AUR = useAur();
   const homeLink = settings.isSplash ? "/splash" : "/home";
+
+  const toggle = () => {
+    const next = AUR.name === "dark" ? "light" : "dark";
+    if (typeof setTheme === "function") setTheme(next);
+    try {
+      localStorage.setItem("theme", next);
+    } catch (_) {
+      /* localStorage unavailable — ignore */
+    }
+  };
 
   return (
     <header
@@ -21,7 +33,7 @@ export default function AuroraNav() {
         position: "sticky",
         top: 0,
         zIndex: 20,
-        background: "rgba(11,13,18,0.7)",
+        background: AUR.navBackdrop,
         backdropFilter: "blur(14px) saturate(160%)",
         WebkitBackdropFilter: "blur(14px) saturate(160%)",
         borderBottom: `1px solid ${AUR.rule}`,
@@ -65,6 +77,7 @@ export default function AuroraNav() {
         </span>
         Wei Loon Cheng
         <span
+          className="aur-nav-tag"
           style={{
             ...aurMono,
             fontSize: 11,
@@ -72,7 +85,6 @@ export default function AuroraNav() {
             fontWeight: 400,
             marginLeft: 4,
           }}
-          className="aur-nav-tag"
         >
           · AI engineer
         </span>
@@ -103,35 +115,65 @@ export default function AuroraNav() {
           </NavLink>
         ))}
       </nav>
-      <a
-        href="mailto:weiloon.c97@gmail.com"
-        style={{
-          ...aurSans,
-          fontSize: 13,
-          fontWeight: 500,
-          padding: "8px 14px",
-          borderRadius: 8,
-          background: "rgba(52,211,153,0.1)",
-          border: "1px solid rgba(52,211,153,0.25)",
-          color: AUR.ok,
-          textDecoration: "none",
-          display: "flex",
-          alignItems: "center",
-          gap: 8,
-          whiteSpace: "nowrap",
-        }}
-      >
-        <span
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <button
+          type="button"
+          onClick={toggle}
+          aria-label={
+            AUR.name === "dark" ? "Switch to light mode" : "Switch to dark mode"
+          }
+          title={
+            AUR.name === "dark" ? "Switch to light mode" : "Switch to dark mode"
+          }
           style={{
-            width: 6,
-            height: 6,
-            borderRadius: "50%",
-            background: AUR.ok,
-            boxShadow: `0 0 8px ${AUR.ok}`,
+            width: 36,
+            height: 36,
+            borderRadius: 8,
+            background: AUR.panel,
+            border: `1px solid ${AUR.rule}`,
+            color: AUR.mutedHi,
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+            padding: 0,
+            transition: "border-color 0.15s ease, color 0.15s ease",
           }}
-        />
-        Open to Q4 '26
-      </a>
+          className="aur-theme-toggle"
+        >
+          {AUR.name === "dark" ? <HiSun size={16} /> : <HiMoon size={16} />}
+        </button>
+        <a
+          href="mailto:weiloon.c97@gmail.com"
+          style={{
+            ...aurSans,
+            fontSize: 13,
+            fontWeight: 500,
+            padding: "8px 14px",
+            borderRadius: 8,
+            background: `${AUR.ok}1a`,
+            border: `1px solid ${AUR.ok}40`,
+            color: AUR.ok,
+            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+            gap: 8,
+            whiteSpace: "nowrap",
+          }}
+          className="aur-nav-cta"
+        >
+          <span
+            style={{
+              width: 6,
+              height: 6,
+              borderRadius: "50%",
+              background: AUR.ok,
+              boxShadow: `0 0 8px ${AUR.ok}`,
+            }}
+          />
+          Open to Q4 '26
+        </a>
+      </div>
     </header>
   );
 }

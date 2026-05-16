@@ -7,14 +7,18 @@ import AuroraStack from "../../aurora/Stack";
 import AuroraEducation from "../../aurora/Education";
 import AuroraContact from "../../aurora/Contact";
 import AuroraFooter from "../../aurora/Footer";
-import { AUR } from "../../aurora/tokens";
+import { useAur } from "../../aurora/tokens";
 import "../../aurora/aurora.css";
 import "./HomeComponent.css";
 
-function Home() {
+function Home(props) {
+  const AUR = useAur();
   return (
-    <div className="aur-root" style={{ background: AUR.bg, color: AUR.ink }}>
-      <AuroraNav />
+    <div
+      className="aur-root"
+      style={{ background: AUR.bg, color: AUR.ink, minHeight: "100vh" }}
+    >
+      <AuroraNav setTheme={props.setTheme} />
       <AuroraHero />
       <AuroraWork />
       <AuroraProjects />

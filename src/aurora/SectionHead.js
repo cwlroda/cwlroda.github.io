@@ -1,7 +1,8 @@
 import React from "react";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { useAur, aurMono, aurSans } from "./tokens";
 
 export default function SectionHead({ k, label, title, kicker }) {
+  const AUR = useAur();
   return (
     <div
       style={{ padding: "64px 40px 32px", maxWidth: 1280, margin: "0 auto" }}

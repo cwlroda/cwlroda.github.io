@@ -1,7 +1,8 @@
 import React from "react";
-import { AUR, aurMono } from "./tokens";
+import { useAur, aurMono } from "./tokens";
 
 export function AurPh({ h = 200, label = "image", glow }) {
+  const AUR = useAur();
   return (
     <div
       style={{
@@ -39,8 +40,7 @@ export function AurPh({ h = 200, label = "image", glow }) {
           position: "absolute",
           inset: 0,
           opacity: 0.5,
-          backgroundImage:
-            "radial-gradient(circle, #232735 1px, transparent 1px)",
+          backgroundImage: `radial-gradient(circle, ${AUR.dot} 1px, transparent 1px)`,
           backgroundSize: "14px 14px",
         }}
       />
@@ -49,7 +49,9 @@ export function AurPh({ h = 200, label = "image", glow }) {
   );
 }
 
-export function AurChip({ children, color = AUR.link }) {
+export function AurChip({ children, color }) {
+  const AUR = useAur();
+  const c = color || AUR.link;
   return (
     <span
       style={{
@@ -57,9 +59,9 @@ export function AurChip({ children, color = AUR.link }) {
         fontSize: 11,
         padding: "4px 10px",
         borderRadius: 999,
-        background: `${color}14`,
-        color,
-        border: `1px solid ${color}22`,
+        background: `${c}1f`,
+        color: c,
+        border: `1px solid ${c}33`,
         whiteSpace: "nowrap",
       }}
     >

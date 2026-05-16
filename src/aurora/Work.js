@@ -1,8 +1,10 @@
 import React from "react";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { useAur, aurMono, aurSans } from "./tokens";
 import { AurChip } from "./primitives";
 import SectionHead from "./SectionHead";
 
+// `glow` is a key on the theme object (e.g. "glowA") rather than a literal
+// rgba so the wash adjusts intensity when the theme flips.
 const experiences = [
   {
     year: "2024 — Now",
@@ -12,7 +14,7 @@ const experiences = [
     desc:
       "Building a distributed C++ framework for multi-robot collaborative SLAM with real-time semantic mapping, fault tolerance, and on-device optimisation for embedded compute.",
     stack: ["C++", "ROS", "PCL", "CUDA"],
-    glow: AUR.glowA,
+    glow: "glowA",
     current: true,
   },
   {
@@ -23,7 +25,7 @@ const experiences = [
     desc:
       "Built an abstractive BART news summariser (ROUGE > 0.80) and a multi-person pose-based fall detector across concurrent video streams — 83% accuracy, F1 91.",
     stack: ["Python", "PyTorch", "OpenPifPaf"],
-    glow: AUR.glowB,
+    glow: "glowB",
   },
   {
     year: "2019",
@@ -33,7 +35,7 @@ const experiences = [
     desc:
       "Rebuilt the company site end-to-end and shipped a custom JS API to keep course data in sync with the LMS. Reached thousands of views in the first month.",
     stack: ["JavaScript", "WordPress"],
-    glow: AUR.glowC,
+    glow: "glowC",
   },
   {
     year: "2013",
@@ -43,11 +45,12 @@ const experiences = [
     desc:
       "My first taste of industry as a school-age intern. Optimised C++ algorithms for embedded security products.",
     stack: ["C++", "Embedded"],
-    glow: AUR.glowD,
+    glow: "glowD",
   },
 ];
 
 function ExpRow({ year, role, org, where, desc, stack, glow, current }) {
+  const AUR = useAur();
   return (
     <div
       className="aur-exp-row"
@@ -73,7 +76,7 @@ function ExpRow({ year, role, org, where, desc, stack, glow, current }) {
             height: 240,
             top: -120,
             left: -120,
-            background: `radial-gradient(circle, ${glow} 0%, transparent 65%)`,
+            background: `radial-gradient(circle, ${AUR[glow]} 0%, transparent 65%)`,
             filter: "blur(40px)",
             pointerEvents: "none",
           }}
@@ -131,7 +134,12 @@ function ExpRow({ year, role, org, where, desc, stack, glow, current }) {
           {role}
         </div>
         <div
-          style={{ ...aurSans, fontSize: 14, color: AUR.mutedHi, marginTop: 4 }}
+          style={{
+            ...aurSans,
+            fontSize: 14,
+            color: AUR.mutedHi,
+            marginTop: 4,
+          }}
         >
           {org}
         </div>

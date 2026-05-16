@@ -1,5 +1,5 @@
 import React from "react";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { useAur, aurMono, aurSans } from "./tokens";
 import { socialMediaLinks } from "../portfolio";
 
 const cards = [
@@ -24,6 +24,7 @@ const cards = [
 ];
 
 export default function AuroraContact() {
+  const AUR = useAur();
   return (
     <section
       style={{

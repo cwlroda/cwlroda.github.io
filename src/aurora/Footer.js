@@ -1,7 +1,8 @@
 import React from "react";
-import { AUR, aurMono, aurSans } from "./tokens";
+import { useAur, aurMono, aurSans } from "./tokens";
 
 export default function AuroraFooter() {
+  const AUR = useAur();
   return (
     <footer
       style={{
