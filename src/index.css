@@ -1,0 +1,40 @@
+/* Aurora theme: Inter + Geist Mono are loaded from Google Fonts via
+   public/index.html. The body background and scrollbar colors are set
+   by styled-components GlobalStyles so they follow the active theme;
+   the FOUC-safe defaults below mirror the dark theme (the initial
+   render before React mounts). */
+
+code,
+.aur-mono {
+  font-family: "Geist Mono", "JetBrains Mono", ui-monospace, SFMono-Regular,
+    Menlo, Monaco, Consolas, monospace;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #0b0d12;
+  color: #e7eaf0;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 1380px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}

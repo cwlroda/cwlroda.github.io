@@ -1,0 +1,33 @@
+{
+  "simRanges": {
+    "easy": [
+      0.4949,
+      0.5507
+    ],
+    "medium": [
+      0.4589,
+      0.4949
+    ],
+    "hard": [
+      0.4073,
+      0.4589
+    ]
+  },
+  "sniffPenalty": {
+    "easy": 6,
+    "medium": 16,
+    "hard": 20
+  },
+  "scoutPenalty": {
+    "easy": 15,
+    "medium": 42,
+    "hard": 50
+  },
+  "hopSavedBase": 28,
+  "hopSavedEscalation": 9,
+  "showMorePenalty": {
+    "easy": 0,
+    "medium": 7,
+    "hard": 8
+  }
+}

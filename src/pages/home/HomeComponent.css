@@ -1,0 +1,5 @@
+/* Background + text color come from the theme via the inline style on
+   .aur-root; this file is kept only so existing imports don't break. */
+.aur-root {
+  min-height: 100vh;
+}
